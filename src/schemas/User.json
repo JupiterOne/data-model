@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#User",
+  "description": "A user account/login to access certain systems and/or services. Examples include okta-user, aws-iam-user, ssh-user, local-user (on a host), etc.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "#Entity" },
+    {
+      "properties": {
+        "username": {
+          "description": "Username",
+          "type": "string"
+        },
+        "email": {
+          "description": "The email address associated with the user account",
+          "type": "string",
+          "format": "email"
+        },
+        "shortLoginId": {
+          "description": "The shortened login Id. For example, if the username is the full email address (first.last@company.com), the shortLoginId would be the part before @ (first.last).",
+          "type": "string"
+        },
+        "mfaEnabled": {
+          "description": "Specifies whether multi-factor authentication (MFA) is enabled for this user.",
+          "type": "boolean"
+        }
+      },
+      "required": ["username"]
+    }
+  ]
+}

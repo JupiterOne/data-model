@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#Host",
+  "description": "A compute instance that itself owns a whole network stack and serves as an environment for workloads. Typically it runs an operating system. The exact host type is described in the _type property of the Entity. The UUID of the host should be captured in the _id property of the Entity",
+  "type": "object",
+  "allOf": [
+    { "$ref": "#Entity" },
+    {
+      "properties": {
+        "fqdn": {
+          "description": "Fully qualified domain name",
+          "type": "string"
+        },
+        "hostname": {
+          "description": "The primary/local hostname",
+          "type": "string"
+        },
+        "ipAddress": {
+          "description": "The main IP address. This property is usually used to store the primary IP address of a Host.",
+          "type": "string",
+          "format": "ip"
+        },
+        "publicDnsName": {
+          "description": "The public DNS name",
+          "type": "string",
+          "format": "hostname"
+        },
+        "privateDnsName": {
+          "description": "The private DNS name",
+          "type": "string",
+          "format": "hostname"
+        },
+        "publicIpAddress": {
+          "description": "The public IP address",
+          "type": "string",
+          "format": "ipv4"
+        },
+        "privateIpAddress": {
+          "description": "The private IP address",
+          "type": "string",
+          "format": "ipv4"
+        },
+        "ipAddresses": {
+          "description": "A listing of all IPv4 addresses associated with this Host",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "ipv4"
+          }
+        },
+        "ipv6Addresses": {
+          "description": "A listing of all IPv6 addresses associated with this Host",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "ipv6"
+          }
+        },
+        "macAddress": {
+          "description": "Primary MAC address",
+          "type": "string"
+        },
+        "platform": {
+          "description": "Operating System Platform",
+          "type": "string",
+          "enum": [
+            "darwin",
+            "linux",
+            "unix",
+            "windows",
+            "android",
+            "ios",
+            "embedded",
+            "other"
+          ]
+        },
+        "osDetails": {
+          "description": "Operating System Full Details (e.g. macOS High Sierra version 10.13.6)",
+          "type": "string"
+        },
+        "osName": {
+          "description": "Operating System Name (e.g. macOS)",
+          "type": "string"
+        },
+        "osVersion": {
+          "description": "Operating System Version (e.g. 10.13.6)",
+          "type": "string"
+        },
+        "macAddresses": {
+          "description": "A listing of all MAC addresses associated with this Host",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "physical": {
+          "description": "Indicates if this is a physical host, such as a physical server.",
+          "type": "boolean"
+        }
+      },
+      "required": ["hostname"]
+    }
+  ]
+}

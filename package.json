@@ -1,0 +1,41 @@
+{
+  "name": "@jupiterone/data-model",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "repository": "git@github.com:JupiterOne/data-model.git",
+  "author": "JupiterOne <dev@jupiterone.io>",
+  "license": "MPL-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist/*",
+    "build": "tsc --project tsconfig.dist.json --declaration",
+    "test": "jest",
+    "lint": "eslint src --ext .ts,.js",
+    "format": "prettier --write '**/*.{ts,js,json,md}'"
+  },
+  "dependencies": {
+    "ajv": "^6.12.0",
+    "lodash.camelcase": "^4.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.5",
+    "@types/lodash.camelcase": "^4.3.6",
+    "@types/node": "^13.11.0",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "husky": "^4.2.3",
+    "jest": "^25.2.7",
+    "lint-staged": "^10.1.1",
+    "prettier": "^2.0.2",
+    "ts-jest": "^25.3.0",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
+  }
+}

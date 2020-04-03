@@ -1,0 +1,14 @@
+{
+  "linters": {
+    "*.ts": [
+      "eslint",
+      "prettier --write",
+      "git add"
+    ],
+    "*.{md,js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "ignore": []
+}
