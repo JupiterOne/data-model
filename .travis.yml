@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - '10'
+  - '12'
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+
+script: yarn build
+
+deploy:
+  provider: npm
+  edge: true
+  email: npm@jupiterone.io
+  api_key:
+    secure: "pW7oA7G07RpG3zYljYrQsMISAUNgD6y9P7LEoHejGE+fekHFC5NYtLjCsA7ScuOfDPYDMT66h/z5kfBTaStacghYyGsU99RAROPKjfsgYCG4ZrUtGc+unoS+aVgtM26XViWTi076yU1olu3i1boDpY1Yv9/q6YRdIMuxmvixpSsZO1c5Xltsi82LmbAeCo6RfgBeqSkunv7roI76+CIAMSCQN2WrBBDleI8F5HTSRWMLcx2Vs4Zve6x/M8FFtFFzLpKV4MpQQScqvqSZFygKcOjT/neSrKznIOcrbZpyAbHjLokB57QGukXnjXdBA89mrCRdvV0I8+VsLAzym/+an1ysaYnf5sYDXwlQ+a1oETuNfFDvyW+3Fxk5JDokeuOjrRElGBM0NdYcUb6iI+jtTbjQJAg1YQbU8SdGZLN51yp00C1OvznkanFXd0Elld7QW0tsk3wwhD7s2RJucGUdIHaajS+5tWg1C4vqEyqdVv7lYaqMIm5ZQ/KN0GrK/dOAEDS4bMQNNuRDqnuJYYD3y1U5hygBfZ2f/+tA4et7aCv5KZwU63rCvlQ5VQTTsSzxZTunU2UVhBywpY9Bb6Fm2PlDbA+bRVTFao20rBUcgSlAZB3+xrlHrfk9z2KSLf809hiyWDWMwMnTwWC0f6Do6lqhk4jfWqqEnhupb9Eyvy0="
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: master
+    repo: JupiterOne/data-model
+    node: '12'
