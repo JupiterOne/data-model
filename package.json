@@ -13,18 +13,16 @@
   },
   "scripts": {
     "prebuild": "rm -rf dist/*",
-    "build": "tsc --project tsconfig.dist.json --declaration",
+    "build": "tsc --project tsconfig.dist.json --declaration && cp -R ./src/schemas ./dist/schemas",
     "test": "jest",
     "lint": "eslint src --ext .ts,.js",
     "format": "prettier --write '**/*.{ts,js,json,md}'"
   },
   "dependencies": {
-    "ajv": "^6.12.0",
-    "lodash.camelcase": "^4.3.0"
+    "ajv": "^6.12.0"
   },
   "devDependencies": {
     "@types/jest": "^25.1.5",
-    "@types/lodash.camelcase": "^4.3.6",
     "@types/node": "^13.11.0",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",

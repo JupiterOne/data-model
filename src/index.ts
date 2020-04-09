@@ -1,17 +1,17 @@
-export { createIntegrationEntity } from './createIntegrationEntity';
-export { createIntegrationRelationship } from './createIntegrationRelationship';
-export { assignTags, ResourceTagList, ResourceTagMap } from './tagging';
-export { generateRelationshipKey, generateRelationshipType } from './util';
-export * from './converters';
+export { EVERYONE, INTERNET } from './globalEntities';
+
+export { RelationshipClass } from './RelationshipClass';
 export * from './relationships';
 
-import * as ipUtil from './ip';
-import { EVERYONE, INTERNET } from './globalEntities';
-import { RelationshipClass } from './schemas';
-
-export const DataModel = {
-  ipUtil,
-  EVERYONE,
-  INTERNET,
-  RelationshipClass,
+export type IntegrationEntitySchema = {
+  $ref?: string;
+  allOf?: IntegrationEntitySchema[];
+  properties?: {
+    [propertyName: string]: any;
+  };
+  required?: string[];
 };
+export { IntegrationSchema } from "./IntegrationSchema";
+
+export { validateEntityWithSchema } from './validateEntityWithSchema';
+export { getSchema } from './getSchema';
