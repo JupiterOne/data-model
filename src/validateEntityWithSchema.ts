@@ -1,9 +1,8 @@
-import { IntegrationSchema } from '.';
+import { IntegrationSchema } from ".";
 
 /**
  * Validates an entity using the data model schemas, throwing an error when
- * validation fails. It is expected that this will only be used during
- * development, not in production!
+ * validation fails.
  */
 export function validateEntityWithSchema(entity: { _class: string[] }): void {
   for (const c of entity._class) {
@@ -17,8 +16,8 @@ export function validateEntityWithSchema(entity: { _class: string[] }): void {
         `Entity fails to validate as class '${c}':\n\n${JSON.stringify(
           validate.errors,
           null,
-          2
-        )}`
+          2,
+        )}`,
       );
     }
   }

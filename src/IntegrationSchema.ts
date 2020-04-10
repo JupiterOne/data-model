@@ -1,5 +1,5 @@
-import { readdirSync } from 'fs';
-import Ajv from 'ajv';
+import { readdirSync } from "fs";
+import Ajv from "ajv";
 
 // JSON Schema allows an object to contain properties that are not specified by
 // the schema. This can be disabled with `additionalProperties: false`. Ajv then
@@ -13,12 +13,13 @@ import Ajv from 'ajv';
 // 2) when an entity has multiple classes, each schema needs to allow for
 //    properties from other schemas.
 /**
- * An Ajv schema for integration graph objects, useful for validating entities
- * creating by an integration.
+ * An Ajv schema for integration graph objects, useful for validating that
+ * entities conform to minimum requirements.
  */
-export const IntegrationSchema = new Ajv({ unknownFormats: 'ignore' });
+export const IntegrationSchema = new Ajv({ unknownFormats: "ignore" });
 
 for (const schemaFilename of readdirSync(__dirname + "/schemas")) {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
   const schema = require(`./schemas/${schemaFilename}`);
   IntegrationSchema.addSchema(schema);
 }
