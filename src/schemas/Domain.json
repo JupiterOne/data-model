@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#Domain",
+  "description": "An internet domain.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "#Entity"
+    },
+    {
+      "properties": {
+        "domainName": {
+          "description": "Domain name.",
+          "type": "string"
+        },
+        "whoisServer": {
+          "description": "WHOIS server that is responsible for resolving the details of this domain.",
+          "type": "string"
+        },
+        "registrar": {
+          "description": "Domain registrar where this domain is registered.",
+          "type": "string"
+        },
+        "registrarName": {
+          "description": "Domain registrar name.",
+          "type": "string"
+        },
+        "registrarUrl": {
+          "description": "Domain registrar URL.",
+          "type": "string"
+        },
+        "nameservers": {
+          "description": "List of nameservers.",
+          "type": "string"
+        },
+        "contactEmails": {
+          "description": "List of contact emails.",
+          "type": "string"
+        },
+        "abuseContactEmail": {
+          "description": "Abuse contact email.",
+          "type": "string"
+        },
+        "registrantContactEmail": {
+          "description": "Registrant contact email.",
+          "type": "string"
+        },
+        "techContactEmail": {
+          "description": "Technical contact email.",
+          "type": "string"
+        },
+        "adminContactEmail": {
+          "description": "Administrative contact email.",
+          "type": "string"
+        },
+        "billingContactEmail": {
+          "description": "Billing contact email.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "domainName"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#Document",
+  "description": "A document or data object.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "#Entity"
+    },
+    {
+      "properties": {},
+      "required": [],
+      "excludes": []
+    }
+  ]
+}
