@@ -56,7 +56,11 @@
         "billingContactEmail": {
           "description": "Billing contact email.",
           "type": "string"
-        }
+        },
+        "autoRenew": {
+          "description": "Indicates whether auto-renewal is configured.",
+          "type": "boolean"
+         }
       },
       "required": [
         "domainName"
