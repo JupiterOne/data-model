@@ -13,7 +13,8 @@
   },
   "scripts": {
     "prebuild": "rm -rf dist/*",
-    "build": "tsc --project tsconfig.dist.json --declaration && cp -R ./src/schemas ./dist/schemas",
+    "build": "yarn tsc --project tsconfig.dist.json --declaration && cp -R ./src/schemas ./dist/schemas",
+    "generate-schema-imports": "./tools/generate-schema-imports.sh",
     "test": "jest",
     "lint": "eslint src --ext .ts,.js",
     "format": "prettier --write '**/*.{ts,js,json,md}'"
