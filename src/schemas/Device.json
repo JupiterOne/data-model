@@ -10,7 +10,30 @@
         "category": {
           "description": "The device category",
           "type": "string",
-          "examples": ["server", "endpoint", "storage-media", "mobile", "other"]
+          "examples": [
+            "server",
+            "endpoint",
+            "storage-media",
+            "mobile",
+            "network",
+            "other"
+          ]
+        },
+        "make": {
+          "description": "Same as hardwareVendor: The manufacturer or vendor of the device, e.g. Apple Inc., Generic",
+          "type": "string"
+        },
+        "model": {
+          "description": "Same as hardwareModel: The device hardware model, e.g. MacBookPro13,3",
+          "type": "string"
+        },
+        "version": {
+          "description": "Same as hardwareVersion: The device hardware version",
+          "type": "string"
+        },
+        "serial": {
+          "description": "Same as hardwareSerial: The device serial number",
+          "type": "string"
         },
         "hardwareVendor": {
           "description": "The manufacturer or vendor of the device, e.g. Apple Inc., Generic",
@@ -141,13 +164,7 @@
           ]
         }
       },
-      "required": [
-        "category",
-        "hardwareVendor",
-        "hardwareModel",
-        "hardwareSerial",
-        "BYOD"
-      ]
+      "required": ["category", "make", "model", "serial"]
     }
   ]
 }
