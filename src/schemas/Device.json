@@ -20,19 +20,19 @@
           ]
         },
         "make": {
-          "description": "The manufacturer or vendor of the device, e.g. Apple Inc., Generic",
+          "description": "Same as hardwareVendor: The manufacturer or vendor of the device, e.g. Apple Inc., Generic",
           "type": "string"
         },
         "model": {
-          "description": "The device hardware model, e.g. MacBookPro13,3",
+          "description": "Same as hardwareModel: The device hardware model, e.g. MacBookPro13,3",
           "type": "string"
         },
         "version": {
-          "description": "The device hardware version",
+          "description": "Same as hardwareVersion: The device hardware version",
           "type": "string"
         },
         "serial": {
-          "description": "The device serial number",
+          "description": "Same as hardwareSerial: The device serial number",
           "type": "string"
         },
         "hardwareVendor": {
