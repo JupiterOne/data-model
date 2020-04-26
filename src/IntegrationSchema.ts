@@ -124,6 +124,8 @@ import Entity from "./schemas/Entity.json";
 IntegrationSchema.addSchema(Entity);
 import DomainZone from "./schemas/DomainZone.json";
 IntegrationSchema.addSchema(DomainZone);
+import DomainRecord from "./schemas/DomainRecord.json";
+IntegrationSchema.addSchema(DomainRecord);
 import Domain from "./schemas/Domain.json";
 IntegrationSchema.addSchema(Domain);
 import Document from "./schemas/Document.json";

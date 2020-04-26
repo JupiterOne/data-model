@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#DomainRecord",
+  "description": "The DNS Record of a Domain Zone.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "#Entity"
+    },
+    {
+      "properties": {
+        "type": {
+          "description": "DNS Record type.",
+          "type": "string",
+          "enum": [
+            "A",
+            "AAAA",
+            "ALIAS",
+            "CNAME",
+            "MX",
+            "NX",
+            "PTR",
+            "SOA",
+            "SRV",
+            "TXT"
+          ]
+        },
+        "TTL": {
+          "description": "Time to Live before resolver cache expires.",
+          "type": "string"
+        },
+        "value": {
+          "description": "The record value. Could be referenced as `data`, `content`, `resourceRecords`, `aliasTarget` or another property name depending on the DNS provider.",
+          "type": "string"
+        }
+      },
+      "required": ["type", "TTL"]
+    }
+  ]
+}
