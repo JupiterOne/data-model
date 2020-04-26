@@ -31,11 +31,17 @@
         },
         "nameservers": {
           "description": "List of nameservers.",
-          "type": "string"
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "contactEmails": {
           "description": "List of contact emails.",
-          "type": "string"
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "abuseContactEmail": {
           "description": "Abuse contact email.",
@@ -60,11 +66,13 @@
         "autoRenew": {
           "description": "Indicates whether auto-renewal is configured.",
           "type": "boolean"
-         }
+        },
+        "parent": {
+          "description": "Parent domain, if the entity is a sub-domain.",
+          "type": "string"
+        }
       },
-      "required": [
-        "domainName"
-      ]
+      "required": ["domainName"]
     }
   ]
 }
