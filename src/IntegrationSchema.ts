@@ -122,6 +122,8 @@ import Finding from "./schemas/Finding.json";
 IntegrationSchema.addSchema(Finding);
 import Entity from "./schemas/Entity.json";
 IntegrationSchema.addSchema(Entity);
+import DomainZone from "./schemas/DomainZone.json";
+IntegrationSchema.addSchema(DomainZone);
 import Domain from "./schemas/Domain.json";
 IntegrationSchema.addSchema(Domain);
 import Document from "./schemas/Document.json";
