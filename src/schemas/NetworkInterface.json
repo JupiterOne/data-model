@@ -19,6 +19,11 @@
           "type": "string",
           "format": "hostname"
         },
+        "ipAddress": {
+          "description": "The assigned primary IP address",
+          "type": "string",
+          "format": "ip"
+        },
         "publicIpAddress": {
           "description": "The assigned public IP address",
           "type": "string",
@@ -33,15 +38,10 @@
           "description": "Indicates IP version 4 or 6",
           "type": "integer",
           "default": 4,
-          "examples": [
-            4,
-            6
-          ]
+          "enum": [4, 6]
         }
       },
-      "required": [
-        "ipAddress"
-      ]
+      "required": []
     }
   ]
 }
