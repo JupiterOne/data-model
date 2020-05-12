@@ -86,6 +86,8 @@ import Organization from "./schemas/Organization.json";
 IntegrationSchema.addSchema(Organization);
 import NetworkInterface from "./schemas/NetworkInterface.json";
 IntegrationSchema.addSchema(NetworkInterface);
+import NetworkEndpoint from "./schemas/NetworkEndpoint.json";
+IntegrationSchema.addSchema(NetworkEndpoint);
 import Network from "./schemas/Network.json";
 IntegrationSchema.addSchema(Network);
 import Module from "./schemas/Module.json";
