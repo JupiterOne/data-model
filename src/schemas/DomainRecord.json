@@ -38,7 +38,7 @@
         },
         "TTL": {
           "description": "Time to Live before resolver cache expires.",
-          "type": "string"
+          "type": "number"
         },
         "value": {
           "description": "The record value. Could be referenced as `data`, `content`, `resourceRecords`, `aliasTarget` or another property name depending on the DNS provider.",
