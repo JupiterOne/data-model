@@ -176,6 +176,8 @@ import Attacker from "./schemas/Attacker.json";
 IntegrationSchema.addSchema(Attacker);
 import Assessment from "./schemas/Assessment.json";
 IntegrationSchema.addSchema(Assessment);
+import ApplicationEndpoint from "./schemas/ApplicationEndpoint.json";
+IntegrationSchema.addSchema(ApplicationEndpoint);
 import Application from "./schemas/Application.json";
 IntegrationSchema.addSchema(Application);
 import Account from "./schemas/Account.json";
