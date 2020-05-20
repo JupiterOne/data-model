@@ -103,13 +103,7 @@
           }
         }
       },
-      "required": [
-        "category",
-        "severity",
-        "open",
-        "production",
-        "public"
-      ]
+      "required": ["category", "severity", "open"]
     }
   ]
 }
