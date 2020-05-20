@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#ApplicationEndpoint",
+  "description": "An application endpoint is a program interface that either initiates or receives a request, such as an API.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "#Entity"
+    },
+    {
+      "properties": {
+        "address": {
+          "description": "The endpoint address",
+          "type": "string"
+        }
+      },
+      "required": ["address"]
+    }
+  ]
+}
