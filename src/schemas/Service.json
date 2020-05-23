@@ -14,7 +14,7 @@
           "type": "array",
           "items": {
             "type": "string",
-            "enum": ["software", "platform", "infrastructure", "other"]
+            "examples": ["software", "platform", "infrastructure", "other"]
           }
         },
         "endpoints": {
