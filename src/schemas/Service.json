@@ -14,7 +14,13 @@
           "type": "array",
           "items": {
             "type": "string",
-            "examples": ["software", "platform", "infrastructure", "other"]
+            "examples": [
+              "software",
+              "platform",
+              "infrastructure",
+              "physical",
+              "other"
+            ]
           }
         },
         "endpoints": {
