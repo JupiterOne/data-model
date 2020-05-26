@@ -68,6 +68,8 @@ import Queue from "./schemas/Queue.json";
 IntegrationSchema.addSchema(Queue);
 import Project from "./schemas/Project.json";
 IntegrationSchema.addSchema(Project);
+import Program from "./schemas/Program.json";
+IntegrationSchema.addSchema(Program);
 import Product from "./schemas/Product.json";
 IntegrationSchema.addSchema(Product);
 import Process from "./schemas/Process.json";
