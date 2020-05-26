@@ -31,7 +31,7 @@
           }
         }
       },
-      "required": ["category", "endpoints"]
+      "required": ["category"]
     }
   ]
 }
