@@ -1,6 +1,6 @@
 {
   "name": "@jupiterone/data-model",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -17,7 +17,8 @@
     "generate-schema-imports": "./tools/generate-schema-imports.sh",
     "test": "jest",
     "lint": "eslint src --ext .ts,.js",
-    "format": "prettier --write '**/*.{ts,js,json,md}'"
+    "format": "prettier --write '**/*.{ts,js,json,md}'",
+    "prepack": "yarn build"
   },
   "dependencies": {
     "ajv": "^6.12.0"
