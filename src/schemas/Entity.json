@@ -87,6 +87,10 @@
           "description": "Indicates if this node is a temporary resource, such as a lambda instance or an EC2 instance started by ECS.",
           "type": "boolean"
         },
+        "trusted": {
+          "description": "Indicates if this is a trusted resource. For example, a trusted Network, Host, Device, Application, Person, User, or Vendor.",
+          "type": "boolean"
+        },
         "createdOn": {
           "description": "The timestamp (in milliseconds since epoch) when the entity was created at the source. This is different than `_createdOn` which is the timestamp the entity was first ingested into JupiterOne.",
           "type": "number",
