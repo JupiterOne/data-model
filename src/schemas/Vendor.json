@@ -70,6 +70,31 @@
           "description": "Main physical/mailing address of the vendor.",
           "type": "string"
         },
+        "mainContactTitle": {
+          "description": "The title of the vendor's main point of contact. For example, 'Manager of Operations'.",
+          "type": "string"
+        },
+        "alternateContactName": {
+          "description": "The vendor's alternate/secondary point of contact person.",
+          "type": "string"
+        },
+        "alternateContactEmail": {
+          "description": "Email of the vendor's alternate/secondary point of contact person.",
+          "type": "string",
+          "format": "email"
+        },
+        "alternateContactPhone": {
+          "description": "Phone number of the vendor's alternate/secondary point of contact person.",
+          "type": "string"
+        },
+        "alternateContactAddress": {
+          "description": "Alternate/secondary physical/mailing address of the vendor.",
+          "type": "string"
+        },
+        "alternateContactTitle": {
+          "description": "The title of the vendor's alternate/secondary point of contact. For example, 'CISO'.",
+          "type": "string"
+        },
         "admins": {
           "description": "List of admin users to the vendor account, if applicable. If this vendor account is integrated directly to JupiterOne and its data is ingested, the admin users should be already mapped as User entities.",
           "type": "array",
@@ -122,15 +147,8 @@
           "format": "uri"
         }
       },
-      "required": [
-        "category"
-      ],
-      "excludes": [
-        "status",
-        "public",
-        "temporary",
-        "expiresOn"
-      ]
+      "required": ["category"],
+      "excludes": ["status", "public", "temporary", "expiresOn"]
     }
   ]
 }
