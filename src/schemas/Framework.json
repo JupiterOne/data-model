@@ -30,7 +30,7 @@
           "type": "string",
           "examples": [
             "HIPAA",
-            "HITRUST CSF",
+            "NIST",
             "CSA STAR",
             "PCI DSS",
             "NIST CSF",
@@ -42,16 +42,11 @@
           ]
         },
         "version": {
-          "description": "The version of the framework. For example, HITRUST CSF may have version 8.1, 9.0, 9.1, etc.; OWASP may have version 2010, 2013, 2017.",
+          "description": "The version of the framework. For example, OWASP may have version 2010, 2013, 2017.",
           "type": "string"
         }
       },
-      "required": [
-        "name",
-        "displayName",
-        "standard",
-        "version"
-      ]
+      "required": ["name", "displayName", "standard", "version"]
     }
   ]
 }
