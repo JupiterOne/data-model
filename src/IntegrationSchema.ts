@@ -138,6 +138,8 @@ import Domain from "./schemas/Domain.json";
 IntegrationSchema.addSchema(Domain);
 import Document from "./schemas/Document.json";
 IntegrationSchema.addSchema(Document);
+import Disk from "./schemas/Disk.json";
+IntegrationSchema.addSchema(Disk);
 import Directory from "./schemas/Directory.json";
 IntegrationSchema.addSchema(Directory);
 import Device from "./schemas/Device.json";
