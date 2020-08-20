@@ -98,7 +98,7 @@
           "type": "boolean"
         }
       },
-      "required": ["hostname"]
+      "required": []
     }
   ]
 }
