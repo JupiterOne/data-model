@@ -43,7 +43,12 @@ export enum RelationshipClass {
    */
   GENERATED = "GENERATED",
 
+  /**
+   * A relationship between any Entity and a direct descendant of that Entity.
+   * The target entity cannot be "had" by more than one source entity.
+   */
   HAS = "HAS",
+
   IDENTIFIED = "IDENTIFIED",
   IMPLEMENTS = "IMPLEMENTS",
   IS = "IS",
@@ -63,5 +68,9 @@ export enum RelationshipClass {
    */
   UPDATED = "UPDATED",
 
+  /**
+   * A relationship between any Entity and a utility Entity.
+   * The target entity can be "used" by many source entities.
+   */
   USES = "USES",
 }
