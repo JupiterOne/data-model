@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.9.0 - 2020-08-26
+
+### Added
+
+- Added `DENIES` relationship class
+
 ## 0.8.1 - 2020-08-20
 
 ### Changed
