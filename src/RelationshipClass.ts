@@ -3,16 +3,20 @@
  */
 export enum RelationshipClass {
   /**
-   * A relationship between an AccessPolicy and a resource Entity.
+   * A relationship between an {AccessPolicy, Firewall} and a resource Entity.
    */
   ALLOWS = "ALLOWS",
 
   /**
    * A relationship between a {AccessRole, User, Group} and AccessPolicy.
    */
-  ASSIGNED = "ASSIGNED",
-  CONNECTS = "CONNECTS",
-  CONTAINS = "CONTAINS",
+  ASSIGNED = 'ASSIGNED',
+  CONNECTS = 'CONNECTS',
+
+  /**
+   * Closely related to or interchangeable with HAS.
+   */
+  CONTAINS = 'CONTAINS',
 
   /**
    * A relationship between a User and any Entity.
@@ -25,7 +29,7 @@ export enum RelationshipClass {
   DEFINES = "DEFINES",
 
   /**
-   * A relationship between an AccessPolicy and a resource Entity.
+   * A relationship between an {AccessPolicy, Firewall} and a resource Entity.
    */
   DENIES = "DENIES",
 
@@ -44,8 +48,8 @@ export enum RelationshipClass {
   GENERATED = "GENERATED",
 
   /**
-   * A relationship between any Entity and a direct descendant of that Entity.
-   * The target entity cannot be "had" by more than one source entity.
+   * A relationship between a group or service Entity and a member of that Entity.
+   * Closely related to or interchangeable with CONTAINS.
    */
   HAS = "HAS",
 
