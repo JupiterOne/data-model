@@ -19,6 +19,9 @@
               "platform",
               "infrastructure",
               "physical",
+              "network",
+              "application",
+              "security",
               "other"
             ]
           }
