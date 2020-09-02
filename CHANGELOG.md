@@ -8,6 +8,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- [#39](https://github.com/JupiterOne/data-model/issues/39) - Add `ISSUED`
+  relationship class.
+
 ## 0.9.0 - 2020-08-26
 
 ### Added

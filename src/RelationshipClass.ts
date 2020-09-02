@@ -77,4 +77,13 @@ export enum RelationshipClass {
    * The target entity can be "used" by many source entities.
    */
   USES = 'USES',
+
+  /**
+   * A relationship between an authoritative entity (e.g. user) and some
+   * resource that the authoritative entity issued to another entity
+   * (e.g. a token).
+   *
+   * Example: my_user ISSUED the_token
+   */
+  ISSUED = 'ISSUED',
 }
