@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.10.0 - 2020-09-09
+
+### Added
+
+- Added `NS` as valid `DomainRecord`.`type` value
+
 ## 0.9.0 - 2020-08-26
 
 ### Added
