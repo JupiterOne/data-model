@@ -12,6 +12,12 @@ and this project adheres to
 
 - Added `createdBy`, `updatedBy`, `deletedBy`, `discoveredBy` to `Entity` schema
 
+## 0.10.0 - 2020-09-09
+
+### Added
+
+- Added `NS` as valid `DomainRecord`.`type` value
+
 ## 0.9.0 - 2020-08-26
 
 ### Added
