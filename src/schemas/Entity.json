@@ -101,10 +101,36 @@
           "type": "number",
           "format": "date-time"
         },
+        "deletedOn": {
+          "description": "The timestamp (in milliseconds since epoch) when the entity was deleted at the source.",
+          "type": "number",
+          "format": "date-time"
+        },
+        "discoveredOn": {
+          "description": "The timestamp (in milliseconds since epoch) when the entity was discovered.",
+          "type": "number",
+          "format": "date-time"
+        },
         "expiresOn": {
           "description": "If the entity is a temporary resource, optionally set the expiration date. For example, the expiration date of an SSL cert.",
           "type": "number",
           "format": "date-time"
+        },
+        "createdBy": {
+          "description": "The source/principal/user that created the entity",
+          "type": "string"
+        },
+        "updatedBy": {
+          "description": "The source/principal/user that updated the entity",
+          "type": "string"
+        },
+        "deletedBy": {
+          "description": "The source/principal/user that deleted the entity",
+          "type": "string"
+        },
+        "discoveredBy": {
+          "description": "The source/principal/user that discovered the entity",
+          "type": "string"
         },
         "webLink": {
           "description": "Web link to the source. For example: https://console.aws.amazon.com/iam/home#/roles/Administrator. This property is used by the UI to add a hyperlink to the entity.",

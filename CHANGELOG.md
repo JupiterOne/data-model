@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added 
+
+- Added `createdBy`, `updatedBy`, `deletedBy`, `discoveredBy` to `Entity` schema
+
 ## 0.10.0 - 2020-09-09
 
 ### Added
