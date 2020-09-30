@@ -8,9 +8,10 @@ and this project adheres to
 
 ## [Unreleased]
 
-### Added 
+### Added
 
 - Added `createdBy`, `updatedBy`, `deletedBy`, `discoveredBy` to `Entity` schema
+- Added `RelationshipClass.SCANS` constant
 
 ## 0.10.0 - 2020-09-09
 

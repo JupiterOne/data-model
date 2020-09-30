@@ -43,7 +43,11 @@ export enum RelationshipClass {
   EXTENDS = 'EXTENDS',
 
   /**
-   * A relationship between any Entity and {Finding, Incident}.
+   * A relationship indicating an Entity is responsible for generating another Entity.
+   *
+   * Examples:
+   *
+   * * Project - GENERATED -> Finding
    */
   GENERATED = 'GENERATED',
 
@@ -53,9 +57,27 @@ export enum RelationshipClass {
    */
   HAS = 'HAS',
 
+  /**
+   * A relationship indicating an Entity identified another Entity.
+   *
+   * Examples:
+   *
+   * * Service - IDENTIFIED -> Finding
+   */
   IDENTIFIED = 'IDENTIFIED',
+
   IMPLEMENTS = 'IMPLEMENTS',
+
+  /**
+   * A relationship indicating an Entity is an instance of another Entity.
+   *
+   * Examples:
+   *
+   * * Finding - IS -> Vulnerability
+   * * User - IS -> Person
+   */
   IS = 'IS',
+
   MANAGES = 'MANAGES',
   MITIGATES = 'MITIGATES',
   MONITORS = 'MONITORS',
@@ -64,6 +86,16 @@ export enum RelationshipClass {
   PERFORMED = 'PERFORMED',
   PROTECTS = 'PROTECTS',
   PROVIDES = 'PROVIDES',
+
+  /**
+   * A relationships indicating an Entity performs some kind of scan on another Entity.
+   *
+   * Examples:
+   *
+   * * Service - SCANS -> Host
+   */
+  SCANS = 'SCANS',
+
   TRIGGERS = 'TRIGGERS',
   TRUSTS = 'TRUSTS',
 
@@ -73,8 +105,13 @@ export enum RelationshipClass {
   UPDATED = 'UPDATED',
 
   /**
-   * A relationship between any Entity and a utility Entity.
-   * The target entity can be "used" by many source entities.
+   * A relationship indicating an Entity utilizes another Entity. Typically, the
+   * target Entity can be "used" by many source Entities.
+   *
+   * Examples:
+   *
+   * * Host - USES -> DataStore
+   * * UserRole - USES -> AccessPolicy
    */
   USES = 'USES',
 }
