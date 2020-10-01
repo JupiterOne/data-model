@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.12.0 - 2020-10-01
+
 ### Added
 
 - Added `createdBy`, `updatedBy`, `deletedBy`, `discoveredBy` to `Entity`
@@ -19,7 +21,7 @@ and this project adheres to
 - `Entity.id` allows `string | string[]`. This change will allow `id` to capture
   values from each provider that tracks an Entity.
 
-## 0.10.0 - 2020-09-09
+## 0.11.0 - 2020-09-24
 
 ### Added
 
