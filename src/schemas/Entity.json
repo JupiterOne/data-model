@@ -8,8 +8,13 @@
     {
       "properties": {
         "id": {
-          "description": "Identifier of this entity assigned by the provider. Unique within the provider scope.",
-          "type": "string"
+          "description": "Identifiers of this entity assigned by the providers. Values are expected to be unique within the provider scope.",
+          "type": ["string", "number", "array"],
+          "items": [
+            {
+              "type": ["string", "number"]
+            }
+          ]
         },
         "name": {
           "description": "Name of this entity",
