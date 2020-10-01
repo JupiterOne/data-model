@@ -48,31 +48,4 @@ describe('Entity', () => {
       } as any),
     ).not.toThrow();
   });
-
-  test('allows number as id', () => {
-    expect(() =>
-      validateEntityWithSchema({
-        ...requiredProperties,
-        id: 123,
-      } as any),
-    ).not.toThrow();
-  });
-
-  test('allows number[] as id', () => {
-    expect(() =>
-      validateEntityWithSchema({
-        ...requiredProperties,
-        id: [123, 456],
-      } as any),
-    ).not.toThrow();
-  });
-
-  test('allows (string | number)[] as id', () => {
-    expect(() =>
-      validateEntityWithSchema({
-        ...requiredProperties,
-        id: ['gogogo', 456],
-      } as any),
-    ).not.toThrow();
-  });
 });

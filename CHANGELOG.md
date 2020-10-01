@@ -16,11 +16,8 @@ and this project adheres to
 
 ### Changed
 
-- `Entity.id` allows `string | number | (string | number)[]`. Though typically
-  it is best that Array properties are homogenious, `id` is a case where
-  different providers identify an Entity with different values, some using a
-  `string`, others a `number`. This change will allow `id` to capture the value
-  from each provider that tracks the Entity.
+- `Entity.id` allows `string | string[]`. This change will allow `id` to capture
+  values from each provider that tracks an Entity.
 
 ## 0.10.0 - 2020-09-09
 

@@ -9,10 +9,10 @@
       "properties": {
         "id": {
           "description": "Identifiers of this entity assigned by the providers. Values are expected to be unique within the provider scope.",
-          "type": ["string", "number", "array"],
+          "type": ["string", "array"],
           "items": [
             {
-              "type": ["string", "number"]
+              "type": "string"
             }
           ]
         },
