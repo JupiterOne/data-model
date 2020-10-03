@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.13.0 - 2020-10-03
+
 ### Added
 
 - Added `Vault` schema, which should be used to classify a collection of secrets
