@@ -8,6 +8,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Added `Vault` schema, which should be used to classify a collection of secrets
+  such as a key ring.
+
 ## 0.12.0 - 2020-10-01
 
 ### Added
