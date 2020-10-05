@@ -31,14 +31,26 @@
           "format": "hostname"
         },
         "publicIpAddress": {
-          "description": "The public IP address",
-          "type": "string",
-          "format": "ipv4"
+          "description": "The public IP address or addresses",
+          "type": ["string", "array"],
+          "items": [
+            {
+              "type": "string"
+            }
+          ],
+          "format": "ipv4",
+          "uniqueItems": true
         },
         "privateIpAddress": {
-          "description": "The private IP address",
-          "type": "string",
-          "format": "ipv4"
+          "description": "The private IP address or addresses",
+          "type": ["string", "array"],
+          "items": [
+            {
+              "type": "string"
+            }
+          ],
+          "format": "ipv4",
+          "uniqueItems": true
         },
         "ipAddresses": {
           "description": "A listing of all IPv4 addresses associated with this Host",
