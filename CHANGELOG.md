@@ -8,6 +8,15 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.14.0 2020-10-05
+
+### Updated
+
+- [#48](https://github.com/JupiterOne/data-model/pull/48) - Allow array type for
+  publicIpAddress and privateIpAddress in `Host` class
+- [#49](https://github.com/JupiterOne/data-model/pull/49) Allow `null` value for
+  `Network` class `CIDR` property
+
 ## 0.13.0 - 2020-10-03
 
 ### Added
