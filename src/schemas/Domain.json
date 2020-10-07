@@ -67,6 +67,10 @@
           "description": "Indicates whether auto-renewal is configured.",
           "type": "boolean"
         },
+        "locked": {
+          "description": "Indicates whether domain transfer is locked/protected.",
+          "type": "boolean"
+        },
         "parent": {
           "description": "Parent domain, if the entity is a sub-domain.",
           "type": "string"
