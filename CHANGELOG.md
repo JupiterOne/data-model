@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.14.1 2020-10-07
+
+### Updated
+
+- Added `locked` as a common property to `Domain` entity
+
 ## 0.14.0 2020-10-05
 
 ### Updated
