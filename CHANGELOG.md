@@ -8,6 +8,14 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Added `numericSeverity` as a required property to `Finding` entity
+
+### Changed
+
+- `Finding.severity` provides `examples`
+
 ## 0.14.1 2020-10-07
 
 ### Updated
