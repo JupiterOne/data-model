@@ -8,6 +8,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- `Finding.category` may now be a `string | string[]`, and `examples` have been
+  added.
+
 ## 0.14.1 2020-10-07
 
 ### Updated
