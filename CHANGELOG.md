@@ -8,8 +8,13 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Added `numericSeverity` as a required property to `Finding` entity
+
 ### Changed
 
+- `Finding.severity` provides `examples`
 - `Finding.category` may now be a `string | string[]`, and `examples` have been
   added.
 

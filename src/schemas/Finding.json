@@ -34,8 +34,21 @@
           "type": "string"
         },
         "severity": {
-          "description": "Severity rating based on impact and exploitability. Can be a string such as 'critical', 'high', 'medium', 'low', 'info'.  Or an integer usually between 0-5.",
-          "type": "string"
+          "description": "Severity rating based on impact and exploitability.",
+          "type": "string",
+          "examples": [
+            "none",
+            "informational",
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ]
+        },
+        "numericSeverity": {
+          "description": "Severity rating based on impact and exploitability.",
+          "type": "number",
+          "examples": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         },
         "priority": {
           "description": "Priority level mapping to Severity rating. Can be a string such as 'critical', 'high', 'medium', 'low', 'info'.  Or an integer usually between 0-5.",
@@ -115,7 +128,7 @@
           }
         }
       },
-      "required": ["category", "severity", "open"]
+      "required": ["category", "severity", "numericSeverity", "open"]
     }
   ]
 }
