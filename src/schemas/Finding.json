@@ -10,8 +10,20 @@
     {
       "properties": {
         "category": {
-          "description": "The category of the finding. For example: 'event', 'app-scan', 'system-scan', 'pen-test'",
-          "type": "string"
+          "description": "The category of the finding.",
+          "type": ["string", "array"],
+          "items": {
+            "type": "string"
+          },
+          "examples": [
+            "data",
+            "application",
+            "host",
+            "network",
+            "endpoint",
+            "malware",
+            "event"
+          ]
         },
         "assessment": {
           "description": "The name/id of the assessment that produced this finding.",
