@@ -10,6 +10,7 @@ and this project adheres to
 
 ### Added
 
+- Added `APPROVED` to the `RelationshipClass` enum
 - Added `numericSeverity` as a required property to `Finding` entity
 
 ### Changed

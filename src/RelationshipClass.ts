@@ -8,6 +8,11 @@ export enum RelationshipClass {
   ALLOWS = 'ALLOWS',
 
   /**
+   * A relationship between a User and a PR.
+   */
+  APPROVED = 'APPROVED',
+
+  /**
    * A relationship between a {AccessRole, User, Group} and AccessPolicy.
    */
   ASSIGNED = 'ASSIGNED',
