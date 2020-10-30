@@ -8,8 +8,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.15.0
+
 ### Added
 
+- Added `APPROVED` to the `RelationshipClass` enum
 - Added `numericSeverity` as a required property to `Finding` entity
 
 ### Changed
