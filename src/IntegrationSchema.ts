@@ -162,6 +162,8 @@ import Control from "./schemas/Control.json";
 IntegrationSchema.addSchema(Control);
 import Container from "./schemas/Container.json";
 IntegrationSchema.addSchema(Container);
+import Contact from "./schemas/Contact.json";
+IntegrationSchema.addSchema(Contact);
 import Configuration from "./schemas/Configuration.json";
 IntegrationSchema.addSchema(Configuration);
 import CodeReview from "./schemas/CodeReview.json";

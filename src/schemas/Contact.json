@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#User",
+  "description": "Contact information details. For example, an emergency contact.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "#Entity" },
+    {
+      "properties": {
+        "firstName": {
+          "description": "The person's official first name in the system (such as HR database)",
+          "type": "string"
+        },
+        "lastName": {
+          "description": "The person's official last name in the system (such as HR database)",
+          "type": "string"
+        },
+        "middleName": {
+          "description": "The person's official middle name in the system (such as HR database)",
+          "type": "string"
+        },
+        "phone": {
+          "description": "The contact's phone numbers; the first one in the array is the primary contact number.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "email": {
+          "description": "The email address associated with the contact",
+          "type": "string",
+          "format": "email"
+        },
+        "address": {
+          "description": "The contact's physical contact address",
+          "type": "string"
+        }
+      },
+      "required": []
+    }
+  ]
+}

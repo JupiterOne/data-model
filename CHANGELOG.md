@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.16.0
+
+### Added
+
+- Added `Contact` entity schema
+
 ## 0.15.0
 
 ### Added
