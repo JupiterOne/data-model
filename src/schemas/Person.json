@@ -79,6 +79,15 @@
           "description": "Email of the person's manager",
           "type": "string",
           "format": "email"
+        },
+        "backgroundCheckedOn": {
+          "description": "Timestamp of the background and/or reference check",
+          "type": "number",
+          "format": "date-time"
+        },
+        "backgroundCheckedBy": {
+          "description": "The agency or person conducted the background/reference check",
+          "type": "string"
         }
       },
       "required": [
