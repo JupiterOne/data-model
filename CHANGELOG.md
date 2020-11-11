@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.15.1
+
+### Changed
+
+- Added `backgroundCheckedOn` and `backgroundCheckedBy` properties to `Person` entity
+
 ## 0.15.0
 
 ### Added
