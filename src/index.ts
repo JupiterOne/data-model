@@ -11,7 +11,12 @@ export type IntegrationEntitySchema = {
   };
   required?: string[];
 };
-export { IntegrationSchema } from "./IntegrationSchema";
+export {
+  IntegrationSchema,
+  SchemaTypes,
+  schemas,
+  availableSchemas,
+} from './IntegrationSchema';
 
 export { validateEntityWithSchema } from './validateEntityWithSchema';
 export { getSchema } from './getSchema';
