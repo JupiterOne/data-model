@@ -109,7 +109,7 @@ import AccessRole from './schemas/AccessRole.json';
 import AccessPolicy from './schemas/AccessPolicy.json';
 import AccessKey from './schemas/AccessKey.json';
 
-export const schemas = {
+export const entitySchemas = {
   Workload,
   Weakness,
   Vulnerability,
@@ -202,7 +202,9 @@ export const schemas = {
   AccessKey,
 };
 
-export type EntityClass = keyof typeof schemas;
-export const entityClasses = Object.keys(schemas) as EntityClass[];
+export type EntityClass = keyof typeof entitySchemas;
+export const entityClasses = Object.keys(entitySchemas) as EntityClass[];
 
-entityClasses.map((schema) => IntegrationSchema.addSchema(schemas[schema]));
+entityClasses.map((schema) =>
+  IntegrationSchema.addSchema(entitySchemas[schema]),
+);

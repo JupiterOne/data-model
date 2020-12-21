@@ -14,7 +14,7 @@ export type IntegrationEntitySchema = {
 export {
   IntegrationSchema,
   EntityClass,
-  schemas,
+  entitySchemas,
   entityClasses,
 } from './IntegrationSchema';
 
