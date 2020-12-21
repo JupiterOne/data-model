@@ -13,9 +13,9 @@ export type IntegrationEntitySchema = {
 };
 export {
   IntegrationSchema,
-  SchemaTypes,
+  EntityClass,
   schemas,
-  availableSchemas,
+  entityClasses,
 } from './IntegrationSchema';
 
 export { validateEntityWithSchema } from './validateEntityWithSchema';

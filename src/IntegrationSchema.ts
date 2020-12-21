@@ -202,7 +202,7 @@ export const schemas = {
   AccessKey,
 };
 
-export type SchemaTypes = keyof typeof schemas;
-export const availableSchemas = Object.keys(schemas) as SchemaTypes[];
+export type EntityClass = keyof typeof schemas;
+export const entityClasses = Object.keys(schemas) as EntityClass[];
 
-availableSchemas.map((schema) => IntegrationSchema.addSchema(schemas[schema]));
+entityClasses.map((schema) => IntegrationSchema.addSchema(schemas[schema]));
