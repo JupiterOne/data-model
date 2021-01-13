@@ -50,6 +50,10 @@ import TrainingJson from "./schemas/Training.json";
 export const Training = TrainingJson;
 IntegrationSchema.addSchema(Training);
 
+import ThreatIntelJson from "./schemas/ThreatIntel.json";
+export const ThreatIntel = ThreatIntelJson;
+IntegrationSchema.addSchema(ThreatIntel);
+
 import TeamJson from "./schemas/Team.json";
 export const Team = TeamJson;
 IntegrationSchema.addSchema(Team);

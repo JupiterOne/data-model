@@ -8,11 +8,17 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- `ThreatIntel` entity for collecting threat intelligence, typically related to
+  a `Vulnerability`
+
 ## 0.15.1
 
-### Changed
+### Added
 
-- Added `backgroundCheckedOn` and `backgroundCheckedBy` properties to `Person` entity
+- Added `backgroundCheckedOn` and `backgroundCheckedBy` properties to `Person`
+  entity
 
 ## 0.15.0
 
