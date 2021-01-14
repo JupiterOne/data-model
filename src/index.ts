@@ -11,12 +11,14 @@ export type IntegrationEntitySchema = {
   };
   required?: string[];
 };
-export {
-  IntegrationSchema,
-  EntityClass,
-  entitySchemas,
-  entityClasses,
-} from './IntegrationSchema';
+
+export { IntegrationSchema } from './IntegrationSchema';
+
+import * as integrationSchemas from './IntegrationSchema';
+const { IntegrationSchema, ...allSchemas } = integrationSchemas;
+export const entitySchemas = allSchemas;
+export type EntityClass = keyof typeof entitySchemas;
+export const entityClasses = Object.keys(entitySchemas) as EntityClass[];
 
 export { validateEntityWithSchema } from './validateEntityWithSchema';
 export { getSchema } from './getSchema';
