@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.16.5
+
 ### Added
 
 - `ThreatIntel` entity for collecting threat intelligence, typically related to
@@ -15,14 +17,27 @@ and this project adheres to
 - Clarification and examples of use in documentation for
   `RelationshipClass.{HAS, CONTAINS}`.
 
-## 0.15.1
+## 0.16.4 2021-01-13
+
+### Fixed
+
+- 0.16.1-4 were changes to fix the build
+
+## 0.16.0 2020-12-21
+
+### Changed
+
+- BREAKING! `import { schemas } from '@jupiterone/data-model'` must be changed
+  to `import { entitySchemas } from '@jupiterone/data-model'`
+
+## 0.15.1 2020-11-11
 
 ### Added
 
 - Added `backgroundCheckedOn` and `backgroundCheckedBy` properties to `Person`
   entity
 
-## 0.15.0
+## 0.15.0 2020-10-30
 
 ### Added
 
