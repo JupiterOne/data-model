@@ -11,7 +11,9 @@ and this project adheres to
 ### Added
 
 - `ThreatIntel` entity for collecting threat intelligence, typically related to
-  a `Vulnerability`
+  a `Finding` as `Finding - HAS -> ThreatIntel`
+- Clarification and examples of use in documentation for
+  `RelationshipClass.{HAS, CONTAINS}`.
 
 ## 0.15.1
 

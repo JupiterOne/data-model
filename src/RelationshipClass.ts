@@ -19,7 +19,16 @@ export enum RelationshipClass {
   CONNECTS = 'CONNECTS',
 
   /**
-   * Closely related to or interchangeable with HAS.
+   * A relationship indicating an Entity contains another Entity.
+   *
+   * Examples:
+   *
+   * - Network - CONTAINS -> Network (a subnet)
+   * - Network - CONTAINS -> Host
+   * - Cluster - CONTAINS -> Host
+   * - UserGroup - CONTAINS -> User
+   *
+   * @see HAS
    */
   CONTAINS = 'CONTAINS',
 
@@ -57,8 +66,18 @@ export enum RelationshipClass {
   GENERATED = 'GENERATED',
 
   /**
-   * A relationship between a group or service Entity and a member of that Entity.
-   * Closely related to or interchangeable with CONTAINS.
+   * A relationship indicating a possessive association between two Entities.
+   * The direction of the relationship typically flows toward the possessed
+   * Entity.
+   *
+   * Examples:
+   *
+   * - Account - HAS -> User
+   * - Network - HAS -> AccessPolicy
+   * - Network - HAS -> Firewall
+   * - Finding - HAS -> ThreatIntel
+   *
+   * @see CONTAINS
    */
   HAS = 'HAS',
 
