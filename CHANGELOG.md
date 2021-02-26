@@ -8,6 +8,13 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.17.0 - 2021-02-26
+
+### Added
+
+- Added `RelationshipClass.INSTALLED` relationship class, which can be used to
+  represent a device that has installed an application.
+
 ## 0.16.5
 
 ### Added

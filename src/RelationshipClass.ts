@@ -138,4 +138,14 @@ export enum RelationshipClass {
    * * UserRole - USES -> AccessPolicy
    */
   USES = 'USES',
+
+  /**
+   * A relationship indicating that a device has some kind of application
+   * installed.
+   *
+   * Examples:
+   *
+   * Device - INSTALLED -> Application
+   */
+  INSTALLED = 'INSTALLED',
 }
