@@ -11,31 +11,34 @@
       "properties": {
         "category": {
           "description": "The category of vendor.",
-          "type": "string",
-          "examples": [
-            "business-operations",
-            "cloud",
-            "facilities",
-            "finance",
-            "infrastructure",
-            "legal",
-            "purchasing",
-            "security",
-            "software",
-            "platform-development",
-            "platform-social-media",
-            "professional-services-staffing",
-            "professional-services-recruiting",
-            "professional-services-consulting",
-            "generic-service-provider",
-            "generic-subscription",
-            "CSP",
-            "ISP",
-            "MSP",
-            "MSSP",
-            "IdP",
-            "other"
-          ]
+          "type": "array",
+          "items": {
+            "type": "string",
+            "examples": [
+              "business-operations",
+              "cloud",
+              "facilities",
+              "finance",
+              "infrastructure",
+              "legal",
+              "purchasing",
+              "security",
+              "software",
+              "platform-development",
+              "platform-social-media",
+              "professional-services-staffing",
+              "professional-services-recruiting",
+              "professional-services-consulting",
+              "generic-service-provider",
+              "generic-subscription",
+              "CSP",
+              "ISP",
+              "MSP",
+              "MSSP",
+              "IdP",
+              "other"
+            ]
+          }
         },
         "website": {
           "description": "The vendor's main website URL.",
