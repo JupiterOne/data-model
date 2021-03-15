@@ -11,7 +11,7 @@
       "properties": {
         "category": {
           "description": "The category of vendor.",
-          "type": "array",
+          "type": ["string", "array"],
           "items": {
             "type": "string",
             "examples": [
