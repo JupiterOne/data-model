@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.18.0 - 2021-03-16
+
+### Added
+
+- `Vendor.category` now supports `string` or `string[]` values.
+
 ## 0.17.0 - 2021-02-26
 
 ### Added
