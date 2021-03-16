@@ -49,3 +49,32 @@ describe('Entity', () => {
     ).not.toThrow();
   });
 });
+
+describe('Vendor: category can be string | string[]', () => {
+
+  test('allows string as category', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        _class: ['Vendor'],
+        _key: 'super_samurai',
+        _type: 'Vendor',
+        name: 'Super',
+        displayName: 'Samurai',
+        category: 'fighter',
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('allows string[] as category', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        _class: ['Vendor'],
+        _key: 'awesome_ninja',
+        _type: 'Vendor',
+        name: 'Awesome',
+        displayName: 'Ninja',
+        category: [ 'lover', 'fighter' ],
+      } as any),
+    ).not.toThrow();
+  });
+});
