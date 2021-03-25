@@ -6,7 +6,7 @@ The **JupiterOne Graph Data Model** describes a set of common classifications
 for data found in an organization's set of digital assets, as well as common
 property names and relationships.
 
-The model not represent a strict requirement for data stored in the JupiterOne
+The model does not represent a strict requirement for data stored in the JupiterOne
 graph. It is acceptable and common to include many additional properties on any
 class of entity or relationship, when those properties provide value for
 querying and reporting. It is however strongly recommended that similar data use
