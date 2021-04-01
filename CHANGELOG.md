@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- `ConfigurableHostAgent` entity
+
 ## 0.18.0 - 2021-03-16
 
 ### Added

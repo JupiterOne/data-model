@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#ConfigurableHostAgent",
+  "description": "A software agent that runs on a host/endpoint whose governance functionality is determined by attached Configurations and Policies.",
+
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "#Entity"
+    }
+  ]
+}
