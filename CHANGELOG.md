@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.19.0 - 2021-04-02
+
+### Added
+
+- `NOTIFIES` relationship class
+
 ## 0.18.0 - 2021-03-16
 
 ### Added
