@@ -148,7 +148,7 @@
         },
         "tag.*": {
           "description": "Named tags assigned to the entity (i.e., 'tag.Name', 'tag.OtherName')",
-          "type": "string",
+          "type": ["string", "number", "boolean"],
           "multiple": true
         },
         "tags": {

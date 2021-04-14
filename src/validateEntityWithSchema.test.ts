@@ -48,10 +48,27 @@ describe('Entity', () => {
       } as any),
     ).not.toThrow();
   });
+
+  test('allows number as tag.*', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        'tag.Anything': 1234,
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('allows boolean as tag.*', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        'tag.Anything': true,
+      } as any),
+    ).not.toThrow();
+  });
 });
 
 describe('Vendor: category can be string | string[]', () => {
-
   test('allows string as category', () => {
     expect(() =>
       validateEntityWithSchema({
@@ -73,7 +90,7 @@ describe('Vendor: category can be string | string[]', () => {
         _type: 'Vendor',
         name: 'Awesome',
         displayName: 'Ninja',
-        category: [ 'lover', 'fighter' ],
+        category: ['lover', 'fighter'],
       } as any),
     ).not.toThrow();
   });

@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.19.1 - 2021-04-14
+
+### Fixed
+
+- Fixed schema for `tag.*` properties to allow `number` and `boolean` values.
+
 ## 0.19.0 - 2021-04-02
 
 ### Added
