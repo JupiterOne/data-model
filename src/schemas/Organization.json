@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "#Organization",
-  "description": "An organization, such as a company (e.g. LifeOmic) or a business unit (e.g. HR). An organization can be internal or external. Note that there is a more specific Vendor class.",
+  "description": "An organization, such as a company (e.g. JupiterOne) or a business unit (e.g. HR). An organization can be internal or external. Note that there is a more specific Vendor class.",
   "type": "object",
   "allOf": [
     {
@@ -37,12 +37,7 @@
         }
       },
       "required": [],
-      "excludes": [
-        "status",
-        "public",
-        "temporary",
-        "expiresOn"
-      ]
+      "excludes": ["status", "public", "temporary", "expiresOn"]
     }
   ]
 }

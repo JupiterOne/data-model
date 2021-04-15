@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixed `validateEntityWithSchema()` emitting log warning for missing format
+  `"ip"` by adding a custom format. These properties will now be validated as
+  `ipv4` or `ipv6`.
+
 ### Changed
 
 - Upgraded to `ajv@8.0.0`. This drove some schema structure changes that may

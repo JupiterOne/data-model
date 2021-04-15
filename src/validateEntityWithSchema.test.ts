@@ -22,6 +22,43 @@ test('does not throw if entity successfully validates', () => {
   ).not.toThrow();
 });
 
+describe('IpAddress', () => {
+  const requiredProperties = {
+    _class: ['IpAddress'],
+    _key: 'my_testing_key',
+    _type: 'my_testing_type',
+    name: 'John',
+    displayName: 'Wick',
+  };
+
+  test('allows IPv4 as ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: '10.10.10.10',
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('disallows IPv4 with netmask as ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: '10.10.10.10/32',
+      } as any),
+    ).toThrow(/must match format/);
+  });
+
+  test('allows IPv6 as ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: 'FE80:0000:0000:0000:0202:B3FF:FE1E:8329',
+      } as any),
+    ).not.toThrow();
+  });
+});
+
 describe('Entity', () => {
   const requiredProperties = {
     _class: ['Entity'],
