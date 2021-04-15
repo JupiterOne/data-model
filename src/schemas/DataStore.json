@@ -10,7 +10,7 @@
     {
       "properties": {
         "location": {
-          "description": "URI to the data store, e.g. https://docker-registry.lifeomic.com or https://lifeomic.sharepoint.com. Or a description to the physical location.",
+          "description": "URI to the data store, e.g. https://docker-registry.jupiterone.com or https://jupiterone.sharepoint.com. Or a description to the physical location.",
           "type": "string"
         },
         "encryptionRequired": {

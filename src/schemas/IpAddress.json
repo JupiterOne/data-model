@@ -14,6 +14,11 @@
           "type": "string",
           "format": "hostname"
         },
+        "ipAddress": {
+          "description": "The assigned IP address",
+          "type": "string",
+          "format": "ip"
+        },
         "publicIpAddress": {
           "description": "The assigned public IP address",
           "type": "string",

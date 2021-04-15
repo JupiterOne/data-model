@@ -1,6 +1,9 @@
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 
+const ipv4 = addFormats.get('ipv4') as RegExp;
+const ipv6 = addFormats.get('ipv6') as RegExp;
+
 // JSON Schema allows an object to contain properties that are not specified by
 // the schema. This can be disabled with `additionalProperties: false`. Ajv then
 // supports a `removeAdditional` option, directing it to remove any properties
@@ -19,6 +22,9 @@ import addFormats from 'ajv-formats';
 export const IntegrationSchema = new Ajv({
   // Ignore "excludes", "multiple"; used in JupiterOne UI?
   strictSchema: false,
+  formats: {
+    ip: (x) => ipv4.test(x) || ipv6.test(x),
+  },
 });
 
 // Install ajv-formats
