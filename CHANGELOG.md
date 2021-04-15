@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.20.0
+
 ### Fixed
 
 - Fixed `validateEntityWithSchema()` emitting log warning for missing format
