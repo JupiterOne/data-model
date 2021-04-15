@@ -2,20 +2,19 @@
   "exclude": ["dist"],
   "compilerOptions": {
     "outDir": "dist",
+    "target": "es2018",
+    "lib": ["es2018"],
+    "module": "commonjs",
+    "inlineSourceMap": true,
+    "moduleResolution": "node",
     "noUnusedLocals": true,
-    "allowSyntheticDefaultImports": true,
+    "pretty": true,
+    "resolveJsonModule": true,
     "esModuleInterop": true,
-    "noImplicitAny": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
-    "allowJs": false,
-    "moduleResolution": "node",
-    "target": "ESNext",
-    "module": "commonjs",
-    "pretty": true,
-    "inlineSourceMap": true,
-    "resolveJsonModule": true
+    "allowJs": false
   }
 }
