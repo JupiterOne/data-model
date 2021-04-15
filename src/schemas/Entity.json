@@ -9,10 +9,15 @@
       "properties": {
         "id": {
           "description": "Identifiers of this entity assigned by the providers. Values are expected to be unique within the provider scope.",
-          "type": ["string", "array"],
-          "items": [
+          "anyOf": [
             {
               "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             }
           ]
         },
@@ -145,11 +150,6 @@
         "owner": {
           "description": "The owner of this entity. This could reference the name of the owner, or as reference ID/key to another entity in the graph as the owner.",
           "type": "string"
-        },
-        "tag.*": {
-          "description": "Named tags assigned to the entity (i.e., 'tag.Name', 'tag.OtherName')",
-          "type": ["string", "number", "boolean"],
-          "multiple": true
         },
         "tags": {
           "description": "An array of unnamed tags",

@@ -8,6 +8,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Upgraded to `ajv@8.0.0`. This drove some schema structure changes that may
+  impact JupiterOne where the schema is used to drive an entity editor UI.
+
 ## 0.19.1 - 2021-04-14
 
 ### Fixed
