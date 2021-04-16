@@ -11,18 +11,23 @@
       "properties": {
         "category": {
           "description": "The category of the finding.",
-          "type": ["string", "array"],
-          "items": {
-            "type": "string"
-          },
-          "examples": [
-            "data",
-            "application",
-            "host",
-            "network",
-            "endpoint",
-            "malware",
-            "event"
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": { "type": "string" },
+              "examples": [
+                "data",
+                "application",
+                "host",
+                "network",
+                "endpoint",
+                "malware",
+                "event"
+              ]
+            }
           ]
         },
         "assessment": {
