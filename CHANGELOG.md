@@ -8,12 +8,14 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.20.1 - 2021-04-15
+
 ### Fixed
 
 - Fixed additional log warnings by correcting schema structures to conform to
   strict settings.
 
-## 0.20.0
+## 0.20.0 - 2021-04-14
 
 ### Fixed
 
