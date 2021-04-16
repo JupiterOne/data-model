@@ -1,3 +1,7 @@
+/* eslint-disable */
+
+import { getSchema } from './getSchema';
+import { entityClasses } from './index';
 import { validateEntityWithSchema } from './validateEntityWithSchema';
 
 test('throws error if schema does not exist', () => {
@@ -20,6 +24,49 @@ test('does not throw if entity successfully validates', () => {
       _type: 'my_testing_type',
     } as any),
   ).not.toThrow();
+});
+
+describe('schemas load without warnings', () => {
+  for (const entityClass of entityClasses) {
+    getSchema(entityClass);
+  }
+});
+
+describe('Host', () => {
+  const requiredProperties = {
+    _class: ['Host'],
+    _key: 'my_testing_key',
+    _type: 'my_testing_type',
+    name: 'John',
+    displayName: 'Wick',
+  };
+
+  test('allows IPv4 as publicIpAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        publicIpAddress: '10.10.10.10',
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('disallows IPv4 with netmask as publicIpAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        publicIpAddress: '10.10.10.10/32',
+      } as any),
+    ).toThrow(/must match format/);
+  });
+
+  test('allows IPv6 as publicIpAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        publicIpAddress: 'FE80:0000:0000:0000:0202:B3FF:FE1E:8329',
+      } as any),
+    ).not.toThrow();
+  });
 });
 
 describe('IpAddress', () => {
