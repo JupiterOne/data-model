@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { getSchema } from './getSchema';
 import { entityClasses } from './index';
 import { validateEntityWithSchema } from './validateEntityWithSchema';
