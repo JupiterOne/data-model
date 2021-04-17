@@ -106,6 +106,22 @@
         "physical": {
           "description": "Indicates if this is a physical host, such as a physical server.",
           "type": "boolean"
+        },
+        "scannedBy": {
+          "description": "A list of services (identifiers) that have scanned this Host.",
+          "anyOf": [
+            { "type": "string" },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        },
+        "lastScannedOn": {
+          "description": "The time of the last scan performed on this Host.",
+          "type": "number"
         }
       },
       "required": []
