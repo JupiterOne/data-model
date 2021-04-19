@@ -1,8 +1,15 @@
 /* eslint-disable */
 
-import { getSchema } from './getSchema';
 import { entityClasses } from './index';
 import { validateEntityWithSchema } from './validateEntityWithSchema';
+
+const requiredGraphObjectProperties = {
+  _class: ['GraphObject'],
+  _key: 'my_testing_key',
+  _type: 'my_testing_type',
+  name: 'John',
+  displayName: 'Wick',
+};
 
 test('throws error if schema does not exist', () => {
   expect(() => validateEntityWithSchema({ _class: ['ChimkenNumget'] })).toThrow(
@@ -26,19 +33,42 @@ test('does not throw if entity successfully validates', () => {
   ).not.toThrow();
 });
 
-describe('schemas load without warnings', () => {
+describe('schemas', () => {
   for (const entityClass of entityClasses) {
-    getSchema(entityClass);
+    test(entityClass, () => {
+      expect(() =>
+        validateEntityWithSchema({
+          ...requiredGraphObjectProperties,
+          _class: [entityClass],
+          _key: undefined,
+        } as any),
+      ).toThrow(/'_key'/);
+
+      expect(() =>
+        validateEntityWithSchema({
+          ...requiredGraphObjectProperties,
+          _class: [entityClass],
+          _type: undefined,
+        } as any),
+      ).toThrow(/'_type'/);
+
+      if ('GraphObject' === entityClass) return;
+
+      expect(() =>
+        validateEntityWithSchema({
+          ...requiredGraphObjectProperties,
+          _class: [entityClass],
+          displayName: undefined,
+        } as any),
+      ).toThrow(/'displayName'/);
+    });
   }
 });
 
 describe('Host', () => {
   const requiredProperties = {
+    ...requiredGraphObjectProperties,
     _class: ['Host'],
-    _key: 'my_testing_key',
-    _type: 'my_testing_type',
-    name: 'John',
-    displayName: 'Wick',
   };
 
   test('allows IPv4 as publicIpAddress', () => {
@@ -71,11 +101,8 @@ describe('Host', () => {
 
 describe('IpAddress', () => {
   const requiredProperties = {
+    ...requiredGraphObjectProperties,
     _class: ['IpAddress'],
-    _key: 'my_testing_key',
-    _type: 'my_testing_type',
-    name: 'John',
-    displayName: 'Wick',
   };
 
   test('allows IPv4 as ipAddress', () => {
@@ -108,11 +135,8 @@ describe('IpAddress', () => {
 
 describe('Entity', () => {
   const requiredProperties = {
+    ...requiredGraphObjectProperties,
     _class: ['Entity'],
-    _key: 'my_testing_key',
-    _type: 'my_testing_type',
-    name: 'John',
-    displayName: 'Wick',
   };
 
   test('allows string as id', () => {
@@ -156,11 +180,8 @@ describe('Vendor: category can be string | string[]', () => {
   test('allows string as category', () => {
     expect(() =>
       validateEntityWithSchema({
+        ...requiredGraphObjectProperties,
         _class: ['Vendor'],
-        _key: 'super_samurai',
-        _type: 'Vendor',
-        name: 'Super',
-        displayName: 'Samurai',
         category: 'fighter',
       } as any),
     ).not.toThrow();
@@ -169,11 +190,8 @@ describe('Vendor: category can be string | string[]', () => {
   test('allows string[] as category', () => {
     expect(() =>
       validateEntityWithSchema({
+        ...requiredGraphObjectProperties,
         _class: ['Vendor'],
-        _key: 'awesome_ninja',
-        _type: 'Vendor',
-        name: 'Awesome',
-        displayName: 'Ninja',
         category: ['lover', 'fighter'],
       } as any),
     ).not.toThrow();
