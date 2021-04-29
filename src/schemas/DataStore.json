@@ -36,6 +36,10 @@
         "hasBackup": {
           "description": "Indicates if the data store is data backup has been configured/enabled.",
           "type": "boolean"
+        },
+        "retentionPeriod": {
+          "description": "The number of days for which data is retained",
+          "type": "number"
         }
       },
       "required": ["classification", "encrypted"]

@@ -8,6 +8,14 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.21.0 - 2021-04-28
+
+### Added
+
+- Fix [#82](https://github.com/JupiterOne/data-model/issues/82) - Add
+  `retentionPeriod` property to `DataStore` class that represents the number of
+  days that data will be retained for.
+
 ## 0.20.1 - 2021-04-15
 
 ### Fixed
