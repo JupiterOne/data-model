@@ -110,6 +110,7 @@ export enum RelationshipClass {
   PERFORMED = 'PERFORMED',
   PROTECTS = 'PROTECTS',
   PROVIDES = 'PROVIDES',
+  REVIEWED = 'REVIEWED',
 
   /**
    * A relationships indicating an Entity performs some kind of scan on another Entity.
