@@ -36,7 +36,20 @@
     }
   },
   "patternProperties": {
-    "^tag\\.": { "type": "string" }
+    "^tag\\.": {
+      "description": "Named tags assigned to the entity (i.e., 'tag.Name', 'tag.OtherName')",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    }
   },
   "required": ["_key", "_class", "_type"]
 }

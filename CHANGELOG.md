@@ -8,11 +8,51 @@ and this project adheres to
 
 ## [Unreleased]
 
-## 0.19.0 - 2021-05-04
+## 0.22.0 - 2021-05-05
 
 ### Added
 
 - Added `REVIEWED` to the `RelationshipClass` enum
+
+## 0.21.0 - 2021-04-28
+
+### Added
+
+- Fix [#82](https://github.com/JupiterOne/data-model/issues/82) - Add
+  `retentionPeriodDays` property to `DataStore` class that represents the number of
+  days that data will be retained for.
+
+## 0.20.1 - 2021-04-15
+
+### Fixed
+
+- Fixed additional log warnings by correcting schema structures to conform to
+  strict settings.
+
+## 0.20.0 - 2021-04-14
+
+### Fixed
+
+- Fixed `validateEntityWithSchema()` emitting log warning for missing format
+  `"ip"` by adding a custom format. These properties will now be validated as
+  `ipv4` or `ipv6`.
+
+### Changed
+
+- Upgraded to `ajv@8.0.0`. This drove some schema structure changes that may
+  impact JupiterOne where the schema is used to drive an entity editor UI.
+
+## 0.19.1 - 2021-04-14
+
+### Fixed
+
+- Fixed schema for `tag.*` properties to allow `number` and `boolean` values.
+
+## 0.19.0 - 2021-04-02
+
+### Added
+
+- `NOTIFIES` relationship class
 
 ## 0.18.0 - 2021-03-16
 

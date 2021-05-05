@@ -7,7 +7,7 @@ sed -i "" -e "\|$MARKER|,$ {" -e "\|$MARKER|b" -e d -e "}" src/IntegrationSchema
 for SCHEMA_FILENAME in $(ls src/schemas | sort); do
     SCHEMA=$(echo $SCHEMA_FILENAME | cut -d . -f 1)
     sed -i "" "\|$MARKER|a\\
-import ${SCHEMA}Json from \"./schemas/$SCHEMA_FILENAME\";\\
+import ${SCHEMA}Json from './schemas/$SCHEMA_FILENAME';\\
 export const ${SCHEMA} = ${SCHEMA}Json;\\
 IntegrationSchema.addSchema($SCHEMA);\\
 \\

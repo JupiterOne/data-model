@@ -10,7 +10,7 @@
     {
       "properties": {
         "accessURL": {
-          "description": "The main URL to access this account, e.g. https://lifeomic.okta.com",
+          "description": "The main URL to access this account, e.g. https://jupiterone.okta.com",
           "type": "string",
           "format": "uri"
         },

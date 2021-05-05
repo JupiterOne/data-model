@@ -1,18 +1,23 @@
-const { defaults } = require("jest-config");
-
 module.exports = {
-  transform: {
-    "^.+\\.ts$": "ts-jest",
-  },
-  setupFilesAfterEnv: ['./jest.env.js'],
-  testMatch: ["<rootDir>/src/**/*.test.{js,ts}"],
-  moduleFileExtensions: [...defaults.moduleFileExtensions, "ts"],
-  testEnvironment: "node",
+  preset: 'ts-jest',
   clearMocks: true,
-  collectCoverage: true,
-  collectCoverageFrom: [
-    "src/**/*.ts"
+  restoreMocks: true,
+  testMatch: [
+    '<rootDir>/**/*.test.ts',
+    '!**/node_modules/*',
+    '!**/dist/*',
+    '!**/*.bak/*',
   ],
+  globals: {
+    'ts-jest': {
+      isolatedModules: true,
+    },
+  },
+
+  setupFilesAfterEnv: ['./jest.env.js'],
+  testEnvironment: 'node',
+  collectCoverage: true,
+  collectCoverageFrom: ['src/**/*.ts', '!src/index.ts'],
   coverageThreshold: {
     global: {
       statements: 100,

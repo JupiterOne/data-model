@@ -1,4 +1,15 @@
+/* eslint-disable */
+
+import { entityClasses } from './index';
 import { validateEntityWithSchema } from './validateEntityWithSchema';
+
+const requiredGraphObjectProperties = {
+  _class: ['GraphObject'],
+  _key: 'my_testing_key',
+  _type: 'my_testing_type',
+  name: 'John',
+  displayName: 'Wick',
+};
 
 test('throws error if schema does not exist', () => {
   expect(() => validateEntityWithSchema({ _class: ['ChimkenNumget'] })).toThrow(
@@ -22,13 +33,110 @@ test('does not throw if entity successfully validates', () => {
   ).not.toThrow();
 });
 
+describe('schemas', () => {
+  for (const entityClass of entityClasses) {
+    test(entityClass, () => {
+      expect(() =>
+        validateEntityWithSchema({
+          ...requiredGraphObjectProperties,
+          _class: [entityClass],
+          _key: undefined,
+        } as any),
+      ).toThrow(/'_key'/);
+
+      expect(() =>
+        validateEntityWithSchema({
+          ...requiredGraphObjectProperties,
+          _class: [entityClass],
+          _type: undefined,
+        } as any),
+      ).toThrow(/'_type'/);
+
+      if ('GraphObject' === entityClass) return;
+
+      expect(() =>
+        validateEntityWithSchema({
+          ...requiredGraphObjectProperties,
+          _class: [entityClass],
+          displayName: undefined,
+        } as any),
+      ).toThrow(/'displayName'/);
+    });
+  }
+});
+
+describe('Host', () => {
+  const requiredProperties = {
+    ...requiredGraphObjectProperties,
+    _class: ['Host'],
+  };
+
+  test('allows IPv4 as publicIpAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        publicIpAddress: '10.10.10.10',
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('disallows IPv4 with netmask as publicIpAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        publicIpAddress: '10.10.10.10/32',
+      } as any),
+    ).toThrow(/must match format/);
+  });
+
+  test('allows IPv6 as publicIpAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        publicIpAddress: 'FE80:0000:0000:0000:0202:B3FF:FE1E:8329',
+      } as any),
+    ).not.toThrow();
+  });
+});
+
+describe('IpAddress', () => {
+  const requiredProperties = {
+    ...requiredGraphObjectProperties,
+    _class: ['IpAddress'],
+  };
+
+  test('allows IPv4 as ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: '10.10.10.10',
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('disallows IPv4 with netmask as ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: '10.10.10.10/32',
+      } as any),
+    ).toThrow(/must match format/);
+  });
+
+  test('allows IPv6 as ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: 'FE80:0000:0000:0000:0202:B3FF:FE1E:8329',
+      } as any),
+    ).not.toThrow();
+  });
+});
+
 describe('Entity', () => {
   const requiredProperties = {
+    ...requiredGraphObjectProperties,
     _class: ['Entity'],
-    _key: 'my_testing_key',
-    _type: 'my_testing_type',
-    name: 'John',
-    displayName: 'Wick',
   };
 
   test('allows string as id', () => {
@@ -48,18 +156,32 @@ describe('Entity', () => {
       } as any),
     ).not.toThrow();
   });
+
+  test('allows number as tag.*', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        'tag.Anything': 1234,
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('allows boolean as tag.*', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        'tag.Anything': true,
+      } as any),
+    ).not.toThrow();
+  });
 });
 
 describe('Vendor: category can be string | string[]', () => {
-
   test('allows string as category', () => {
     expect(() =>
       validateEntityWithSchema({
+        ...requiredGraphObjectProperties,
         _class: ['Vendor'],
-        _key: 'super_samurai',
-        _type: 'Vendor',
-        name: 'Super',
-        displayName: 'Samurai',
         category: 'fighter',
       } as any),
     ).not.toThrow();
@@ -68,12 +190,9 @@ describe('Vendor: category can be string | string[]', () => {
   test('allows string[] as category', () => {
     expect(() =>
       validateEntityWithSchema({
+        ...requiredGraphObjectProperties,
         _class: ['Vendor'],
-        _key: 'awesome_ninja',
-        _type: 'Vendor',
-        name: 'Awesome',
-        displayName: 'Ninja',
-        category: [ 'lover', 'fighter' ],
+        category: ['lover', 'fighter'],
       } as any),
     ).not.toThrow();
   });

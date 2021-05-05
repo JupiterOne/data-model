@@ -10,7 +10,7 @@
     {
       "properties": {
         "location": {
-          "description": "URI to the data store, e.g. https://docker-registry.lifeomic.com or https://lifeomic.sharepoint.com. Or a description to the physical location.",
+          "description": "URI to the data store, e.g. https://docker-registry.jupiterone.com or https://jupiterone.sharepoint.com. Or a description to the physical location.",
           "type": "string"
         },
         "encryptionRequired": {
@@ -36,6 +36,10 @@
         "hasBackup": {
           "description": "Indicates if the data store is data backup has been configured/enabled.",
           "type": "boolean"
+        },
+        "retentionPeriodDays": {
+          "description": "The number of days for which data is retained",
+          "type": "number"
         }
       },
       "required": ["classification", "encrypted"]
