@@ -8,6 +8,9 @@ and this project adheres to
 
 ## [Unreleased]
 
+- Stop requiring `ipAddress` on `NetworkEndpoint` class. Azure private endpoints
+  actually relate to a `NetworkInterface` entity, where the IP address lives.
+
 ## 0.22.0 - 2021-05-05
 
 ### Added
@@ -19,8 +22,8 @@ and this project adheres to
 ### Added
 
 - Fix [#82](https://github.com/JupiterOne/data-model/issues/82) - Add
-  `retentionPeriodDays` property to `DataStore` class that represents the number of
-  days that data will be retained for.
+  `retentionPeriodDays` property to `DataStore` class that represents the number
+  of days that data will be retained for.
 
 ## 0.20.1 - 2021-04-15
 
