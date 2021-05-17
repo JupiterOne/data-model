@@ -251,6 +251,10 @@ import FrameworkJson from './schemas/Framework.json';
 export const Framework = FrameworkJson;
 IntegrationSchema.addSchema(Framework);
 
+import FirewallRuleJson from './schemas/FirewallRule.json';
+export const FirewallRule = FirewallRuleJson;
+IntegrationSchema.addSchema(FirewallRule);
+
 import FirewallJson from './schemas/Firewall.json';
 export const Firewall = FirewallJson;
 IntegrationSchema.addSchema(Firewall);

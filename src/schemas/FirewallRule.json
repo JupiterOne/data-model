@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#FirewallRule",
+  "description": "A network rule defined on a Firewall or host.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "#Entity" },
+    {
+      "properties": {
+        "priority": {
+          "description": "Priority of the firewall rule. Typically, a number between 0 and 65535.",
+          "type": "integer"
+        },
+        "source": {
+          "description": "Source of the firewall rule. Can be IP address, CIDR range, 'Any', or other firewall-defined options.",
+          "type": "string"
+        },
+        "sourceIp": {
+          "description": "Source IP of the firewall rule.",
+          "type": "string",
+          "format": "ip"
+        },
+        "sourcePort": {
+          "description": "Source port of the firewall rule. Typically an integer between 0 and 65535, but could also be 'Any', '*', or range of ports.",
+          "type": "integer"
+        },
+        "destination": {
+          "description": "Destination of the firewall rule. Can be IP address, CIDR range, 'Any', or other firewall-defined options.",
+          "type": "string"
+        },
+        "destinationIp": {
+          "description": "Destination IP of the firewall rule.",
+          "type": "string",
+          "format": "ip"
+        },
+        "destinationPort": {
+          "description": "Destination port of the firewall rule. Typically an integer between 0 and 65535, but could also be 'Any', '*', or range of ports.",
+          "type": "integer"
+        },
+        "protocol": {
+          "description": "The protocol ",
+          "type": "string",
+          "examples": ["TCP", "UDP", "Any"]
+        },
+        "direction": {
+          "description": "The direction defined by the firewall rule, typically 'ingress' or 'egress'",
+          "type": "string",
+          "examples": ["ingress", "egress"]
+        },
+        "action": {
+          "description": "The action defined by the firewall rule, typically 'Allow' or 'Deny'",
+          "type": "string",
+          "examples": ["allow", "deny"]
+        }
+      },
+      "required": []
+    }
+  ]
+}

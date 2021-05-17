@@ -8,6 +8,7 @@ and this project adheres to
 
 ## [Unreleased]
 
+- Added the `FirewallRule` class.
 - Stop requiring `ipAddress` on `NetworkEndpoint` class. Azure private endpoints
   actually relate to a `NetworkInterface` entity, where the IP address lives.
 
