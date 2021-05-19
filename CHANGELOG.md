@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.22.1 - 2021-05-19
+
 ### Changed
 
 - Stop requiring `ipAddress` on `NetworkEndpoint` class. Azure private endpoints
