@@ -8,8 +8,15 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
 - Stop requiring `ipAddress` on `NetworkEndpoint` class. Azure private endpoints
   actually relate to a `NetworkInterface` entity, where the IP address lives.
+
+### Fixed
+
+- [#87](https://github.com/JupiterOne/data-model/issues/87) - `Control` entity
+  class should allow an array of `function`
 
 ## 0.22.0 - 2021-05-05
 
