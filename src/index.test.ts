@@ -103,3 +103,65 @@ describe('DataStore & Disk', () => {
     expect(validate(getMockDataStoreEntity(['DataStore', 'Disk']))).toBe(true);
   });
 });
+
+describe('Control', () => {
+  test('should allow "function" to be an array', () => {
+    const validate = IntegrationSchema.getSchema('#Control')!;
+
+    expect(
+      validate({
+        _type: 'some-type-of-thing',
+        _class: 'Control',
+        _key: 'some-key-unique',
+        name: 'Name of Thing',
+        displayName: 'Name of Thing',
+        function: ['appsec', 'bug-bounty', 'pen-test'],
+      }),
+    ).toBe(true);
+  });
+
+  test('should allow "function" to be a string', () => {
+    const validate = IntegrationSchema.getSchema('#Control')!;
+
+    expect(
+      validate({
+        _type: 'some-type-of-thing',
+        _class: 'Control',
+        _key: 'some-key-unique',
+        name: 'Name of Thing',
+        displayName: 'Name of Thing',
+        function: 'appsec',
+      }),
+    ).toBe(true);
+  });
+
+  test('should throw if invalid string value assigned to "function"', () => {
+    const validate = IntegrationSchema.getSchema('#Control')!;
+
+    expect(
+      validate({
+        _type: 'some-type-of-thing',
+        _class: 'Control',
+        _key: 'some-key-unique',
+        name: 'Name of Thing',
+        displayName: 'Name of Thing',
+        function: 'INVALID_FUNCTION_VAL',
+      }),
+    ).toBe(false);
+  });
+
+  test('should throw if invalid array value assigned to "function"', () => {
+    const validate = IntegrationSchema.getSchema('#Control')!;
+
+    expect(
+      validate({
+        _type: 'some-type-of-thing',
+        _class: 'Control',
+        _key: 'some-key-unique',
+        name: 'Name of Thing',
+        displayName: 'Name of Thing',
+        function: ['bug-bounty', 'INVALID_FUNCTION_VAL', 'appsec'],
+      }),
+    ).toBe(false);
+  });
+});
