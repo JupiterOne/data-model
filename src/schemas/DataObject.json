@@ -17,16 +17,6 @@
           "description": "The format of the data, such as 'document', 'raw', 'plaintext', 'binary', etc.",
           "type": "string"
         },
-        "classification": {
-          "description": "The sensitivity of the data; should match company data classification",
-          "type": "string",
-          "examples": [
-            "critical",
-            "confidential",
-            "internal",
-            "public"
-          ]
-        },
         "location": {
           "description": "URI to the data, e.g. file path",
           "type": "string"
@@ -56,9 +46,7 @@
           "type": "boolean"
         }
       },
-      "required": [
-        "classification"
-      ]
+      "required": ["classification"]
     }
   ]
 }

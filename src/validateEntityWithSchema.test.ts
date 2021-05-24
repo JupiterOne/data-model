@@ -197,3 +197,25 @@ describe('Vendor: category can be string | string[]', () => {
     ).not.toThrow();
   });
 });
+
+describe('#DataObject', () => {
+  test('should accept "classification" string value', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredGraphObjectProperties,
+        _class: ['DataObject'],
+        classification: 'critical',
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('should accept "classification" null value', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredGraphObjectProperties,
+        _class: ['DataObject'],
+        classification: null,
+      } as any),
+    ).not.toThrow();
+  });
+});
