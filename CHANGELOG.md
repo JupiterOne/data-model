@@ -8,9 +8,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.22.2 - 2021-05-24
+
 ### Fixed
 
-- [#87](https://github.com/JupiterOne/data-model/issues/90) - `DataObject`
+- [#90](https://github.com/JupiterOne/data-model/issues/90) - `DataObject`
   `classification` field should accept `null`
 
 ## 0.22.1 - 2021-05-19
