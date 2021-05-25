@@ -102,6 +102,15 @@ export enum RelationshipClass {
    */
   IS = 'IS',
 
+  /**
+   * A relationship indicating an Entity limits or restricts another Entity.
+   *
+   * Examples:
+   *
+   * * AccessPolicy - LIMITS -> User or Role
+   */
+  LIMITS = 'LIMITS',
+
   MANAGES = 'MANAGES',
   MITIGATES = 'MITIGATES',
   MONITORS = 'MONITORS',
