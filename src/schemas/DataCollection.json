@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#DataTable",
-  "description": "An individual table of data, such as a SQL table. The exact data type is described in the _type property of the Entity.",
+  "$id": "#DataCollection",
+  "description": "An individual collection of data. The collection may exist in various formats, such as a table (e.g. a MySQL table). The exact data type is described in the _type property of the Entity.",
   "type": "object",
   "allOf": [
     {

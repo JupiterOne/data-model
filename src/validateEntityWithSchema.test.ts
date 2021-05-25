@@ -220,8 +220,8 @@ describe('#DataObject', () => {
   });
 });
 
-describe('#DataTable', () => {
-  function createDataTableEntity(partial?: Record<string, any>): any {
+describe('#DataCollection', () => {
+  function createDataCollectionEntity(partial?: Record<string, any>): any {
     return {
       ...requiredGraphObjectProperties,
       PII: false,
@@ -232,20 +232,20 @@ describe('#DataTable', () => {
       public: false,
       classification: 'critical',
       ...partial,
-      _class: ['DataTable'],
+      _class: ['DataCollection'],
     };
   }
 
   test('should accept known properties', () => {
     expect(() =>
-      validateEntityWithSchema(createDataTableEntity()),
+      validateEntityWithSchema(createDataCollectionEntity()),
     ).not.toThrow();
   });
 
   test('should accept "classification" null value', () => {
     expect(() =>
       validateEntityWithSchema(
-        createDataTableEntity({
+        createDataCollectionEntity({
           classification: null,
         }),
       ),

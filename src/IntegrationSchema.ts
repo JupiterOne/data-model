@@ -299,10 +299,6 @@ import DatabaseJson from './schemas/Database.json';
 export const Database = DatabaseJson;
 IntegrationSchema.addSchema(Database);
 
-import DataTableJson from './schemas/DataTable.json';
-export const DataTable = DataTableJson;
-IntegrationSchema.addSchema(DataTable);
-
 import DataStoreJson from './schemas/DataStore.json';
 export const DataStore = DataStoreJson;
 IntegrationSchema.addSchema(DataStore);
@@ -310,6 +306,10 @@ IntegrationSchema.addSchema(DataStore);
 import DataObjectJson from './schemas/DataObject.json';
 export const DataObject = DataObjectJson;
 IntegrationSchema.addSchema(DataObject);
+
+import DataCollectionJson from './schemas/DataCollection.json';
+export const DataCollection = DataCollectionJson;
+IntegrationSchema.addSchema(DataCollection);
 
 import CryptoKeyJson from './schemas/CryptoKey.json';
 export const CryptoKey = CryptoKeyJson;

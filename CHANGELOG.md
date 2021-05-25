@@ -11,7 +11,7 @@ and this project adheres to
 ### Added
 
 - [#96](https://github.com/JupiterOne/data-model/issues/96) - Introduce
-  `DataTable` entity class
+  `DataCollection` entity class
 
 ## 0.23.0 - 2021-05-24
 
