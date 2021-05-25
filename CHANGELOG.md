@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.23.0 - 2021-05-24
+
+### Added
+
+- Added `LIMITS` relationship class
+
 ## 0.22.2 - 2021-05-24
 
 ### Fixed
