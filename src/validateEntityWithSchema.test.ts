@@ -219,3 +219,36 @@ describe('#DataObject', () => {
     ).not.toThrow();
   });
 });
+
+describe('#DataTable', () => {
+  function createDataTableEntity(partial?: Record<string, any>): any {
+    return {
+      ...requiredGraphObjectProperties,
+      PII: false,
+      PHI: false,
+      PCI: false,
+      encryptionRequired: false,
+      encrypted: false,
+      public: false,
+      classification: 'critical',
+      ...partial,
+      _class: ['DataTable'],
+    };
+  }
+
+  test('should accept known properties', () => {
+    expect(() =>
+      validateEntityWithSchema(createDataTableEntity()),
+    ).not.toThrow();
+  });
+
+  test('should accept "classification" null value', () => {
+    expect(() =>
+      validateEntityWithSchema(
+        createDataTableEntity({
+          classification: null,
+        }),
+      ),
+    ).not.toThrow();
+  });
+});
