@@ -219,3 +219,36 @@ describe('#DataObject', () => {
     ).not.toThrow();
   });
 });
+
+describe('#DataCollection', () => {
+  function createDataCollectionEntity(partial?: Record<string, any>): any {
+    return {
+      ...requiredGraphObjectProperties,
+      PII: false,
+      PHI: false,
+      PCI: false,
+      encryptionRequired: false,
+      encrypted: false,
+      public: false,
+      classification: 'critical',
+      ...partial,
+      _class: ['DataCollection'],
+    };
+  }
+
+  test('should accept known properties', () => {
+    expect(() =>
+      validateEntityWithSchema(createDataCollectionEntity()),
+    ).not.toThrow();
+  });
+
+  test('should accept "classification" null value', () => {
+    expect(() =>
+      validateEntityWithSchema(
+        createDataCollectionEntity({
+          classification: null,
+        }),
+      ),
+    ).not.toThrow();
+  });
+});
