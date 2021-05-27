@@ -123,6 +123,12 @@ export enum RelationshipClass {
   PERFORMED = 'PERFORMED',
   PROTECTS = 'PROTECTS',
   PROVIDES = 'PROVIDES',
+
+  /**
+   * A relationship indicating an Entity limits or restricts another Entity.
+   */
+  RESTRICTS = 'RESTRICTS',
+
   REVIEWED = 'REVIEWED',
 
   /**
