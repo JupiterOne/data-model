@@ -10,7 +10,7 @@
     {
       "properties": {
         "category": {
-          "description": "The category of service, e.g. software, platform, infrastructure, other.",
+          "description": "The category of service, e.g. software, platform, infrastructure, other",
           "type": "array",
           "items": {
             "type": "string",
@@ -27,7 +27,7 @@
           }
         },
         "function": {
-          "description": "The functions provided by the service, e.g. access-review, database, load-balancing, other.",
+          "description": "The functions provided by the service, e.g. access-review, database, load-balancing, other",
           "type": "array",
           "items": {
             "type": "string",
@@ -83,6 +83,14 @@
           "items": {
             "type": "string"
           }
+        },
+        "fedrampModerate": {
+          "description": "Indicates whether this service is compliant with FedRAMP Moderate",
+          "type": "boolean"
+        },
+        "hipaaEligible": {
+          "description": "Indicates whether this service is HIPPA eligible",
+          "type": "boolean"
         }
       },
       "required": ["category", "function"]
