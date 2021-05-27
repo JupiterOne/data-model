@@ -307,6 +307,10 @@ import DataObjectJson from './schemas/DataObject.json';
 export const DataObject = DataObjectJson;
 IntegrationSchema.addSchema(DataObject);
 
+import DataCollectionJson from './schemas/DataCollection.json';
+export const DataCollection = DataCollectionJson;
+IntegrationSchema.addSchema(DataCollection);
+
 import CryptoKeyJson from './schemas/CryptoKey.json';
 export const CryptoKey = CryptoKeyJson;
 IntegrationSchema.addSchema(CryptoKey);
