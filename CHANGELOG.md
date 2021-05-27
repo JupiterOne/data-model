@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.25.0 - 2021-05-26
+
+### Added
+
+- Added `RESTRICTS` relationship class
+
 ## 0.24.0 - 2021-05-25
 
 ### Added
@@ -19,7 +25,7 @@ and this project adheres to
 
 ### Added
 
-- Added `LIMITS` and `RESTRICTS` relationship classes
+- Added `LIMITS` relationship classes
 
 ## 0.22.2 - 2021-05-24
 
