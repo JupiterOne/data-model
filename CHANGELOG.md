@@ -12,7 +12,7 @@ and this project adheres to
 
 ### Added
 
-- Added `LIMITS` relationship class
+- Added `LIMITS` and `RESTRICTS` relationship classes
 
 ## 0.22.2 - 2021-05-24
 
