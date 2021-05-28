@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.26.0 - 2021-05-28
+
 - Added required property `Service.function` description and example/recommended
   values to encourage consistency.
 - Added optional `boolean` properties `Service.fedrampModerate` and
