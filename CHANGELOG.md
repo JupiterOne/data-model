@@ -8,6 +8,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+- Added required property `Service.function` description and example/recommended
+  values to encourage consistency.
+- Added optional `boolean` properties `Service.fedrampModerate` and
+  `Service.hipaaEligible`.
+
 ## 0.25.0 - 2021-05-26
 
 ### Added
