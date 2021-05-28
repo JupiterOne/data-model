@@ -16,6 +16,16 @@ export enum RelationshipClass {
    * A relationship between a {AccessRole, User, Group} and AccessPolicy.
    */
   ASSIGNED = 'ASSIGNED',
+
+  /**
+   * A relationship indicating general connectivity between two entities.
+   *
+   * Examples:
+   *
+   * - Load Balancer -> CONNECTS -> Instance
+   * - Gateway -> CONNECTS -> Internet
+   * - Content Distribution -> CONNECTS -> Gateway
+   */
   CONNECTS = 'CONNECTS',
 
   /**
@@ -119,7 +129,7 @@ export enum RelationshipClass {
 
   OPENED = 'OPENED',
   OWNS = 'OWNS',
-  
+
   PERFORMED = 'PERFORMED',
   PROTECTS = 'PROTECTS',
   PROVIDES = 'PROVIDES',
@@ -140,7 +150,18 @@ export enum RelationshipClass {
    */
   SCANS = 'SCANS',
 
+  /**
+   * A relationship indicating an Entitiy triggers an event on another Entity
+   *
+   * Example:
+   * - Gateway -> TRIGGERS -> Function
+   * - Kinesis -> TRIGGERS -> Function
+   * - Metric -> TRIGGERS -> Alarm
+   * - IDS -> TRIGGERS -> Alarm
+   *
+   */
   TRIGGERS = 'TRIGGERS',
+
   TRUSTS = 'TRUSTS',
 
   /**
