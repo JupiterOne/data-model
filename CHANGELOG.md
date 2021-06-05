@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.27.0 - 2021-06-05
+
 ### Added
 
 - [#104](https://github.com/JupiterOne/data-model/issues/104) - Introduce
