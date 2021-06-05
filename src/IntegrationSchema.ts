@@ -199,6 +199,10 @@ import ModuleJson from './schemas/Module.json';
 export const Module = ModuleJson;
 IntegrationSchema.addSchema(Module);
 
+import ModelJson from './schemas/Model.json';
+export const Model = ModelJson;
+IntegrationSchema.addSchema(Model);
+
 import LogsJson from './schemas/Logs.json';
 export const Logs = LogsJson;
 IntegrationSchema.addSchema(Logs);

@@ -8,6 +8,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- [#104](https://github.com/JupiterOne/data-model/issues/104) - Introduce
+  `Model` entity class
+
 ## 0.26.0 - 2021-05-28
 
 - Added required property `Service.function` description and example/recommended
