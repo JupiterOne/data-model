@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.28.0 - 2021-06-10
+
+### Added
+
+- Added `REPORTED` to the `RelationshipClass` enum
+
 ## 0.27.0 - 2021-06-05
 
 ### Added
