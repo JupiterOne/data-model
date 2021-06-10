@@ -140,6 +140,7 @@ export enum RelationshipClass {
   RESTRICTS = 'RESTRICTS',
 
   REVIEWED = 'REVIEWED',
+  REPORTED = 'REPORTED',
 
   /**
    * A relationships indicating an Entity performs some kind of scan on another Entity.
