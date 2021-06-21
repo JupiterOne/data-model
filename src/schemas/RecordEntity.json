@@ -111,6 +111,14 @@
           "description": "The timestamp (in milliseconds since epoch) when the entity was last updated at the source.",
           "type": "number",
           "format": "date-time"
+        },
+        "exception": {
+          "description": "Indicates if this record has an applied exception. For example, exception for a known finding or a PR that is not fully approved.",
+          "type": "boolean"
+        },
+        "exceptionReason": {
+          "description": "Reason / description of the exception.",
+          "type": "string"
         }
       },
       "required": [
