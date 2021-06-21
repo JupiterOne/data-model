@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.29.0 - 2021-06-21
+
+### Added
+
+- Added `exception` flag and `exceptionReason` string property to `RecordEntity`
+
 ## 0.28.0 - 2021-06-10
 
 ### Added
