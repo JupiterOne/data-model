@@ -41,6 +41,7 @@ export enum RelationshipClass {
    * @see HAS
    */
   CONTAINS = 'CONTAINS',
+  COMPLETED = 'COMPLETED',
 
   /**
    * A relationship between a User and any Entity.

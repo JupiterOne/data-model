@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.30.0 - 2021-06-25
+
+### Added
+
+- Added `COMPLETED` to the `RelationshipClass` enum
+
 ## 0.29.0 - 2021-06-21
 
 ### Added
