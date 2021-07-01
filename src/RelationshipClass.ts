@@ -29,18 +29,21 @@ export enum RelationshipClass {
   CONNECTS = 'CONNECTS',
 
   /**
-   * A relationship indicating an Entity contains another Entity.
+   * A relationship indicating an Entity contains another Entity. A contained Entity
+   * _should_ have a single relationship of this class to reflect that it cannot be
+   * directly contained within multiple Entities.
    *
    * Examples:
    *
    * - Network - CONTAINS -> Network (a subnet)
    * - Network - CONTAINS -> Host
    * - Cluster - CONTAINS -> Host
-   * - UserGroup - CONTAINS -> User
+   * - Role - CONTAINS -> Role (when roles form a hiearchy)
    *
    * @see HAS
    */
   CONTAINS = 'CONTAINS',
+
   COMPLETED = 'COMPLETED',
 
   /**
@@ -87,6 +90,7 @@ export enum RelationshipClass {
    * - Network - HAS -> AccessPolicy
    * - Network - HAS -> Firewall
    * - Finding - HAS -> ThreatIntel
+   * - UserGroup - HAS -> User (users typically may belong to multiple groups)
    *
    * @see CONTAINS
    */
