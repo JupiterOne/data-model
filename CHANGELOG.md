@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.31.0 - 2021-07-02
+
+### Added
+
+- `firstName` and `lastName` properties to `User` entity class
+
 ## 0.30.0 - 2021-06-25
 
 ### Added
