@@ -23,6 +23,14 @@
         "mfaEnabled": {
           "description": "Specifies whether multi-factor authentication (MFA) is enabled for this user.",
           "type": "boolean"
+        },
+        "firstName": {
+          "description": "The user's official first name in the system (such as HR database)",
+          "type": "string"
+        },
+        "lastName": {
+          "description": "The user's official last name in the system (such as HR database)",
+          "type": "string"
         }
       },
       "required": ["username"]

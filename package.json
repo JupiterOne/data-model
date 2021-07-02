@@ -1,6 +1,6 @@
 {
   "name": "@jupiterone/data-model",
-  "version": "0.30.0",
+  "version": "0.31.0",
   "main": "dist/index.js",
   "files": [
     "dist"
