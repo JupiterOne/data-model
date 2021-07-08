@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.32.0 - 2021-07-08
+
+### Added
+
+- Added `RelationshipClass.PUBLISHED`
+
 ## 0.31.0 - 2021-07-02
 
 ### Added

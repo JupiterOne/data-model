@@ -140,6 +140,16 @@ export enum RelationshipClass {
   PROVIDES = 'PROVIDES',
 
   /**
+   * A relationship between a CodeRepo and an artifact.
+   *
+   * Examples:
+   *
+   * * CodeRepo - PUBLISHED -> CodeModule
+   * * CodeRepo - PUBLISHED -> Image
+   */
+  PUBLISHED = 'PUBLISHED',
+
+  /**
    * A relationship indicating an Entity limits or restricts another Entity.
    */
   RESTRICTS = 'RESTRICTS',
