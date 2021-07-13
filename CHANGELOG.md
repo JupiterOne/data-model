@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Added `Problem` class.
+
 ## 0.32.0 - 2021-07-08
 
 ### Added

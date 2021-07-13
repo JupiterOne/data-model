@@ -159,6 +159,10 @@ import ProcessJson from './schemas/Process.json';
 export const Process = ProcessJson;
 IntegrationSchema.addSchema(Process);
 
+import ProblemJson from './schemas/Problem.json';
+export const Problem = ProblemJson;
+IntegrationSchema.addSchema(Problem);
+
 import ProcedureJson from './schemas/Procedure.json';
 export const Procedure = ProcedureJson;
 IntegrationSchema.addSchema(Procedure);
