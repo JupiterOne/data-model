@@ -43,7 +43,17 @@
         },
         "value": {
           "description": "The record value. Could be referenced as `data`, `content`, `resourceRecords`, `aliasTarget` or another property name depending on the DNS provider.",
-          "type": "string"
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
         }
       },
       "required": ["type", "TTL"]
