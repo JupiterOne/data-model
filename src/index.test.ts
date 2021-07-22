@@ -165,3 +165,35 @@ describe('Control', () => {
     ).toBe(false);
   });
 });
+
+describe('Problem', () => {
+  test('should require the same properties as a Finding entity', () => {
+    const validateFinding = IntegrationSchema.getSchema('#Finding')!;
+    const validateProblem = IntegrationSchema.getSchema('#Problem')!;
+    const entity = {
+      _type: 'some-type-of-thing',
+      _class: 'Control',
+      _key: 'some-key-unique',
+      name: 'Name of Thing',
+      displayName: 'Name of Thing',
+      category: 'test',
+      severity: 'high',
+      numericSeverity: 10,
+      open: false,
+    };
+
+    expect(validateFinding(entity)).toBe(true);
+    expect(validateProblem(entity)).toBe(true);
+
+    const {
+      category,
+      severity,
+      numericSeverity,
+      open,
+      ...entityWithoutFindingProperties
+    } = entity;
+
+    expect(validateFinding(entityWithoutFindingProperties)).toBe(false);
+    expect(validateProblem(entityWithoutFindingProperties)).toBe(false);
+  });
+});

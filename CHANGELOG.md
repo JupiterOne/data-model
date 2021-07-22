@@ -8,7 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Added `Problem` class.
+
 ## 0.33.0 - 2021-07-20
+
 ### Added
 
 - Changed `DomainRecord.value` to be `string | string[]`
