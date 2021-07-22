@@ -12,6 +12,12 @@ and this project adheres to
 
 - Added `Problem` class.
 
+## 0.33.0 - 2021-07-20
+
+### Added
+
+- Changed `DomainRecord.value` to be `string | string[]`
+
 ## 0.32.0 - 2021-07-08
 
 ### Added
