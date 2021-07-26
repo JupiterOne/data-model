@@ -195,5 +195,15 @@ describe('Problem', () => {
 
     expect(validateFinding(entityWithoutFindingProperties)).toBe(false);
     expect(validateProblem(entityWithoutFindingProperties)).toBe(false);
+
+    const findingWithoutCategory = {
+      severity,
+      numericSeverity,
+      open,
+      ...entityWithoutFindingProperties
+    };
+
+    expect(validateFinding(findingWithoutCategory)).toBe(false);
+    expect(validateProblem(findingWithoutCategory)).toBe(true);
   });
 });
