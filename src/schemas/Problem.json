@@ -5,7 +5,8 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "#Finding"
+      "$ref": "#Finding",
+      "excludes": ["category"]
     }
   ]
 }
