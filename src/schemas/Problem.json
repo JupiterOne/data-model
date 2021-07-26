@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "#Problem",
-  "description": "A validated security finding, which may be a vulnerability or issue. A problem is notable and worthy of action.",
+  "description": "A problem identified from the analysis and correlation of assets and findings that is a notable issue worthy of action. It could be (or become) the cause, or potential cause, of one or more incidents or findings.",
   "type": "object",
   "allOf": [
     {
