@@ -391,6 +391,10 @@ import ApplicationJson from './schemas/Application.json';
 export const Application = ApplicationJson;
 IntegrationSchema.addSchema(Application);
 
+import AlertJson from './schemas/Alert.json';
+export const Alert = AlertJson;
+IntegrationSchema.addSchema(Alert);
+
 import AccountJson from './schemas/Account.json';
 export const Account = AccountJson;
 IntegrationSchema.addSchema(Account);
