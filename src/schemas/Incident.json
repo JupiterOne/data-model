@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "#Incident",
-  "description": "An operational or security incident.",
+  "description": "An operational or security incident. An event that negatively affects the confidentiality, integrity or availability of an organization's assets.",
   "type": "object",
   "allOf": [
     {
