@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.35.0 - 2021-08-03
+
+- Added `Alert` class.
+
 ## 0.34.0 - 2021-07-27
 
 ### Added
