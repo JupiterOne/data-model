@@ -138,6 +138,16 @@ export enum RelationshipClass {
   NOTIFIES = 'NOTIFIES',
 
   OPENED = 'OPENED',
+
+  /**
+   * A relationship between a Secret and a Secret of the same name that it shadows.
+   *
+   * Examples:
+   *
+   * * Secret - OVERRIDES -> Secret
+   */
+  OVERRIDES = 'OVERRIDES',
+
   OWNS = 'OWNS',
 
   PERFORMED = 'PERFORMED',
