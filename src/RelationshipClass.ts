@@ -140,11 +140,13 @@ export enum RelationshipClass {
   OPENED = 'OPENED',
 
   /**
-   * A relationship between a Secret and a Secret of the same name that it shadows.
+   * A relationship between an Entity and another Entity of the same type that it shadows or overrides.
    *
    * Examples:
    *
    * * Secret - OVERRIDES -> Secret
+   * * Configuration - OVERRIDES -> Configuration
+   * * AccessPolicy - OVERRIDES -> AccessPolicy
    */
   OVERRIDES = 'OVERRIDES',
 
