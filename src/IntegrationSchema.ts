@@ -139,6 +139,10 @@ import RecordJson from './schemas/Record.json';
 export const Record = RecordJson;
 IntegrationSchema.addSchema(Record);
 
+import QuestionJson from './schemas/Question.json';
+export const Question = QuestionJson;
+IntegrationSchema.addSchema(Question);
+
 import QueueJson from './schemas/Queue.json';
 export const Queue = QueueJson;
 IntegrationSchema.addSchema(Queue);
