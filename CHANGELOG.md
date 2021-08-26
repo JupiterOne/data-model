@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Added `RelationshipClass.ENFORCES`
+
 ## 0.35.0 - 2021-08-03
 
 - Added `Alert` class.

@@ -64,6 +64,11 @@ export enum RelationshipClass {
   DEPLOYED = 'DEPLOYED',
 
   /**
+   * A relationship between a ControlPolicy and any resource.
+   */
+  ENFORCES = 'ENFORCES',
+
+  /**
    * A relationship between a {Vulnerability, Finding} and Weakness.
    */
   EXPLOITS = 'EXPLOITS',
