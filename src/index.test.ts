@@ -197,3 +197,22 @@ describe('Problem', () => {
     expect(validateProblem(entityWithoutFindingProperties)).toBe(false);
   });
 });
+
+describe('Question', () => {
+  test('should require queries to be provided', () => {
+    const validateQuestion = IntegrationSchema.getSchema('#Question')!;
+    const entity = {
+      _type: 'some-type-of-question',
+      _class: 'Question',
+      _key: 'some-key-unique',
+      name: 'Name of Question',
+      displayName: 'Name of Question',
+    };
+
+    expect(validateQuestion(entity)).toBe(false);
+    expect(validateQuestion({
+      ...entity,
+      queries: []
+    })).toBe(true);
+  });
+});
