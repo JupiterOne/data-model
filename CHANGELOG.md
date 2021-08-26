@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.37.0 - 2021-08-26
+
+- Added `Question` entity class.
+
 ## 0.36.0 - 2021-08-26
 
 ### Added
