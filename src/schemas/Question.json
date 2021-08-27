@@ -18,7 +18,8 @@
             }
           ]
         }
-      }
+      },
+      "required": ["queries"]
     }
   ]
 }

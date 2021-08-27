@@ -210,9 +210,26 @@ describe('Question', () => {
     };
 
     expect(validateQuestion(entity)).toBe(false);
-    expect(validateQuestion({
-      ...entity,
-      queries: []
-    })).toBe(true);
+    expect(
+      validateQuestion({
+        ...entity,
+        queries: [],
+      }),
+    ).toBe(true);
+  });
+});
+
+describe('Secret', () => {
+  test('simple entity validation to ensure Secret schema exists', () => {
+    const validateSecret = IntegrationSchema.getSchema('#Secret')!;
+    const entity = {
+      _type: 'some-type-of-secret',
+      _class: 'Secret',
+      _key: 'some-key-unique',
+      name: 'Name of Secret',
+      displayName: 'Name of Secret',
+    };
+
+    expect(validateSecret(entity)).toBe(true);
   });
 });

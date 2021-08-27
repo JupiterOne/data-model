@@ -95,6 +95,10 @@ import SectionJson from './schemas/Section.json';
 export const Section = SectionJson;
 IntegrationSchema.addSchema(Section);
 
+import SecretJson from './schemas/Secret.json';
+export const Secret = SecretJson;
+IntegrationSchema.addSchema(Secret);
+
 import ScannerJson from './schemas/Scanner.json';
 export const Scanner = ScannerJson;
 IntegrationSchema.addSchema(Scanner);
@@ -414,4 +418,3 @@ IntegrationSchema.addSchema(AccessPolicy);
 import AccessKeyJson from './schemas/AccessKey.json';
 export const AccessKey = AccessKeyJson;
 IntegrationSchema.addSchema(AccessKey);
-
