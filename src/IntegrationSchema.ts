@@ -143,13 +143,13 @@ import RecordJson from './schemas/Record.json';
 export const Record = RecordJson;
 IntegrationSchema.addSchema(Record);
 
-import QuestionJson from './schemas/Question.json';
-export const Question = QuestionJson;
-IntegrationSchema.addSchema(Question);
-
 import QueueJson from './schemas/Queue.json';
 export const Queue = QueueJson;
 IntegrationSchema.addSchema(Queue);
+
+import QuestionJson from './schemas/Question.json';
+export const Question = QuestionJson;
+IntegrationSchema.addSchema(Question);
 
 import ProjectJson from './schemas/Project.json';
 export const Project = ProjectJson;
@@ -418,3 +418,4 @@ IntegrationSchema.addSchema(AccessPolicy);
 import AccessKeyJson from './schemas/AccessKey.json';
 export const AccessKey = AccessKeyJson;
 IntegrationSchema.addSchema(AccessKey);
+
