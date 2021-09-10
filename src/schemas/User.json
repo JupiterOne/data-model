@@ -16,6 +16,11 @@
           "type": "string",
           "format": "email"
         },
+        "domainName": {
+          "description": "The domain portion of the email address associated with the user account.",
+          "type": "string",
+          "format": "string"
+        },
         "shortLoginId": {
           "description": "The shortened login Id. For example, if the username is the full email address (first.last@company.com), the shortLoginId would be the part before @ (first.last).",
           "type": "string"
