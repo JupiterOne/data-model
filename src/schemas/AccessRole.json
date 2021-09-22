@@ -9,7 +9,7 @@
     },
     {
       "properties": {
-        "isAdmin": {
+        "isSuperAdmin": {
           "description": "Is the role an administrator role?",
           "type": "boolean"
         },
@@ -17,8 +17,8 @@
           "description": "Is this a system role?",
           "type": "boolean"
         },
-        "privilegeIds": {
-          "description": "The role's privilege IDs",
+        "privilegeServiceIds": {
+          "description": "The role's privilege service IDs",
           "type": "array",
           "items": {
             "type": "string"
