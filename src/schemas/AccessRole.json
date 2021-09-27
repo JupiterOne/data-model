@@ -9,11 +9,11 @@
     },
     {
       "properties": {
-        "isSuperAdmin": {
+        "superAdmin": {
           "description": "Is the role an administrator role?",
           "type": "boolean"
         },
-        "isSystem": {
+        "system": {
           "description": "Is this a system role?",
           "type": "boolean"
         },
