@@ -13,7 +13,7 @@
           "description": "Is the role an administrator role?",
           "type": "boolean"
         },
-        "system": {
+        "systemRole": {
           "description": "Is this a system role?",
           "type": "boolean"
         },
