@@ -8,7 +8,30 @@
       "$ref": "#Entity"
     },
     {
-      "properties": {},
+      "properties": {
+        "superAdmin": {
+          "description": "Is the role an administrator role?",
+          "type": "boolean"
+        },
+        "systemRole": {
+          "description": "Is this a system role?",
+          "type": "boolean"
+        },
+        "privilegeServiceIds": {
+          "description": "The role's privilege service IDs",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "privilegeNames": {
+          "description": "The role's privilege names",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
       "required": []
     }
   ]
