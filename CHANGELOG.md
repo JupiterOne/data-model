@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.39.0 - 2021-09-30
+
 - Added `Issue` entity class.
 
 ## 0.38.0 - 2021-08-27
