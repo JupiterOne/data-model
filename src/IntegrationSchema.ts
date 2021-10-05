@@ -223,6 +223,10 @@ import KeyJson from './schemas/Key.json';
 export const Key = KeyJson;
 IntegrationSchema.addSchema(Key);
 
+import IssueJson from './schemas/Issue.json';
+export const Issue = IssueJson;
+IntegrationSchema.addSchema(Issue);
+
 import IpAddressJson from './schemas/IpAddress.json';
 export const IpAddress = IpAddressJson;
 IntegrationSchema.addSchema(IpAddress);
@@ -418,4 +422,3 @@ IntegrationSchema.addSchema(AccessPolicy);
 import AccessKeyJson from './schemas/AccessKey.json';
 export const AccessKey = AccessKeyJson;
 IntegrationSchema.addSchema(AccessKey);
-
