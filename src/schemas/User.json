@@ -12,9 +12,17 @@
           "type": "string"
         },
         "email": {
-          "description": "The email address associated with the user account",
+          "description": "The primary email address associated with the user account",
           "type": "string",
           "format": "email"
+        },
+        "emailDomain": {
+          "description": "The domain portion of the email addresses associated with the user account.",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "string"
+          }
         },
         "shortLoginId": {
           "description": "The shortened login Id. For example, if the username is the full email address (first.last@company.com), the shortLoginId would be the part before @ (first.last).",

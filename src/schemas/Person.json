@@ -29,6 +29,14 @@
             "format": "email"
           }
         },
+        "emailDomain": {
+          "description": "The domain portion of the email addresses associated with the user account.",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "string"
+          }
+        },
         "title": {
           "description": "The person's role or title within an organization",
           "type": "string"
