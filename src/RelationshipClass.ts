@@ -222,4 +222,14 @@ export enum RelationshipClass {
    * Device - INSTALLED -> Application
    */
   INSTALLED = 'INSTALLED',
+
+  /**
+   * A relationship indicating that an Entity fails to comply with
+   * a rule or agreement defined by another Entity.
+   *
+   * Examples:
+   * - Problem - VIOLATES -> Requirement
+   * - Problem - VIOLATES -> Control
+   */
+  VIOLATES = 'VIOLATES',
 }
