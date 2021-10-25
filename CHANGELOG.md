@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.40.0 - 2021-10-25
+
 - Added `RelationshipClass.VIOLATES`
 
 ## 0.39.0 - 2021-09-30
