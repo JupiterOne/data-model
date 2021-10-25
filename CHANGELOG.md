@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+- Added `RelationshipClass.VIOLATES`
+
 ## 0.39.0 - 2021-09-30
 
 - Added `Issue` entity class.
