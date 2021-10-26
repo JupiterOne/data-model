@@ -4,7 +4,7 @@
   "description": "Standard metadata properties of a graph object, maintained by the system. These are visible to users but may not be directly modified.",
   "type": "object",
   "propertyNames": {
-    "pattern": "^(_|tag\\.)?[A-Za-z0-9. -]+$"
+    "pattern": "^(_|tag\\.)?[A-Za-z0-9/. -]+$"
   },
   "properties": {
     "_key": {
