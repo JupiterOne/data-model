@@ -32,6 +32,10 @@
           "description": "Specifies whether multi-factor authentication (MFA) is enabled for this user.",
           "type": "boolean"
         },
+        "active": {
+          "description": "Specifies whether user account is active or disabled.",
+          "type": "boolean"
+        },
         "firstName": {
           "description": "The user's official first name in the system (such as HR database)",
           "type": "string"
@@ -41,7 +45,7 @@
           "type": "string"
         }
       },
-      "required": ["username"]
+      "required": ["username", "active"]
     }
   ]
 }
