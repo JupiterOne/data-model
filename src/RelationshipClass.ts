@@ -102,6 +102,11 @@ export enum RelationshipClass {
   HAS = 'HAS',
 
   /**
+   * A relationship between a Vendor and an Account
+   */
+  HOSTS = 'HOSTS',
+
+  /**
    * A relationship indicating an Entity identified another Entity.
    *
    * Examples:
