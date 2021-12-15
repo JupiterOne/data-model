@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.42.0 - 2021-12-15
+
 - Added `RelationshipClass.HOSTS`
 - Added `RelationshipClass.LOGS`
 

@@ -141,6 +141,7 @@ export enum RelationshipClass {
    * Examples:
    *
    * * NetworkEndpoint - LOGS -> DataStore or Logs
+   * * Host - LOGS -> DataStore or Logs
    */
   LOGS = 'LOGS',
 
