@@ -135,6 +135,14 @@ export enum RelationshipClass {
    * * AccessPolicy - LIMITS -> User or Role
    */
   LIMITS = 'LIMITS',
+  /**
+   * A relationship indicating an Entity sends logs to another Entity.
+   *
+   * Examples:
+   *
+   * * NetworkEndpoint - LOGS -> DataStore or Logs
+   */
+  LOGS = 'LOGS',
 
   MANAGES = 'MANAGES',
   MITIGATES = 'MITIGATES',
