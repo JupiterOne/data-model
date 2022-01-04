@@ -33,8 +33,7 @@
           "description": "The domain portion of the email addresses associated with the user account.",
           "type": "array",
           "items": {
-            "type": "string",
-            "format": "string"
+            "type": "string"          
           }
         },
         "title": {
