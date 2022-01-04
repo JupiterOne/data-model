@@ -8,6 +8,13 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.42.1 - 2022-01-04
+
+### Fixed
+
+- Warning was being thrown for usage of `format: string` for emailDomain property. Removed
+  the format to silience the warning.
+
 ## 0.42.0 - 2021-12-15
 
 - Added `RelationshipClass.HOSTS`
