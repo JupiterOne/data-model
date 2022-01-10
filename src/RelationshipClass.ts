@@ -198,6 +198,15 @@ export enum RelationshipClass {
   SCANS = 'SCANS',
 
   /**
+   * A relationships indicating an Entity sends something to another Entity
+   * 
+   * Examples: 
+   * 
+   * Queue - SENDS -> Queue
+   */
+  SENDS = 'SENDS',
+
+  /**
    * A relationship indicating an Entitiy triggers an event on another Entity
    *
    * Example:

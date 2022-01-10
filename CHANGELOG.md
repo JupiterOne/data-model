@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+- Added  `RelationshipClass.SENDS`
+
 ## 0.42.1 - 2022-01-04
 
 ### Fixed
