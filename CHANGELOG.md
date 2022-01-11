@@ -10,7 +10,7 @@ and this project adheres to
 
 ## 0.43.0 - 2022-01-10
 
-- Added  `RelationshipClass.SENDS`
+- Added `RelationshipClass.SENDS`
 
 ## 0.42.1 - 2022-01-04
 
