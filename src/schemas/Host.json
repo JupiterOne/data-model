@@ -106,6 +106,10 @@
         "physical": {
           "description": "Indicates if this is a physical host, such as a physical server.",
           "type": "boolean"
+        },
+        "state": {
+          "description": "The current state of a host (e.g. pending, running, shutting-down, terminated, stopping, stopped)",
+          "type": "string"
         }
       },
       "required": []
