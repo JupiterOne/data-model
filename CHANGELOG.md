@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.44.0 - 2022-02-03
+
 - `state` property added to `Host` entity class
 
 ## 0.43.0 - 2022-01-10
