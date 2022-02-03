@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+- `state` property added to `Host` entity class
+
 ## 0.43.0 - 2022-01-10
 
 - Added `RelationshipClass.SENDS`
@@ -16,8 +18,8 @@ and this project adheres to
 
 ### Fixed
 
-- Warning was being thrown for usage of `format: string` for emailDomain property. Removed
-  the format to silience the warning.
+- Warning was being thrown for usage of `format: string` for emailDomain
+  property. Removed the format to silience the warning.
 
 ## 0.42.0 - 2021-12-15
 
