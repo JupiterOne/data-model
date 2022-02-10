@@ -8,8 +8,17 @@
     {
       "properties": {
         "fqdn": {
-          "description": "Fully qualified domain name",
-          "type": "string"
+          "description": "Fully qualified domain name(s)",
+          "anyOf": [
+            { "type": "string" },
+            {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
         },
         "hostname": {
           "description": "The primary/local hostname",

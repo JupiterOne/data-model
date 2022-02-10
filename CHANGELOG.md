@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+- Updated `fqdn` property on `HOST` entity to allow string or array type
+
 ## 0.44.0 - 2022-02-03
 
 - `state` property added to `Host` entity class
