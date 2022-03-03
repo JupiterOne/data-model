@@ -9,7 +9,7 @@
       "properties": {
         "category": {
           "description": "The device category",
-          "type": "string",
+          "type": ["string", "null"],
           "examples": [
             "server",
             "endpoint",
@@ -21,11 +21,11 @@
         },
         "make": {
           "description": "Same as hardwareVendor: The manufacturer or vendor of the device, e.g. Apple Inc., Generic",
-          "type": "string"
+          "type": ["string", "null"]
         },
         "model": {
           "description": "Same as hardwareModel: The device hardware model, e.g. MacBookPro13,3",
-          "type": "string"
+          "type": ["string", "null"]
         },
         "version": {
           "description": "Same as hardwareVersion: The device hardware version",
@@ -33,7 +33,7 @@
         },
         "serial": {
           "description": "Same as hardwareSerial: The device serial number",
-          "type": "string"
+          "type": ["string", "null"]
         },
         "hardwareVendor": {
           "description": "The manufacturer or vendor of the device, e.g. Apple Inc., Generic",
