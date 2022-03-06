@@ -8,7 +8,14 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.45.0 - 2022-03-05
+
 - Updated `fqdn` property on `HOST` entity to allow string or array type
+- Allow `null` to be assigned to the following `Device` properties:
+  - `category`
+  - `make`
+  - `model`
+  - `serial`
 
 ## 0.44.0 - 2022-02-03
 
