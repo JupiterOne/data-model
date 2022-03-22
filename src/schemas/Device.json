@@ -35,6 +35,10 @@
           "description": "Same as hardwareSerial: The device serial number",
           "type": ["string", "null"]
         },
+        "deviceId": {
+          "description": "The unique device identifier, traditionally known as a UDID",
+          "type": ["string", "null"]
+        },
         "hardwareVendor": {
           "description": "The manufacturer or vendor of the device, e.g. Apple Inc., Generic",
           "type": "string"
@@ -164,7 +168,7 @@
           ]
         }
       },
-      "required": ["category", "make", "model", "serial"]
+      "required": ["category", "make", "model", "serial", "deviceId"]
     }
   ]
 }
