@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.46.0 - 2022-03-25
+
 ### Added
 
 - Added deviceId as a nullable required property of Device. This property will
