@@ -8,6 +8,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Added deviceId as a nullable required property of Device. This property will
+  be used in HostAgent PROTECTS DEVICE mapped relationships
+
 ## 0.45.0 - 2022-03-05
 
 - Updated `fqdn` property on `HOST` entity to allow string or array type
