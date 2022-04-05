@@ -8,6 +8,15 @@ and this project adheres to
 
 ## [Unreleased]
 
+- Allow `null` to be assigned to the following required `Vulnerability`
+  properties
+  - `category`
+  - `severity`
+  - `blocking`
+  - `open`
+  - `production`
+  - `public`
+
 ## 0.46.0 - 2022-03-25
 
 ### Added
