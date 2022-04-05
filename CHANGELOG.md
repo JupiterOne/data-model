@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.47.0 - 2022-04-05
+
 - Allow `null` to be assigned to the following required `Vulnerability`
   properties
   - `category`
