@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.48.0 - 2022-05-18
+
 - Add `RelationshipClass.EVALUATES`
 
 ## 0.47.0 - 2022-04-05
