@@ -68,6 +68,7 @@ export enum RelationshipClass {
    */
   ENFORCES = 'ENFORCES',
 
+  EVALUATES = 'EVALUATES',
   /**
    * A relationship between a {Vulnerability, Finding} and Weakness.
    */
