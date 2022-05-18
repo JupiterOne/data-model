@@ -68,7 +68,11 @@ export enum RelationshipClass {
    */
   ENFORCES = 'ENFORCES',
 
+  /**
+   * A relatioship between a Config Rule and any resource.
+   */
   EVALUATES = 'EVALUATES',
+  
   /**
    * A relationship between a {Vulnerability, Finding} and Weakness.
    */
