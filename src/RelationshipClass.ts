@@ -194,6 +194,11 @@ export enum RelationshipClass {
   REPORTED = 'REPORTED',
 
   /**
+   * A relationships indicating an Entity performs some sort of task that is the other Entity
+   */
+  RUNS = 'RUNS',
+
+  /**
    * A relationships indicating an Entity performs some kind of scan on another Entity.
    *
    * Examples:
