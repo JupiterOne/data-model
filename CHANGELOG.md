@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.49.0 - 2022-05-20
+
 - Add `RelationshipClass.RUNS`
 
 ## 0.48.0 - 2022-05-18
