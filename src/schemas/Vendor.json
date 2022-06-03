@@ -155,6 +155,11 @@
           "description": "Link to the vendor's service status page (e.g. https://status.aws.amazon.com/).",
           "type": "string",
           "format": "uri"
+        },
+        "vendorValidatedOn": {
+          "description": "The timestamp (in milliseconds since epoch) of when this vendor was last validated per the vendor management policy.",
+          "type": "number",
+          "format": "date-time"
         }
       },
       "required": ["category"],
