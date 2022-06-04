@@ -43,7 +43,7 @@
           "description": "The user's official last name in the system (such as HR database)",
           "type": "string"
         },
-        "passwordRotatedOn": {
+        "passwordChangedOn": {
           "description": "The timestamp (in milliseconds since epoch) of when the user's password was last rotated for this particular account.",
           "type": "number",
           "format": "date-time"
