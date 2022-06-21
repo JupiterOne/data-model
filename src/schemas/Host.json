@@ -26,8 +26,17 @@
         },
         "ipAddress": {
           "description": "The main IP address. This property is usually used to store the primary IP address of a Host.",
-          "type": "string",
-          "format": "ip"
+          "anyOf": [
+            { "type": "string", "format": "ip" },
+            {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "format": "ip"
+              }
+            }
+          ]
         },
         "publicDnsName": {
           "description": "The public DNS name",
@@ -67,17 +76,18 @@
             }
           ]
         },
-        "ipAddresses": {
-          "description": "A listing of all IP addresses associated with this Host",
-          "type": "array",
-          "items": {
-            "type": "string",
-            "format": "ip"
-          }
-        },
         "macAddress": {
           "description": "Primary MAC address",
-          "type": "string"
+          "anyOf": [
+            { "type": "string" },
+            {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
         },
         "platform": {
           "description": "Operating System Platform",
@@ -105,13 +115,6 @@
           "description": "Operating System Version (e.g. 10.13.6)",
           "type": "string"
         },
-        "macAddresses": {
-          "description": "A listing of all MAC addresses associated with this Host",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
         "physical": {
           "description": "Indicates if this is a physical host, such as a physical server.",
           "type": "boolean"
@@ -121,7 +124,7 @@
           "type": "string"
         }
       },
-      "required": []
+      "required": ["hostname"]
     }
   ]
 }
