@@ -22,10 +22,10 @@
         },
         "hostname": {
           "description": "The primary/local hostname",
-          "type": "string"
+          "type": ["string", "null"]
         },
         "ipAddress": {
-          "description": "The main IP address. This property is usually used to store the primary IP address of a Host.",
+          "description": "A listing of all IP addresses associated with this Host",
           "anyOf": [
             { "type": "string", "format": "ip" },
             {
@@ -77,7 +77,7 @@
           ]
         },
         "macAddress": {
-          "description": "Primary MAC address",
+          "description": "A listing of all MAC addresses associated with this Host",
           "anyOf": [
             { "type": "string" },
             {
