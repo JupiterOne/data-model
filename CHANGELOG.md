@@ -8,6 +8,20 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.50.0 - 2022-06-22
+
+### Changed
+
+- `Host.ipAddress` now allows multiple values. All known IP addresses of a Host
+  should be stored in this property.
+- `Host.ipAddresses` should no longer be submitted and all values currently
+  stored there should be moved to `Host.ipAddress`.
+- `Host.macAddress` now allows multiple values. All known MAC addresses of a
+  Host should be stored in this property.
+- `Host.macAddresses` should no longer be submitted and all values currently
+  stored there should be moved to `Host.macAddress`.
+- `Host.hostname` is now a required property.
+
 ## 0.49.0 - 2022-05-20
 
 - Add `RelationshipClass.RUNS`
