@@ -69,6 +69,11 @@ export enum RelationshipClass {
   ENFORCES = 'ENFORCES',
 
   /**
+   * A relatioship between a Config Rule and any resource.
+   */
+  EVALUATES = 'EVALUATES',
+  
+  /**
    * A relationship between a {Vulnerability, Finding} and Weakness.
    */
   EXPLOITS = 'EXPLOITS',
@@ -187,6 +192,11 @@ export enum RelationshipClass {
 
   REVIEWED = 'REVIEWED',
   REPORTED = 'REPORTED',
+
+  /**
+   * A relationships indicating an Entity performs some sort of task that is the other Entity
+   */
+  RUNS = 'RUNS',
 
   /**
    * A relationships indicating an Entity performs some kind of scan on another Entity.
