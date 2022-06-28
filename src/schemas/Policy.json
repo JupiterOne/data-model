@@ -34,15 +34,8 @@
           "type": "boolean"
         }
       },
-      "required": [
-        "title",
-        "summary",
-        "content"
-      ],
-      "excludes": [
-        "category",
-        "reporter"
-      ]
+      "required": ["title", "summary", "content"],
+      "excludes": ["category", "reporter"]
     }
   ]
 }

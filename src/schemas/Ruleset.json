@@ -12,12 +12,7 @@
         "category": {
           "description": "The category of ruleset.",
           "type": "string",
-          "examples": [
-            "compliance",
-            "config",
-            "password",
-            "other"
-          ]
+          "examples": ["compliance", "config", "password", "other"]
         },
         "rules": {
           "description": "Rules of ruleset. Each rule is written 'as-code' that can be operationalized with a control provider or within JupiterOne's rules engine.",

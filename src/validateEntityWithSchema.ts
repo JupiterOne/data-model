@@ -1,4 +1,4 @@
-import { IntegrationSchema } from ".";
+import { IntegrationSchema } from '.';
 
 /**
  * Validates an entity using the data model schemas, throwing an error when

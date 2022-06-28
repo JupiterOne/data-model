@@ -64,11 +64,7 @@
           }
         }
       },
-      "required": [
-        "category",
-        "summary",
-        "internal"
-      ]
+      "required": ["category", "summary", "internal"]
     }
   ]
 }

@@ -33,7 +33,7 @@
           "description": "The domain portion of the email addresses associated with the user account.",
           "type": "array",
           "items": {
-            "type": "string"          
+            "type": "string"
           }
         },
         "title": {
@@ -97,17 +97,8 @@
           "type": "string"
         }
       },
-      "required": [
-        "firstName",
-        "lastName",
-        "email"
-      ],
-      "excludes": [
-        "owner",
-        "createdOn",
-        "updatedOn",
-        "expiresOn"
-      ]
+      "required": ["firstName", "lastName", "email"],
+      "excludes": ["owner", "createdOn", "updatedOn", "expiresOn"]
     }
   ]
 }

@@ -14,18 +14,11 @@
           "type": "array",
           "items": {
             "type": "string",
-            "examples": [
-              "system",
-              "network",
-              "application",
-              "other"
-            ]
+            "examples": ["system", "network", "application", "other"]
           }
         }
       },
-      "required": [
-        "category"
-      ]
+      "required": ["category"]
     }
   ]
 }
