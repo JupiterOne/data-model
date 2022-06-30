@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.51.0 - 2022-06-30
+
+### Added
+
+- Added `Workflow` entity class.
+
 ## 0.50.0 - 2022-06-22
 
 ### Changed
