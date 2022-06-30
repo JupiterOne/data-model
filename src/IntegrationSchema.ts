@@ -35,6 +35,10 @@ import WorkloadJson from './schemas/Workload.json';
 export const Workload = WorkloadJson;
 IntegrationSchema.addSchema(Workload);
 
+import WorkflowJson from './schemas/Workflow.json';
+export const Workflow = WorkflowJson;
+IntegrationSchema.addSchema(Workflow);
+
 import WeaknessJson from './schemas/Weakness.json';
 export const Weakness = WeaknessJson;
 IntegrationSchema.addSchema(Weakness);
