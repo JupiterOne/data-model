@@ -80,6 +80,6 @@ The metadata attributes `_type` and `_class` are used to define what the asset i
     `mobile_device`.
 
 - `_class`: The value is a string or string array in `TitleCase` using a generic
-  IT or Security terminology to describe the higher level category of the asset.
+  IT or Security term to describe the higher level category of the asset.
 
   > These are defined in [`src/schemas`](src/schemas).
