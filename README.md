@@ -62,10 +62,9 @@ The metadata attributes `_type` and `_class` are used to define what the asset i
   BambooHR or Rippling. The `Person` entity being created should have `_type: 'employee'` or
   `_type: 'contractor'` rather than `_type: 'bamboohr_employee'` or `_type: 'bamboohr_contractor'`.
 
-  Another exception is for data that comes from integration with another ITSM or system, or another
-  asset discovery tool, device management tool, or CMDB. While the system might be a good "source 
-  of truth" or "system or record", they are not the actual vendor of those devices. Here are some 
-  examples:
+  Another exception is data that comes from an integration with another ITSM, asset discovery tool,
+  device management tool, or CMDB. While a system might be a good "source of truth" or "system
+  of record," they are not the actual vendor of those devices.
   
   - If a server or application is ingested from **ServiceNow**, the `_type` should *not* be
     `servicenow_server` or `servicenow_application`. 
