@@ -56,7 +56,6 @@ The metadata attributes `_type` and `_class` are used to define what the asset i
   > For example: `aws_instance`, `google_cloud_function`, `apple_tv`, `sentinelone_agent`
 
   It is important to note that in some cases, `${vendor}_${resource}` may not be ideal or feasible. 
-  Here are some exceptions:
 
   For example, we may have directory data that comes in from an HR integration such as
   BambooHR or Rippling. The `Person` entity being created should have `_type: 'employee'` or
