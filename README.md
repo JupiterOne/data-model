@@ -76,7 +76,7 @@ The metadata attributes `_type` and `_class` are used to define what the asset i
   - If a smartphone/mobile device is managed by Google Workspace and ingested via the integration,
     the `_type` for the device should *not* be `google_mobile_device` because the device could be
     an Apple iPhone and it would be very confusing to call an iPhone a Google mobile device. 
-    Instead, it should be `apple_iphone` (if we know what it is), or just using a generic value of
+    Instead, it should be `apple_iphone` when the type of device is known or a generic value of
     `mobile_device`.
 
 - `_class`: The value is a string or string array in `TitleCase` using a generic
