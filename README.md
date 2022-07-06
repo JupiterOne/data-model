@@ -70,7 +70,7 @@ The metadata attributes `_type` and `_class` are used to define what the asset i
   - If a server or application is ingested from **ServiceNow**, the `_type` should *not* be
     `servicenow_server` or `servicenow_application`. 
 
-  - If a Cisco switch is ingested from **Rumble** or **Netbox**, the `_type` shoule be
+  - If a Cisco switch is ingested from **Rumble** or **Netbox**, the `_type` should be
     `cisco_switch` instead of `rumble_switch` or `netbox_device`. 
 
   - If a smartphone/mobile device is managed by Google Workspace and ingested via the integration,
