@@ -59,7 +59,7 @@ The metadata attributes `_type` and `_class` are used to define what the asset i
   Here are some exceptions:
 
   For example, we may have directory data that comes in from an HR integration such as
-  BambooHR or Rippling. The `Person` entity being created should have `_type: 'employee'` 
+  BambooHR or Rippling. The `Person` entity being created should have `_type: 'employee'` or
   `_type: 'contractor'` rather than `_type: 'bamboohr_employee'` or `_type: 'bamboohr_contractor'`.
 
   Another exception is for data that comes from integration with another ITSM or system, or another
