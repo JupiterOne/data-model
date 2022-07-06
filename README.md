@@ -48,7 +48,7 @@ attributes are dynamically assigned and not defined by the data model.
 Each entity represents an actual operating element (a "thing") that is part of an organization's
 cyber operations or infrastructure. This "thing" can be either physical or logical.
 
-The metadata attributes `_type` and `_class` are used to defined what the asset is:
+The metadata attributes `_type` and `_class` are used to define what the asset is:
 
 - `_type`: The value is a single string typically in the format of `${vendor}_${resource}`
   or `${vendor}_${product}_${resource}` in `snake_case`.
