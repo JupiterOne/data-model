@@ -11,17 +11,27 @@
       "properties": {
         "superAdmin": {
           "description": "Is the role an administrator role?",
-          "type": "boolean"
+          "type": "boolean",
+          "validation": {
+            "method": "type_only"
+          }
         },
         "systemRole": {
           "description": "Is this a system role?",
-          "type": "boolean"
+          "type": "boolean",
+          "validation": {
+            "method": "type_only"
+          }
         },
         "privilegeServiceIds": {
           "description": "The role's privilege service IDs",
           "type": "array",
           "items": {
             "type": "string"
+          },
+          "validation": {
+            "method": "type_only",
+            "array_empty_allowed": false
           }
         },
         "privilegeNames": {
@@ -29,6 +39,10 @@
           "type": "array",
           "items": {
             "type": "string"
+          },
+          "validation": {
+            "method": "type_only",
+            "array_empty_allowed": false
           }
         }
       },

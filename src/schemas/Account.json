@@ -12,11 +12,18 @@
         "accessURL": {
           "description": "The main URL to access this account, e.g. https://jupiterone.okta.com",
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "validation": {
+            "method": "reference",
+            "pattern_reference": "url"
+          }
         },
         "mfaEnabled": {
           "description": "Specifies whether multi-factor authentication (MFA) is enabled/required for users of this account.",
-          "type": "boolean"
+          "type": "boolean",
+          "validation": {
+            "method": "type_only"
+          }
         }
       },
       "required": []

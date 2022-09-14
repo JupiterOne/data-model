@@ -43,6 +43,34 @@ The data model combines the benefit of having vendor/provider specific attribute
 together with abstract/normalized attributes. The vendor/provider specific
 attributes are dynamically assigned and not defined by the data model. 
 
+### Schema Format
+
+#### Property Validation
+
+The `validation` field is an optional field inside of an item in the `properties` field.
+While not enforced, its contents specify a mechanism for validating the values of entity properties.
+
+The fields in a `validation` blob are as follows:
+- `"method"`: (required)
+  - `"type_only"`: Only the type of the property to be checked
+  - `"pattern"`: The specified regex pattern will be used to check the property value.
+  - `"pattern_reference"`: The referenced regex pattern will be used to check the property value.
+  - `"none"`: No validation will be done.
+- `"pattern"`: A regular expression to match against the property value as a string
+  - This will attempt to match the entire value. `^` and `$` are not necessary.
+  - For arrays, this will be applied to each element in the array.
+  - The `\` character must be escaped to make valid JSON
+- `"pattern_reference"`: When `"method" == "pattern_reference"` this is a refernce to the pattern in the [`property_validation_patterns.json`](/src/property_validation_patterns.json) file.
+- `"array_empty_allowed"`: A boolean for whether an empty array is considered valid
+
+Example:
+```
+"validation": {
+  "method": "pattern"
+  "pattern": "hello,\\s(world|user)"
+}
+```
+
 ## The Concept of `_type` and `_class`
 
 Each entity represents an actual operating element (a "thing") that is part of an organization's

@@ -12,27 +12,42 @@
         "COTS": {
           "description": "Indicates if this is a Commercial Off-The-Shelf software application. Custom in-house developed application should have this set to false.",
           "type": "boolean",
-          "default": false
+          "default": false,
+          "validation": {
+            "method": "type_only"
+          }
         },
         "FOSS": {
           "description": "Indicates if this is a Free or Open-Source software application or library. Custom in-house developed application should have this set to false.",
           "type": "boolean",
-          "default": false
+          "default": false,
+          "validation": {
+            "method": "type_only"
+          }
         },
         "SaaS": {
           "description": "Indicates if this is a Software-as-a-Service product.",
           "type": "boolean",
-          "default": false
+          "default": false,
+          "validation": {
+            "method": "type_only"
+          }
         },
         "external": {
           "description": "Indicates if this is an externally acquired software application. Custom in-house developed application should have this set to false.",
           "type": "boolean",
-          "default": false
+          "default": false,
+          "validation": {
+            "method": "type_only"
+          }
         },
         "mobile": {
           "description": "Indicates if this is a mobile app.",
           "type": "boolean",
-          "default": false
+          "default": false,
+          "validation": {
+            "method": "type_only"
+          }
         },
         "license": {
           "description": "Stores the type of license",
@@ -51,38 +66,66 @@
             "Proprietary",
             "UNLICENSED",
             "other"
-          ]
+          ],
+          "validation": {
+            "method": "type_only"
+          }
         },
         "licenseURL": {
           "description": "The URL to the full license",
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "validation": {
+            "method": "reference",
+            "pattern_reference": "url"
+          }
         },
         "productionURL": {
           "description": "The Production URL",
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "validation": {
+            "method": "reference",
+            "pattern_reference": "url"
+          }
         },
         "stagingURL": {
           "description": "The Non-Production / Staging URL",
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "validation": {
+            "method": "reference",
+            "pattern_reference": "url"
+          }
         },
         "devURL": {
           "description": "The Development URL",
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "validation": {
+            "method": "reference",
+            "pattern_reference": "url"
+          }
         },
         "testURL": {
           "description": "The Test URL",
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "validation": {
+            "method": "reference",
+            "pattern_reference": "url"
+          }
         },
         "alternateURLs": {
           "description": "The additional URLs related to this application.",
           "type": "array",
           "items": {
             "type": "string"
+          },
+          "validation": {
+            "method": "reference",
+            "array_empty_allowed": false,
+            "pattern_reference": "url"
           }
         }
       },

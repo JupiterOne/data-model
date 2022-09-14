@@ -11,18 +11,28 @@
       "properties": {
         "admin": {
           "description": "Indicates if the policy grants administrative privilege.",
-          "type": "boolean"
+          "type": "boolean",
+          "validation": {
+            "method": "type_only"
+          }
         },
         "rules": {
           "description": "Rules of this policy. Each rule is written 'as-code' that can be operationalized with a control provider or within JupiterOne's rules engine.",
           "type": "array",
           "items": {
             "type": "string"
+          },
+          "validation": {
+            "method": "type_only",
+            "array_empty_allowed": false
           }
         },
         "content": {
           "description": "Content of a policy contains the raw policy rules, if applicable. For example, the JSON text of an AWS IAM Policy. This is stored in raw data.",
-          "type": "string"
+          "type": "string",
+          "validation": {
+            "method": "type_only"
+          }
         }
       },
       "required": [],
