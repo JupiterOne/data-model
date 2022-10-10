@@ -3,3 +3,4 @@ coverage
 dist
 yarn-error.log
 .idea/
+flat_class_schemas.csv
