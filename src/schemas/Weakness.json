@@ -12,12 +12,7 @@
         "category": {
           "description": "The category of the vulnerability finding",
           "type": "string",
-          "examples": [
-            "application",
-            "system",
-            "infrastructure",
-            "other"
-          ]
+          "examples": ["application", "system", "infrastructure", "other"]
         },
         "exploitability": {
           "description": "Indicates the likelihood of exploit.",

@@ -12,13 +12,7 @@
         "type": {
           "description": "The type of logs",
           "type": "string",
-          "examples": [
-            "network",
-            "system",
-            "application",
-            "access",
-            "other"
-          ]
+          "examples": ["network", "system", "application", "access", "other"]
         }
       },
       "required": []

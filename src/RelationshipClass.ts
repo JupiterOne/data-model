@@ -72,7 +72,7 @@ export enum RelationshipClass {
    * A relatioship between a Config Rule and any resource.
    */
   EVALUATES = 'EVALUATES',
-  
+
   /**
    * A relationship between a {Vulnerability, Finding} and Weakness.
    */
@@ -209,9 +209,9 @@ export enum RelationshipClass {
 
   /**
    * A relationships indicating an Entity sends something to another Entity
-   * 
-   * Examples: 
-   * 
+   *
+   * Examples:
+   *
    * Queue - SENDS -> Queue
    */
   SENDS = 'SENDS',

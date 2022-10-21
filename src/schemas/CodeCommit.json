@@ -28,12 +28,7 @@
           "default": false
         }
       },
-      "required": [
-        "branch",
-        "message",
-        "merge",
-        "versionBump"
-      ]
+      "required": ["branch", "message", "merge", "versionBump"]
     }
   ]
 }

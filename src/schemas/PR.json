@@ -20,12 +20,7 @@
         "state": {
           "description": "The state of the PR.",
           "type": "string",
-          "examples": [
-            "open",
-            "merged",
-            "declined",
-            "superseded"
-          ]
+          "examples": ["open", "merged", "declined", "superseded"]
         },
         "source": {
           "description": "The source branch.",
@@ -48,13 +43,7 @@
           "type": "boolean"
         }
       },
-      "required": [
-        "title",
-        "state",
-        "source",
-        "target",
-        "repository"
-      ]
+      "required": ["title", "state", "source", "target", "repository"]
     }
   ]
 }

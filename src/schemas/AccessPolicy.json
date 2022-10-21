@@ -26,9 +26,7 @@
         }
       },
       "required": [],
-      "excludes": [
-        "status"
-      ]
+      "excludes": ["status"]
     }
   ]
 }
