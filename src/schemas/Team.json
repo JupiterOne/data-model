@@ -16,12 +16,7 @@
         }
       },
       "required": [],
-      "excludes": [
-        "status",
-        "public",
-        "temporary",
-        "expiresOn"
-      ]
+      "excludes": ["status", "public", "temporary", "expiresOn"]
     }
   ]
 }

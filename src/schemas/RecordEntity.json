@@ -28,12 +28,7 @@
         "classification": {
           "description": "The sensitivity of the data; should match company data classification scheme. For example: critical - confidential - internal - public.",
           "type": "string",
-          "examples": [
-            "critical",
-            "confidential",
-            "internal",
-            "public"
-          ]
+          "examples": ["critical", "confidential", "internal", "public"]
         },
         "category": {
           "description": "The category of the official record",
@@ -121,10 +116,7 @@
           "type": "string"
         }
       },
-      "required": [
-        "name",
-        "displayName"
-      ]
+      "required": ["name", "displayName"]
     }
   ]
 }

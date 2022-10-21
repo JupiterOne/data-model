@@ -20,22 +20,12 @@
         "probability": {
           "description": "Probability rating of the risk: '3: high/certain', '2: medium/likely', '1: low/unlikely', '0: none/negligible'.",
           "type": "integer",
-          "examples": [
-            0,
-            1,
-            2,
-            3
-          ]
+          "examples": [0, 1, 2, 3]
         },
         "impact": {
           "description": "Impact rating. '3: high/severe', '2: medium/moderate', '1: low/minor', '0: none/insignificant'.",
           "type": "integer",
-          "examples": [
-            0,
-            1,
-            2,
-            3
-          ]
+          "examples": [0, 1, 2, 3]
         },
         "score": {
           "description": "Overall Risk Score = Probability x Impact",
@@ -64,12 +54,7 @@
           ]
         }
       },
-      "required": [
-        "probability",
-        "impact",
-        "score",
-        "status"
-      ]
+      "required": ["probability", "impact", "score", "status"]
     }
   ]
 }

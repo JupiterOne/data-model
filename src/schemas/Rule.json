@@ -12,12 +12,7 @@
         "category": {
           "description": "The category of ruleset.",
           "type": "string",
-          "examples": [
-            "compliance",
-            "config",
-            "password",
-            "other"
-          ]
+          "examples": ["compliance", "config", "password", "other"]
         },
         "content": {
           "description": "Contents of the rule, if applicable.",
