@@ -1,4 +1,4 @@
-import { resolveSchema, buildIdToSchemaMap } from './utils';
+const { resolveSchema, buildIdToSchemaMap } = require('./utils');
 
 test('resolves an basic single schema', () => {
   const graphObjectSchema = createGraphObjectSchema();
