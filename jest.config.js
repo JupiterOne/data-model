@@ -4,6 +4,7 @@ module.exports = {
   restoreMocks: true,
   testMatch: [
     '<rootDir>/**/*.test.ts',
+    '<rootDir>/**/*.test.js',
     '!**/node_modules/*',
     '!**/dist/*',
     '!**/*.bak/*',
