@@ -68,6 +68,7 @@ describe('schemas', () => {
 describe('Host', () => {
   const requiredProperties = {
     ...requiredGraphObjectProperties,
+    hostname: 'test',
     _class: ['Host'],
   };
 
