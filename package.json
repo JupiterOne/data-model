@@ -15,7 +15,7 @@
     "prebuild": "rm -rf dist/*",
     "build": "yarn tsc --project tsconfig.dist.json --declaration",
     "generate-schema-imports": "./tools/generate-schema-imports.sh",
-    "generate-resolved-schemas": "node tools/generate-resolved-schemas.js src/schemas external/resolvedSchemas.json && prettier --write external/resolvedSchemas.json",
+    "generate-resolved-schemas": "node tools/generate-resolved-schemas/index.js src/schemas external/resolvedSchemas.json && prettier --write external/resolvedSchemas.json",
     "test": "jest",
     "lint": "eslint src --ext .ts,.js",
     "format": "prettier --write '**/*.{ts,js,json,md}'",

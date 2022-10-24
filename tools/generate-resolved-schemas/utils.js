@@ -132,31 +132,21 @@ async function readAllSchemas(dir) {
   for (const file of files) {
     const filePath = path.join(dir, file);
     const schemaBlob = await fs.readFile(filePath);
-    const parsedSchema = JSON.parse(schemaBlob.toString());
+    const schemaString = schemaBlob.toString();
+    try {
+      JSON.parse(schemaString);
+    } catch (err) {
+      console.log(filePath, schemaString);
+    }
+    const parsedSchema = JSON.parse(schemaString);
     schemas.push(parsedSchema);
   }
 
   return schemas;
 }
 
-void (async function () {
-  if (process.argv.length < 3) {
-    console.error(
-      `Not enough arguments supplied.\nUsage: node generate-resolved-schemas.js <schema directory> <output path>`,
-    );
-    return;
-  }
-  const schemaPath = process.argv[2];
-  const outputPath = process.argv[3];
-
-  const schemas = await readAllSchemas(schemaPath);
-  const idToSchemaMap = buildIdToSchemaMap(schemas);
-  const resolvedSchemas = {};
-
-  for (const id of Object.keys(idToSchemaMap)) {
-    const resolvedSchema = resolveSchema(idToSchemaMap, id);
-    resolvedSchemas[id] = resolvedSchema;
-  }
-
-  await fs.writeFile(outputPath, JSON.stringify(resolvedSchemas));
-})();
+module.exports = {
+  readAllSchemas,
+  buildIdToSchemaMap,
+  resolveSchema,
+};
