@@ -184,6 +184,7 @@ export enum RelationshipClass {
    * * CodeRepo - PUBLISHED -> Image
    */
   PUBLISHED = 'PUBLISHED',
+  PUBLISHES = 'PUBLISHES',
 
   /**
    * A relationship indicating an Entity limits or restricts another Entity.
