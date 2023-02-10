@@ -8,6 +8,13 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.53.0 - 2023-02-10
+
+### Changed
+
+- Reduced the minLength requirement of \_type to 3 characters to accommodate
+  `cve`, `cwe` and other abbreviated types.
+
 ## 0.52.0 - 2022-11-09
 
 ### Added

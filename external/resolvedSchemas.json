@@ -24,9 +24,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -247,9 +247,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -468,9 +468,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -694,9 +694,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "accessURL": {
@@ -911,9 +911,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "approved": {
@@ -1067,9 +1067,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -1349,9 +1349,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -1561,9 +1561,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -1816,9 +1816,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -2024,9 +2024,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -2236,9 +2236,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -2444,9 +2444,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -2656,9 +2656,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -2864,9 +2864,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -3087,9 +3087,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "action": {
@@ -3255,9 +3255,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -3462,9 +3462,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -3677,9 +3677,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "approved": {
@@ -3837,9 +3837,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -4045,9 +4045,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -4261,9 +4261,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -4624,9 +4624,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -4846,9 +4846,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -5069,9 +5069,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -5296,9 +5296,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -5535,9 +5535,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -5770,9 +5770,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -5990,9 +5990,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -6210,9 +6210,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -6559,9 +6559,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -6786,9 +6786,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -7029,9 +7029,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -7245,9 +7245,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "abuseContactEmail": {
@@ -7512,9 +7512,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -7759,9 +7759,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -7976,9 +7976,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -8152,9 +8152,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "approved": {
@@ -8384,9 +8384,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -8604,9 +8604,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "description": {
@@ -8666,9 +8666,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -8906,9 +8906,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -9145,9 +9145,9 @@
         ]
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5
+        "minLength": 3
       }
     },
     "patternProperties": {
@@ -9187,9 +9187,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -9395,9 +9395,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -9706,9 +9706,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -9936,9 +9936,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -10144,9 +10144,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -10387,9 +10387,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "CIDR": {
@@ -10439,9 +10439,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -10673,9 +10673,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -10881,9 +10881,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -11098,9 +11098,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -11311,9 +11311,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -11524,9 +11524,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -11731,9 +11731,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -11972,9 +11972,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -12185,9 +12185,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -12652,9 +12652,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "approved": {
@@ -12825,9 +12825,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -13102,9 +13102,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -13388,9 +13388,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "adopted": {
@@ -13552,9 +13552,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "approved": {
@@ -13805,9 +13805,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "adopted": {
@@ -13980,9 +13980,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -14192,9 +14192,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -14418,9 +14418,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -14628,9 +14628,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -14865,9 +14865,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -15077,9 +15077,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -15293,9 +15293,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "approved": {
@@ -15449,9 +15449,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "approved": {
@@ -15582,9 +15582,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -15789,9 +15789,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "approved": {
@@ -15952,9 +15952,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -16160,9 +16160,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "approved": {
@@ -16320,9 +16320,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "approved": {
@@ -16499,9 +16499,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "displayName": { "description": "Display name", "type": "string" }
@@ -16532,9 +16532,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -16749,9 +16749,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -16971,9 +16971,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -17187,9 +17187,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -17395,9 +17395,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -17603,9 +17603,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -17892,9 +17892,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -18133,9 +18133,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -18356,9 +18356,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -18572,9 +18572,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -18780,9 +18780,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -18993,9 +18993,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "approved": {
@@ -19154,9 +19154,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "approved": {
@@ -19310,9 +19310,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -19553,9 +19553,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -19766,9 +19766,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -19970,9 +19970,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -20319,9 +20319,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "approved": {
@@ -20503,9 +20503,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "approved": {
@@ -20652,9 +20652,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
@@ -20856,9 +20856,9 @@
         "inherited": true
       },
       "_type": {
-        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+        "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
         "type": "string",
-        "minLength": 5,
+        "minLength": 3,
         "inherited": true
       },
       "active": {
