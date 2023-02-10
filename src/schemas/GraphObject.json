@@ -30,9 +30,9 @@
       ]
     },
     "_type": {
-      "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint'.",
+      "description": "The type of object, typically reflecting the vendor and resource type. For example, 'aws_iam_user'. In some cases, a system knows about a type of entity that other systems know about, such as 'user_endpoint' or 'cve'.",
       "type": "string",
-      "minLength": 5
+      "minLength": 3
     }
   },
   "patternProperties": {
