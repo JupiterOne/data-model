@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.54.0 - 2023-03-01
+
+### Changed
+
+- Removed `username` and `active` from required User properties.
+
 ## 0.53.0 - 2023-02-10
 
 ### Changed
