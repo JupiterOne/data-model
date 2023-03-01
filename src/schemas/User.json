@@ -53,7 +53,7 @@
           "format": "date-time"
         }
       },
-      "required": ["username", "active"]
+      "required": []
     }
   ]
 }
