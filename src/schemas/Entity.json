@@ -4,7 +4,7 @@
   "description": "A node in the graph database that represents an Entity. This reference schema defines common shared properties among most Entities.",
   "type": "object",
   "allOf": [
-    { "$j1ref": "#GraphObject" },
+    { "$j1ref": "#GraphObject", "$ref": "GraphObject.json" },
     {
       "properties": {
         "id": {

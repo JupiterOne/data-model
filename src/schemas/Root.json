@@ -5,7 +5,8 @@
   "type": "object",
   "allOf": [
     {
-      "$j1ref": "#GraphObject"
+      "$j1ref": "#GraphObject",
+      "$ref": "GraphObject.json"
     },
     {
       "properties": {
