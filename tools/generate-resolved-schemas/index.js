@@ -21,7 +21,7 @@ void (async function () {
 
   for (const id of Object.keys(idToSchemaMap)) {
     const resolvedSchema = resolveSchema(idToSchemaMap, id);
-    resolvedSchemas[id] = resolvedSchema;
+    resolvedSchemas[id.replace('.json', '')] = resolvedSchema;
   }
 
   await fs.writeFile(outputPath, JSON.stringify(resolvedSchemas));
