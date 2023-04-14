@@ -18,7 +18,7 @@ module.exports = {
   setupFilesAfterEnv: ['./jest.env.js'],
   testEnvironment: 'node',
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts', '!src/index.js'],
+  collectCoverageFrom: ['src/**/*.ts', '!src/index.ts'],
   coverageThreshold: {
     global: {
       statements: 100,
