@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#Cluster",
+  "$id": "Cluster.json",
   "description": "A cluster of compute or database resources/workloads.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "#Entity"
+      "$ref": "Entity.json"
     },
     {
       "properties": {},

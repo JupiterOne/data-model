@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#Scanner",
+  "$id": "Scanner.json",
   "description": "A system vulnerability, application code or network infrastructure scanner.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "#Entity"
+      "$ref": "Entity.json"
     },
     {
       "properties": {

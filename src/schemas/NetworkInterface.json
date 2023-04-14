@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#NetworkInterface",
+  "$id": "NetworkInterface.json",
   "description": "An re-assignable software defined network interface resource entity. Do not create an entity for a network interface _configured_ on a Host. Use this only if the network interface is a reusable resource, such as an Elastic Network Interface object in AWS.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "#Entity"
+      "$ref": "Entity.json"
     },
     {
       "properties": {

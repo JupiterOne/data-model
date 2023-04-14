@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#Person",
+  "$id": "Person.json",
   "description": "An entity that represents an actual person, such as an employee of an organization.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "#Entity"
+      "$ref": "Entity.json"
     },
     {
       "properties": {

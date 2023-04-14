@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#Product",
+  "$id": "Product.json",
   "description": "A product developed by the organization, such as a software product.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "#Entity"
+      "$ref": "Entity.json"
     },
     {
       "properties": {

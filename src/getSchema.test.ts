@@ -6,6 +6,6 @@ test('returns undefined if no schema for class', () => {
 
 test('returns schema if it exists for class', () => {
   expect(getSchema('Account')).toMatchObject({
-    $id: '#Account',
+    $id: 'Account.json',
   });
 });

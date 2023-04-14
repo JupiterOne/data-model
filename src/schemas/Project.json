@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#Project",
+  "$id": "Project.json",
   "description": "A software development project. Can be used for other generic projects as well but the defined properties are geared towards software development projects.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "#Entity"
+      "$ref": "Entity.json"
     },
     {
       "properties": {

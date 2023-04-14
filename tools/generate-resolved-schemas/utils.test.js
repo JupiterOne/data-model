@@ -1,6 +1,6 @@
 const { resolveSchema, buildIdToSchemaMap } = require('./utils');
 
-test('resolves an basic single schema', () => {
+test('resolves a basic single schema', () => {
   const graphObjectSchema = createGraphObjectSchema();
   const idToSchemaMap = buildIdToSchemaMap([graphObjectSchema]);
   const resolvedSchema = resolveSchema(idToSchemaMap, graphObjectSchema.$id);
@@ -18,7 +18,7 @@ test('resolves a schema with references to other schemas', () => {
 
   expect(resolvedSchema).toEqual({
     $schema: 'http://json-schema.org/draft-07/schema#',
-    $id: '#Entity',
+    $id: 'Entity.json',
     description:
       'A node in the graph database that represents an Entity. This reference schema defines common shared properties among most Entities.',
     type: 'object',
@@ -253,7 +253,7 @@ test('resolves a schema with references to other schemas without side-effects', 
 function createGraphObjectSchema() {
   return {
     $schema: 'http://json-schema.org/draft-07/schema#',
-    $id: '#GraphObject',
+    $id: 'GraphObject.json',
     description:
       'Standard metadata properties of a graph object, maintained by the system. These are visible to users but may not be directly modified.',
     type: 'object',
@@ -316,12 +316,12 @@ function createGraphObjectSchema() {
 function createEntitySchema() {
   return {
     $schema: 'http://json-schema.org/draft-07/schema#',
-    $id: '#Entity',
+    $id: 'Entity.json',
     description:
       'A node in the graph database that represents an Entity. This reference schema defines common shared properties among most Entities.',
     type: 'object',
     allOf: [
-      { $ref: '#GraphObject' },
+      { $ref: 'GraphObject.json' },
       {
         properties: {
           id: {

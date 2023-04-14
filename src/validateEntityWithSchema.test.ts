@@ -221,7 +221,7 @@ describe('#DataObject', () => {
   });
 });
 
-describe('#DataCollection', () => {
+describe('DataCollection', () => {
   function createDataCollectionEntity(partial?: Record<string, any>): any {
     return {
       ...requiredGraphObjectProperties,

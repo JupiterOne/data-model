@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#AccessRole",
+  "$id": "AccessRole.json",
   "description": "An access control role mapped to a Principal (e.g. user, group, or service).",
   "type": "object",
   "allOf": [
     {
-      "$ref": "#Entity"
+      "$ref": "Entity.json"
     },
     {
       "properties": {

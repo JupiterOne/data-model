@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#Review",
+  "$id": "Review.json",
   "description": "A review record.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "#RecordEntity"
+      "$ref": "RecordEntity.json"
     },
     {
       "properties": {

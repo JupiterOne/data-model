@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#Framework",
+  "$id": "Framework.json",
   "description": "An object to represent a standard compliance or technical security framework.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "#GraphObject"
+      "$ref": "GraphObject.json"
     },
     {
       "properties": {

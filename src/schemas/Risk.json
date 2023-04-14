@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#Risk",
+  "$id": "Risk.json",
   "description": "An object that represents an identified Risk as the result of an Assessment. The collection of Risk objects in JupiterOne make up the Risk Register. A Control may have a `MITIGATES` relationship to a Risk.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "#RecordEntity"
+      "$ref": "RecordEntity.json"
     },
     {
       "properties": {

@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#Incident",
+  "$id": "Incident.json",
   "description": "An operational or security incident. An event that negatively affects the confidentiality, integrity or availability of an organization's assets.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "#Entity"
+      "$ref": "Entity.json"
     },
     {
       "properties": {

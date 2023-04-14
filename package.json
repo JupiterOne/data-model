@@ -13,6 +13,7 @@
   },
   "scripts": {
     "prebuild": "rm -rf dist/*",
+    "generate-ts-classes": "rm -rf src/types && mkdir src/types && json2ts -i 'src/schemas/*.json' -o src/types  --cwd=src/schemas --declareExternallyReferenced=false && ts-dedupe --duplicatesFile=src/types/Base.ts",
     "build": "yarn tsc --project tsconfig.dist.json --declaration",
     "generate-schema-imports": "./tools/generate-schema-imports.sh",
     "generate-resolved-schemas": "node tools/generate-resolved-schemas/index.js src/schemas external/resolvedSchemas.json && prettier --write external/resolvedSchemas.json",
@@ -39,6 +40,8 @@
     "prettier": "^2.2.1",
     "ts-jest": "^26.5.4",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "json-schema-to-typescript": "^12.0.0",
+    "ts-dedupe": "^0.3.1"
   }
 }

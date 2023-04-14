@@ -57,7 +57,7 @@ function resolveProperties(idToSchemas, id) {
   // The top-level schema that all other schemas inherit from is
   // GraphObject. It defines properties at the top-level. This is
   // used as the base case.
-  if (schema.$id === '#GraphObject') {
+  if (schema.$id === 'GraphObject.json') {
     return schema.properties;
   }
 

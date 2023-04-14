@@ -6,7 +6,7 @@ import { IntegrationSchema } from '.';
  */
 export function validateEntityWithSchema(entity: { _class: string[] }): void {
   for (const c of entity._class) {
-    const validate = IntegrationSchema.getSchema(`#${c}`);
+    const validate = IntegrationSchema.getSchema(`${c}.json`);
     if (!validate) {
       throw new Error(`Could not find schema for class ${c}!`);
     }
