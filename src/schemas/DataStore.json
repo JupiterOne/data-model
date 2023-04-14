@@ -1,11 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#DataStore",
+  "$id": "DataStore.json",
   "description": "A virtual repository where data is stored, such as aws-s3-bucket, aws-rds-cluster, aws-dynamodb-table, bitbucket-repo, sharepoint-site, docker-registry. The exact type is described in the _type property of the Entity.",
   "type": "object",
   "allOf": [
     {
-      "$j1ref": "#Entity",
       "$ref": "Entity.json"
     },
     {

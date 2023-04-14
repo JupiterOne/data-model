@@ -1,11 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#Network",
+  "$id": "Network.json",
   "description": "A network, such as an aws-vpc, aws-subnet, cisco-meraki-vlan.",
   "type": "object",
   "allOf": [
     {
-      "$j1ref": "#Entity",
       "$ref": "Entity.json"
     },
     {

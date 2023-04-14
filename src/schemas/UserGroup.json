@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#UserGroup",
+  "$id": "UserGroup.json",
   "description": "A user group, typically associated with some type of access control, such as a group in Okta or in Office365. If a UserGroup has an access policy attached, and all member Users of the UserGroup would inherit the policy.",
   "type": "object",
   "allOf": [
-    { "$j1ref": "#Entity" },
+    { "$ref": "Entity.json" },
     {
       "properties": {
         "email": {

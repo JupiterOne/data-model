@@ -1,11 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#Model",
+  "$id": "Model.json",
   "description": "A system of postulates, data, and inferences presented as a mathematical description of an entity or state of affairs. For example, a machine learning model.",
   "type": "object",
   "allOf": [
     {
-      "$j1ref": "#Entity",
       "$ref": "Entity.json"
     },
     {

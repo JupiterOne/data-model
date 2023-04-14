@@ -1,11 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#DataObject",
+  "$id": "DataObject.json",
   "description": "An individual data object, such as an aws-s3-object, sharepoint-document, source-code, or a file (on disk). The exact data type is described in the _type property of the Entity.",
   "type": "object",
   "allOf": [
     {
-      "$j1ref": "#Entity",
       "$ref": "Entity.json"
     },
     {

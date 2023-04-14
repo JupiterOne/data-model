@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#Gateway",
+  "$id": "Gateway.json",
   "description": "A gateway/proxy that can be a system/appliance or software service, such as a network router or application gateway.",
   "type": "object",
   "allOf": [
-    { "$j1ref": "#Entity" },
+    { "$ref": "Entity.json" },
     {
       "properties": {
         "category": {

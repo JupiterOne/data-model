@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#User",
+  "$id": "User.json",
   "description": "A user account/login to access certain systems and/or services. Examples include okta-user, aws-iam-user, ssh-user, local-user (on a host), etc.",
   "type": "object",
   "allOf": [
-    { "$j1ref": "#Entity" },
+    { "$ref": "Entity.json" },
     {
       "properties": {
         "username": {

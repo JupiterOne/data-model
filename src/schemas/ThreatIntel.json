@@ -1,11 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#ThreatIntel",
+  "$id": "ThreatIntel.json",
   "description": "Threat intelligence captures information collected from vulnerability risk analysis by those with substantive expertise and access to all-source information. Threat intelligence helps a security professional determine the risk of a vulnerability finding to their organization.",
   "type": "object",
   "allOf": [
     {
-      "$j1ref": "#RecordEntity",
       "$ref": "RecordEntity.json"
     },
     {

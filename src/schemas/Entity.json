@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#Entity",
+  "$id": "Entity.json",
   "description": "A node in the graph database that represents an Entity. This reference schema defines common shared properties among most Entities.",
   "type": "object",
   "allOf": [
-    { "$j1ref": "#GraphObject", "$ref": "GraphObject.json" },
+    { "$ref": "GraphObject.json" },
     {
       "properties": {
         "id": {

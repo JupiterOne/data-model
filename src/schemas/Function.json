@@ -1,11 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#Function",
+  "$id": "Function.json",
   "description": "A virtual application function. For example, an aws_lambda_function, azure_function, or google_cloud_function",
   "type": "object",
   "allOf": [
     {
-      "$j1ref": "#Entity",
       "$ref": "Entity.json"
     },
     {
