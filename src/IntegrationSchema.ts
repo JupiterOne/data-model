@@ -1,104 +1,36 @@
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
-import AccessKeyJson from './schemas/AccessKey.json';
-import AccessPolicyJson from './schemas/AccessPolicy.json';
-import AccessRoleJson from './schemas/AccessRole.json';
-import AccountJson from './schemas/Account.json';
-import AlertJson from './schemas/Alert.json';
-import ApplicationJson from './schemas/Application.json';
-import ApplicationEndpointJson from './schemas/ApplicationEndpoint.json';
-import AssessmentJson from './schemas/Assessment.json';
-import AttackerJson from './schemas/Attacker.json';
-import BackupJson from './schemas/Backup.json';
-import CertificateJson from './schemas/Certificate.json';
-import ChannelJson from './schemas/Channel.json';
-import ClusterJson from './schemas/Cluster.json';
-import CodeCommitJson from './schemas/CodeCommit.json';
-import CodeDeployJson from './schemas/CodeDeploy.json';
-import CodeModuleJson from './schemas/CodeModule.json';
-import CodeRepoJson from './schemas/CodeRepo.json';
-import CodeReviewJson from './schemas/CodeReview.json';
-import ConfigurationJson from './schemas/Configuration.json';
-import ContainerJson from './schemas/Container.json';
-import ControlJson from './schemas/Control.json';
-import ControlPolicyJson from './schemas/ControlPolicy.json';
-import CryptoKeyJson from './schemas/CryptoKey.json';
-import DatabaseJson from './schemas/Database.json';
-import DataCollectionJson from './schemas/DataCollection.json';
-import DataObjectJson from './schemas/DataObject.json';
-import DataStoreJson from './schemas/DataStore.json';
-import DeploymentJson from './schemas/Deployment.json';
-import DeviceJson from './schemas/Device.json';
-import DirectoryJson from './schemas/Directory.json';
-import DiskJson from './schemas/Disk.json';
-import DocumentJson from './schemas/Document.json';
-import DomainJson from './schemas/Domain.json';
-import DomainRecordJson from './schemas/DomainRecord.json';
-import DomainZoneJson from './schemas/DomainZone.json';
-import EntityJson from './schemas/Entity.json';
-import FindingJson from './schemas/Finding.json';
-import FirewallJson from './schemas/Firewall.json';
-import FrameworkJson from './schemas/Framework.json';
-import FunctionJson from './schemas/Function.json';
-import GatewayJson from './schemas/Gateway.json';
-import GraphObjectJson from './schemas/GraphObject.json';
-import GroupJson from './schemas/Group.json';
-import HostJson from './schemas/Host.json';
-import HostAgentJson from './schemas/HostAgent.json';
-import ImageJson from './schemas/Image.json';
-import IncidentJson from './schemas/Incident.json';
-import InternetJson from './schemas/Internet.json';
-import IpAddressJson from './schemas/IpAddress.json';
-import IssueJson from './schemas/Issue.json';
-import KeyJson from './schemas/Key.json';
-import LogsJson from './schemas/Logs.json';
-import ModelJson from './schemas/Model.json';
-import ModuleJson from './schemas/Module.json';
-import NetworkJson from './schemas/Network.json';
-import NetworkEndpointJson from './schemas/NetworkEndpoint.json';
-import NetworkInterfaceJson from './schemas/NetworkInterface.json';
-import OrganizationJson from './schemas/Organization.json';
-import PasswordPolicyJson from './schemas/PasswordPolicy.json';
-import PersonJson from './schemas/Person.json';
-import PolicyJson from './schemas/Policy.json';
-import PRJson from './schemas/PR.json';
-import ProblemJson from './schemas/Problem.json';
-import ProcedureJson from './schemas/Procedure.json';
-import ProcessJson from './schemas/Process.json';
-import ProductJson from './schemas/Product.json';
-import ProgramJson from './schemas/Program.json';
-import ProjectJson from './schemas/Project.json';
-import QuestionJson from './schemas/Question.json';
-import QueueJson from './schemas/Queue.json';
-import RecordJson from './schemas/Record.json';
-import RecordEntityJson from './schemas/RecordEntity.json';
-import RepositoryJson from './schemas/Repository.json';
-import RequirementJson from './schemas/Requirement.json';
-import ResourceJson from './schemas/Resource.json';
-import ReviewJson from './schemas/Review.json';
-import RiskJson from './schemas/Risk.json';
-import RootJson from './schemas/Root.json';
-import RuleJson from './schemas/Rule.json';
-import RulesetJson from './schemas/Ruleset.json';
-import ScannerJson from './schemas/Scanner.json';
-import SecretJson from './schemas/Secret.json';
-import SectionJson from './schemas/Section.json';
-import ServiceJson from './schemas/Service.json';
-import SiteJson from './schemas/Site.json';
-import StandardJson from './schemas/Standard.json';
-import SubscriptionJson from './schemas/Subscription.json';
-import TaskJson from './schemas/Task.json';
-import TeamJson from './schemas/Team.json';
-import ThreatIntelJson from './schemas/ThreatIntel.json';
-import TrainingJson from './schemas/Training.json';
-import UserJson from './schemas/User.json';
-import UserGroupJson from './schemas/UserGroup.json';
-import VaultJson from './schemas/Vault.json';
-import VendorJson from './schemas/Vendor.json';
-import VulnerabilityJson from './schemas/Vulnerability.json';
-import WeaknessJson from './schemas/Weakness.json';
-import WorkflowJson from './schemas/Workflow.json';
-// Schema Imports : generated by tools/generate-schema-imports.sh
+
+const ipv4 = addFormats.get('ipv4') as RegExp;
+const ipv6 = addFormats.get('ipv6') as RegExp;
+
+// JSON Schema allows an object to contain properties that are not specified by
+// the schema. This can be disabled with `additionalProperties: false`. Ajv then
+// supports a `removeAdditional` option, directing it to remove any properties
+// from an object which are not specified in the schema.
+//
+// We need to allow additional properties in practice because:
+//
+// 1) we already have a lot of integrations throwing all sorts of custom
+//    properties on entities and
+// 2) when an entity has multiple classes, each schema needs to allow for
+//    properties from other schemas.
+/**
+ * An Ajv schema for integration graph objects, useful for validating that
+ * entities conform to minimum requirements.
+ */
+export const IntegrationSchema = new Ajv({
+  // Ignore "excludes", "multiple"; used in JupiterOne UI?
+  strictSchema: false,
+  formats: {
+    ip: (x) => ipv4.test(x) || ipv6.test(x),
+  },
+});
+
+// Install ajv-formats
+addFormats(IntegrationSchema);
+
+// Schema Imports
 import WorkloadJson from './schemas/Workload.json';
 export const Workload = WorkloadJson;
 IntegrationSchema.addSchema(Workload);
