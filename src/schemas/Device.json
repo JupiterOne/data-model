@@ -4,7 +4,7 @@
   "description": "A physical device or media, such as a server, laptop, workstation, smartphone, tablet, router, firewall, switch, wifi-access-point, usb-drive, etc. The exact data type is described in the _type property of the Entity.",
   "type": "object",
   "allOf": [
-    { "$ref": "#Entity" },
+    { "$j1ref": "#Entity" },
     {
       "properties": {
         "category": {

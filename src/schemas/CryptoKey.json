@@ -5,7 +5,8 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "#Key"
+      "$j1ref": "#Key",
+      "$ref": "Key.json"
     },
     {
       "properties": {},

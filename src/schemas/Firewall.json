@@ -4,7 +4,7 @@
   "description": "A piece of hardware or software that protects a network/host/application.",
   "type": "object",
   "allOf": [
-    { "$ref": "#Entity" },
+    { "$j1ref": "#Entity" },
     {
       "properties": {
         "category": {

@@ -4,7 +4,7 @@
   "description": "A user account/login to access certain systems and/or services. Examples include okta-user, aws-iam-user, ssh-user, local-user (on a host), etc.",
   "type": "object",
   "allOf": [
-    { "$ref": "#Entity" },
+    { "$j1ref": "#Entity" },
     {
       "properties": {
         "username": {

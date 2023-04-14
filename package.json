@@ -13,6 +13,7 @@
   },
   "scripts": {
     "prebuild": "rm -rf dist/*",
+    "generate-ts-classes": "json2ts -i 'src/schemas/*.json' -o src/types  --unreachableDefinitions --cwd=src/schemas --declareExternallyReferenced=false",
     "build": "yarn tsc --project tsconfig.dist.json --declaration",
     "generate-schema-imports": "./tools/generate-schema-imports.sh",
     "generate-resolved-schemas": "node tools/generate-resolved-schemas/index.js src/schemas external/resolvedSchemas.json && prettier --write external/resolvedSchemas.json",
@@ -24,7 +25,8 @@
   },
   "dependencies": {
     "ajv": "^8.0.0",
-    "ajv-formats": "^2.0.0"
+    "ajv-formats": "^2.0.0",
+    "json-schema-to-typescript": "^12.0.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.22",

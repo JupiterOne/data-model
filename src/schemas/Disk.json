@@ -5,7 +5,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "#DataStore"
+      "$j1ref": "#DataStore"
     }
   ]
 }

@@ -4,7 +4,7 @@
   "description": "A database cluster/instance.",
   "type": "object",
   "allOf": [
-    { "$ref": "#Entity" },
+    { "$j1ref": "#Entity" },
     {
       "properties": {
         "location": {

@@ -5,7 +5,8 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "#RecordEntity"
+      "$j1ref": "#RecordEntity",
+      "$ref": "RecordEntity.json"
     },
     {
       "properties": {

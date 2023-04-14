@@ -63,8 +63,10 @@ function resolveProperties(idToSchemas, id) {
 
   if (schema.allOf) {
     for (const obj of schema.allOf) {
-      if ('$ref' in obj) {
-        const parentProperties = resolveProperties(idToSchemas, obj['$ref']);
+      // We use $j1ref here so we can maintain valid json schema while still building our custom resolved schema json
+      // file
+      if ('$j1ref' in obj) {
+        const parentProperties = resolveProperties(idToSchemas, obj['$j1ref']);
 
         resolvedProperties = {
           ...addInheritedToProperties(parentProperties),

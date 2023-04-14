@@ -4,7 +4,7 @@
   "description": "A gateway/proxy that can be a system/appliance or software service, such as a network router or application gateway.",
   "type": "object",
   "allOf": [
-    { "$ref": "#Entity" },
+    { "$j1ref": "#Entity" },
     {
       "properties": {
         "category": {
