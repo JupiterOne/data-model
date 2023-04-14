@@ -9,3 +9,8 @@ test('returns schema if it exists for class', () => {
     $id: 'Account.json',
   });
 });
+test('returns schema if it exists for class even with .json', () => {
+  expect(getSchema('Account.json')).toMatchObject({
+    $id: 'Account.json',
+  });
+});
