@@ -1,5 +1,5 @@
 {
-  "AccessKey": {
+  "#AccessKey": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "AccessKey.json",
     "description": "A key used to grant access, such as ssh-key, access-key, api-key/token, mfa-token/device, etc.",
@@ -222,7 +222,7 @@
       }
     }
   },
-  "AccessPolicy": {
+  "#AccessPolicy": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "AccessPolicy.json",
     "description": "A policy for access control assigned to a Host, Role, User, UserGroup, or Service.",
@@ -443,7 +443,7 @@
       }
     }
   },
-  "AccessRole": {
+  "#AccessRole": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "AccessRole.json",
     "description": "An access control role mapped to a Principal (e.g. user, group, or service).",
@@ -669,7 +669,7 @@
       }
     }
   },
-  "Account": {
+  "#Account": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Account.json",
     "description": "An organizational account for a service or a set of services (e.g. AWS, Okta, Bitbucket Team, Google G-Suite account, Apple Developer Account). Each Account should be connected to a Service.",
@@ -886,7 +886,7 @@
       }
     }
   },
-  "Alert": {
+  "#Alert": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Alert.json",
     "description": "A notice of any unusual or dangerous circumstance that is sent to responsible parties for the purpose of triggering action.",
@@ -1042,7 +1042,7 @@
       }
     }
   },
-  "Application": {
+  "#Application": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Application.json",
     "description": "A software product or application.",
@@ -1324,7 +1324,7 @@
       }
     }
   },
-  "ApplicationEndpoint": {
+  "#ApplicationEndpoint": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "ApplicationEndpoint.json",
     "description": "An application endpoint is a program interface that either initiates or receives a request, such as an API.",
@@ -1536,7 +1536,7 @@
       }
     }
   },
-  "Assessment": {
+  "#Assessment": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Assessment.json",
     "description": "An object to represent an assessment, including both compliance assessment such as a HIPAA Risk Assessment or a technical assessment such as a Penetration Testing. Each assessment should have findings (e.g. Vulnerability or Risk) associated.",
@@ -1791,7 +1791,7 @@
       }
     }
   },
-  "Attacker": {
+  "#Attacker": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Attacker.json",
     "description": "An attacker or threat actor.",
@@ -1999,7 +1999,7 @@
       }
     }
   },
-  "Backup": {
+  "#Backup": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Backup.json",
     "description": "A specific repository or data store containing backup data.",
@@ -2211,7 +2211,7 @@
       }
     }
   },
-  "Certificate": {
+  "#Certificate": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Certificate.json",
     "description": "A digital Certificate such as an SSL or S/MIME certificate.",
@@ -2419,7 +2419,7 @@
       }
     }
   },
-  "Channel": {
+  "#Channel": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Channel.json",
     "description": "A communication channel, such as a Slack channel or AWS SNS topic.",
@@ -2631,7 +2631,7 @@
       }
     }
   },
-  "Cluster": {
+  "#Cluster": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Cluster.json",
     "description": "A cluster of compute or database resources/workloads.",
@@ -2839,7 +2839,7 @@
       }
     }
   },
-  "CodeCommit": {
+  "#CodeCommit": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "CodeCommit.json",
     "description": "A code commit to a repo. The commit id is captured in the _id property of the Entity.",
@@ -3062,7 +3062,7 @@
       }
     }
   },
-  "CodeDeploy": {
+  "#CodeDeploy": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "CodeDeploy.json",
     "description": "A code deploy job.",
@@ -3230,7 +3230,7 @@
       }
     }
   },
-  "CodeModule": {
+  "#CodeModule": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "CodeModule.json",
     "description": "A software module. Such as an npm_module or java_library.",
@@ -3437,7 +3437,7 @@
       }
     }
   },
-  "CodeRepo": {
+  "#CodeRepo": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "CodeRepo.json",
     "description": "A source code repository. A CodeRepo is also a DataRepository therefore should carry all the required properties of DataRepository.",
@@ -3652,7 +3652,7 @@
       }
     }
   },
-  "CodeReview": {
+  "#CodeReview": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "CodeReview.json",
     "description": "A code review record.",
@@ -3812,7 +3812,7 @@
       }
     }
   },
-  "Configuration": {
+  "#Configuration": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Configuration.json",
     "description": "A Configuration contains definitions that describe a resource such as a Task, Deployment or Workload. For example, an `aws_ecs_task_definition` is a `Configuration`.",
@@ -4020,7 +4020,7 @@
       }
     }
   },
-  "Container": {
+  "#Container": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Container.json",
     "description": "A standard unit of software that packages up code and all its dependencies and configurations.",
@@ -4236,7 +4236,7 @@
       }
     }
   },
-  "Control": {
+  "#Control": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Control.json",
     "description": "A security or IT Control. A control can be implemented by a vendor/service, a person/team, a program/process, an automation code/script/configuration, or a system/host/device. Therefore, this is most likely an additional Class applied to a Service (e.g. Okta SSO), a Device (e.g. a physical firewall), or a HostAgent (e.g. Carbon Black CbDefense Agent). Controls are mapped to security policy procedures and compliance standards/requirements.",
@@ -4599,7 +4599,7 @@
       }
     }
   },
-  "ControlPolicy": {
+  "#ControlPolicy": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "ControlPolicy.json",
     "description": "An technical or operational policy with rules that govern (or enforce, evaluate, monitor) a security control.",
@@ -4821,7 +4821,7 @@
       }
     }
   },
-  "CryptoKey": {
+  "#CryptoKey": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "CryptoKey.json",
     "description": "A key used to perform cryptographic functions, such as an encryption key.",
@@ -5044,7 +5044,7 @@
       }
     }
   },
-  "DataCollection": {
+  "#DataCollection": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "DataCollection.json",
     "description": "An individual collection of data. The collection may exist in various formats, such as a table (e.g. a MySQL table). The exact data type is described in the _type property of the Entity.",
@@ -5271,7 +5271,7 @@
       }
     }
   },
-  "DataObject": {
+  "#DataObject": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "DataObject.json",
     "description": "An individual data object, such as an aws-s3-object, sharepoint-document, source-code, or a file (on disk). The exact data type is described in the _type property of the Entity.",
@@ -5510,7 +5510,7 @@
       }
     }
   },
-  "DataStore": {
+  "#DataStore": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "DataStore.json",
     "description": "A virtual repository where data is stored, such as aws-s3-bucket, aws-rds-cluster, aws-dynamodb-table, bitbucket-repo, sharepoint-site, docker-registry. The exact type is described in the _type property of the Entity.",
@@ -5745,7 +5745,7 @@
       }
     }
   },
-  "Database": {
+  "#Database": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Database.json",
     "description": "A database cluster/instance.",
@@ -5965,7 +5965,7 @@
       }
     }
   },
-  "Deployment": {
+  "#Deployment": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Deployment.json",
     "description": "A deployment of code, application, infrastructure or service. For example, a Kubernetes deployment. An auto scaling group is also considered a deployment.",
@@ -6185,7 +6185,7 @@
       }
     }
   },
-  "Device": {
+  "#Device": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Device.json",
     "description": "A physical device or media, such as a server, laptop, workstation, smartphone, tablet, router, firewall, switch, wifi-access-point, usb-drive, etc. The exact data type is described in the _type property of the Entity.",
@@ -6534,7 +6534,7 @@
       }
     }
   },
-  "Directory": {
+  "#Directory": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Directory.json",
     "description": "Directory, such as LDAP or Active Directory.",
@@ -6761,7 +6761,7 @@
       }
     }
   },
-  "Disk": {
+  "#Disk": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Disk.json",
     "description": "A disk storage device such as an AWS EBS volume",
@@ -7004,7 +7004,7 @@
       }
     }
   },
-  "Document": {
+  "#Document": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Document.json",
     "description": "A document or data object.",
@@ -7220,7 +7220,7 @@
       }
     }
   },
-  "Domain": {
+  "#Domain": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Domain.json",
     "description": "An internet domain.",
@@ -7487,7 +7487,7 @@
       }
     }
   },
-  "DomainRecord": {
+  "#DomainRecord": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "DomainRecord.json",
     "description": "The DNS Record of a Domain Zone.",
@@ -7734,7 +7734,7 @@
       }
     }
   },
-  "DomainZone": {
+  "#DomainZone": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "DomainZone.json",
     "description": "The DNS Zone of an Internet Domain.",
@@ -7951,7 +7951,7 @@
       }
     }
   },
-  "Entity": {
+  "#Entity": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Entity.json",
     "description": "A node in the graph database that represents an Entity. This reference schema defines common shared properties among most Entities.",
@@ -8127,7 +8127,7 @@
       }
     }
   },
-  "Finding": {
+  "#Finding": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Finding.json",
     "description": "A security finding, which may be a vulnerability or just an informative issue. A single finding may impact one or more resources. The `IMPACTS` relationship between the Vulnerability and the resource entity that was impacted serves as the record of the finding. The `IMPACTS` relationship carries properties such as 'identifiedOn', 'remediatedOn', 'remediationDueOn', 'issueLink', etc.",
@@ -8359,7 +8359,7 @@
       }
     }
   },
-  "Firewall": {
+  "#Firewall": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Firewall.json",
     "description": "A piece of hardware or software that protects a network/host/application.",
@@ -8579,7 +8579,7 @@
       }
     }
   },
-  "Framework": {
+  "#Framework": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Framework.json",
     "description": "An object to represent a standard compliance or technical security framework.",
@@ -8641,7 +8641,7 @@
       }
     }
   },
-  "Function": {
+  "#Function": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Function.json",
     "description": "A virtual application function. For example, an aws_lambda_function, azure_function, or google_cloud_function",
@@ -8881,7 +8881,7 @@
       }
     }
   },
-  "Gateway": {
+  "#Gateway": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Gateway.json",
     "description": "A gateway/proxy that can be a system/appliance or software service, such as a network router or application gateway.",
@@ -9121,7 +9121,7 @@
       }
     }
   },
-  "GraphObject": {
+  "#GraphObject": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "GraphObject.json",
     "description": "Standard metadata properties of a graph object, maintained by the system. These are visible to users but may not be directly modified.",
@@ -9162,7 +9162,7 @@
     },
     "required": ["_key", "_class", "_type"]
   },
-  "Group": {
+  "#Group": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Group.json",
     "description": "A defined, generic group of Entities. This could represent a group of Resources, Users, Workloads, DataRepositories, etc.",
@@ -9370,7 +9370,7 @@
       }
     }
   },
-  "Host": {
+  "#Host": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Host.json",
     "description": "A compute instance that itself owns a whole network stack and serves as an environment for workloads. Typically it runs an operating system. The exact host type is described in the _type property of the Entity. The UUID of the host should be captured in the _id property of the Entity",
@@ -9681,7 +9681,7 @@
       }
     }
   },
-  "HostAgent": {
+  "#HostAgent": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "HostAgent.json",
     "description": "A software agent or sensor that runs on a host/endpoint.",
@@ -9911,7 +9911,7 @@
       }
     }
   },
-  "Image": {
+  "#Image": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Image.json",
     "description": "A system image. For example, an AWS AMI (Amazon Machine Image).",
@@ -10119,7 +10119,7 @@
       }
     }
   },
-  "Incident": {
+  "#Incident": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Incident.json",
     "description": "An operational or security incident. An event that negatively affects the confidentiality, integrity or availability of an organization's assets.",
@@ -10362,7 +10362,7 @@
       }
     }
   },
-  "Internet": {
+  "#Internet": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Internet.json",
     "description": "The Internet node in the graph. There should be only one Internet node.",
@@ -10414,7 +10414,7 @@
       }
     }
   },
-  "IpAddress": {
+  "#IpAddress": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "IpAddress.json",
     "description": "An re-assignable IpAddress resource entity. Do not create an entity for an IP Address _configured_ on a Host. Use this only if the IP Address is a reusable resource, such as an Elastic IP Address object in AWS.",
@@ -10648,7 +10648,7 @@
       }
     }
   },
-  "Issue": {
+  "#Issue": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Issue.json",
     "description": "An issue as used by GitHub, Jira, or other project trackers.",
@@ -10856,7 +10856,7 @@
       }
     }
   },
-  "Key": {
+  "#Key": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Key.json",
     "description": "An ssh-key, access-key, api-key/token, pgp-key, etc.",
@@ -11073,7 +11073,7 @@
       }
     }
   },
-  "Logs": {
+  "#Logs": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Logs.json",
     "description": "A specific repository or destination containing application, network, or system logs.",
@@ -11286,7 +11286,7 @@
       }
     }
   },
-  "Model": {
+  "#Model": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Model.json",
     "description": "A system of postulates, data, and inferences presented as a mathematical description of an entity or state of affairs. For example, a machine learning model.",
@@ -11499,7 +11499,7 @@
       }
     }
   },
-  "Module": {
+  "#Module": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Module.json",
     "description": "A software or hardware module. Such as an npm_module or java_library.",
@@ -11706,7 +11706,7 @@
       }
     }
   },
-  "Network": {
+  "#Network": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Network.json",
     "description": "A network, such as an aws-vpc, aws-subnet, cisco-meraki-vlan.",
@@ -11947,7 +11947,7 @@
       }
     }
   },
-  "NetworkEndpoint": {
+  "#NetworkEndpoint": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "NetworkEndpoint.json",
     "description": "A network endpoint for connecting to or accessing network resources. For example, NFS mount targets or VPN endpoints.",
@@ -12160,7 +12160,7 @@
       }
     }
   },
-  "NetworkInterface": {
+  "#NetworkInterface": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "NetworkInterface.json",
     "description": "An re-assignable software defined network interface resource entity. Do not create an entity for a network interface _configured_ on a Host. Use this only if the network interface is a reusable resource, such as an Elastic Network Interface object in AWS.",
@@ -12399,7 +12399,7 @@
       }
     }
   },
-  "Organization": {
+  "#Organization": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Organization.json",
     "description": "An organization, such as a company (e.g. JupiterOne) or a business unit (e.g. HR). An organization can be internal or external. Note that there is a more specific Vendor class.",
@@ -12627,7 +12627,7 @@
       }
     }
   },
-  "PR": {
+  "#PR": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "PR.json",
     "description": "A pull request.",
@@ -12800,7 +12800,7 @@
       }
     }
   },
-  "PasswordPolicy": {
+  "#PasswordPolicy": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "PasswordPolicy.json",
     "description": "A password policy is a specific `Ruleset`. It is separately defined because of its pervasive usage across digital environments and the well known properties (such as length and complexity) unique to a password policy.",
@@ -13077,7 +13077,7 @@
       }
     }
   },
-  "Person": {
+  "#Person": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Person.json",
     "description": "An entity that represents an actual person, such as an employee of an organization.",
@@ -13363,7 +13363,7 @@
       }
     }
   },
-  "Policy": {
+  "#Policy": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Policy.json",
     "description": "A written policy documentation.",
@@ -13527,7 +13527,7 @@
       }
     }
   },
-  "Problem": {
+  "#Problem": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Problem.json",
     "description": "A problem identified from the analysis and correlation of assets and findings that is a notable issue worthy of action. It could be (or become) the cause, or potential cause, of one or more incidents or findings.",
@@ -13780,7 +13780,7 @@
       }
     }
   },
-  "Procedure": {
+  "#Procedure": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Procedure.json",
     "description": "A written procedure and control documentation. A Procedure typically `IMPLEMENTS` a parent Policy. An actual Control further `IMPLEMENTS` a Procedure.",
@@ -13955,7 +13955,7 @@
       }
     }
   },
-  "Process": {
+  "#Process": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Process.json",
     "description": "A compute process -- i.e. an instance of a computer program / software application that is being executed by one or many threads. This is NOT a program level operational process (i.e. a Procedure).",
@@ -14167,7 +14167,7 @@
       }
     }
   },
-  "Product": {
+  "#Product": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Product.json",
     "description": "A product developed by the organization, such as a software product.",
@@ -14393,7 +14393,7 @@
       }
     }
   },
-  "Program": {
+  "#Program": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Program.json",
     "description": "A program. For example, a bug bounty/vuln disclosure program.",
@@ -14603,7 +14603,7 @@
       }
     }
   },
-  "Project": {
+  "#Project": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Project.json",
     "description": "A software development project. Can be used for other generic projects as well but the defined properties are geared towards software development projects.",
@@ -14840,7 +14840,7 @@
       }
     }
   },
-  "Question": {
+  "#Question": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Question.json",
     "description": "An object that represents an inquiry, usually around some matter of uncertainty or difficulty.",
@@ -15052,7 +15052,7 @@
       }
     }
   },
-  "Queue": {
+  "#Queue": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Queue.json",
     "description": "A scheduling queue of computing processes or devices.",
@@ -15268,7 +15268,7 @@
       }
     }
   },
-  "Record": {
+  "#Record": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Record.json",
     "description": "A DNS record; or an official record (e.g. Risk); or a written document (e.g. Policy/Procedure); or a reference (e.g. Vulnerability/Weakness). The exact record type is captured in the _type property of the Entity.",
@@ -15424,7 +15424,7 @@
       }
     }
   },
-  "RecordEntity": {
+  "#RecordEntity": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "RecordEntity.json",
     "description": "A node in the graph database that represents a Record Entity, with a set of different defined common properties than standard (resource) entities.",
@@ -15557,7 +15557,7 @@
       }
     }
   },
-  "Repository": {
+  "#Repository": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Repository.json",
     "description": "A repository that contains resources. For example, a Docker container registry repository hosting Docker container images.",
@@ -15764,7 +15764,7 @@
       }
     }
   },
-  "Requirement": {
+  "#Requirement": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Requirement.json",
     "description": "An individual requirement for security, compliance, regulation or design.",
@@ -15927,7 +15927,7 @@
       }
     }
   },
-  "Resource": {
+  "#Resource": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Resource.json",
     "description": "A generic assignable resource. A resource is typically non-functional by itself unless used by or attached to a host or workload.",
@@ -16135,7 +16135,7 @@
       }
     }
   },
-  "Review": {
+  "#Review": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Review.json",
     "description": "A review record.",
@@ -16295,7 +16295,7 @@
       }
     }
   },
-  "Risk": {
+  "#Risk": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Risk.json",
     "description": "An object that represents an identified Risk as the result of an Assessment. The collection of Risk objects in JupiterOne make up the Risk Register. A Control may have a `MITIGATES` relationship to a Risk.",
@@ -16474,7 +16474,7 @@
       }
     }
   },
-  "Root": {
+  "#Root": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Root.json",
     "description": "The root node in the graph. There should be only one Root node per organization account.",
@@ -16507,7 +16507,7 @@
       "displayName": { "description": "Display name", "type": "string" }
     }
   },
-  "Rule": {
+  "#Rule": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Rule.json",
     "description": "An operational or configuration compliance rule, often part of a Ruleset.",
@@ -16724,7 +16724,7 @@
       }
     }
   },
-  "Ruleset": {
+  "#Ruleset": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Ruleset.json",
     "description": "An operational or configuration compliance ruleset with rules that govern (or enforce, evaluate, monitor) a security control or IT system.",
@@ -16946,7 +16946,7 @@
       }
     }
   },
-  "Scanner": {
+  "#Scanner": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Scanner.json",
     "description": "A system vulnerability, application code or network infrastructure scanner.",
@@ -17162,7 +17162,7 @@
       }
     }
   },
-  "Secret": {
+  "#Secret": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Secret.json",
     "description": "A stored encrypted secret, accessed by permitted users or applications.",
@@ -17370,7 +17370,7 @@
       }
     }
   },
-  "Section": {
+  "#Section": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Section.json",
     "description": "An object to represent a section such as a compliance section.",
@@ -17578,7 +17578,7 @@
       }
     }
   },
-  "Service": {
+  "#Service": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Service.json",
     "description": "A service provided by a vendor.",
@@ -17867,7 +17867,7 @@
       }
     }
   },
-  "Site": {
+  "#Site": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Site.json",
     "description": "The physical location of an organization. A Person (i.e. employee) would typically has a relationship to a Site (i.e. located_at or work_at). Also used as the abstract reference to AWS Regions.",
@@ -18108,7 +18108,7 @@
       }
     }
   },
-  "Standard": {
+  "#Standard": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Standard.json",
     "description": "An object to represent a standard such as a compliance or technical standard.",
@@ -18331,7 +18331,7 @@
       }
     }
   },
-  "Subscription": {
+  "#Subscription": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Subscription.json",
     "description": "A subscription to a service or channel.",
@@ -18547,7 +18547,7 @@
       }
     }
   },
-  "Task": {
+  "#Task": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Task.json",
     "description": "A computational task. Examples include AWS Batch Job, ECS Task, etc.",
@@ -18755,7 +18755,7 @@
       }
     }
   },
-  "Team": {
+  "#Team": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Team.json",
     "description": "A team consists of multiple member Person entities. For example, the Development team or the Security team.",
@@ -18968,7 +18968,7 @@
       }
     }
   },
-  "ThreatIntel": {
+  "#ThreatIntel": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "ThreatIntel.json",
     "description": "Threat intelligence captures information collected from vulnerability risk analysis by those with substantive expertise and access to all-source information. Threat intelligence helps a security professional determine the risk of a vulnerability finding to their organization.",
@@ -19129,7 +19129,7 @@
       }
     }
   },
-  "Training": {
+  "#Training": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Training.json",
     "description": "A training module, such as a security awareness training or secure development training.",
@@ -19285,7 +19285,7 @@
       }
     }
   },
-  "User": {
+  "#User": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "User.json",
     "description": "A user account/login to access certain systems and/or services. Examples include okta-user, aws-iam-user, ssh-user, local-user (on a host), etc.",
@@ -19528,7 +19528,7 @@
       }
     }
   },
-  "UserGroup": {
+  "#UserGroup": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "UserGroup.json",
     "description": "A user group, typically associated with some type of access control, such as a group in Okta or in Office365. If a UserGroup has an access policy attached, and all member Users of the UserGroup would inherit the policy.",
@@ -19741,7 +19741,7 @@
       }
     }
   },
-  "Vault": {
+  "#Vault": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Vault.json",
     "description": "A collection of secrets such as a key ring",
@@ -19945,7 +19945,7 @@
       }
     }
   },
-  "Vendor": {
+  "#Vendor": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Vendor.json",
     "description": "An external organization that is a vendor or service provider.",
@@ -20294,7 +20294,7 @@
       }
     }
   },
-  "Vulnerability": {
+  "#Vulnerability": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Vulnerability.json",
     "description": "A security vulnerability (application or system or infrastructure). A single vulnerability may relate to multiple findings and impact multiple resources. The `IMPACTS` relationship between the Vulnerability and the resource entity that was impacted serves as the record of the finding. The `IMPACTS` relationship carries properties such as 'identifiedOn', 'remediatedOn', 'remediationDueOn', 'issueLink', etc.",
@@ -20478,7 +20478,7 @@
       }
     }
   },
-  "Weakness": {
+  "#Weakness": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Weakness.json",
     "description": "A security weakness.",
@@ -20627,7 +20627,7 @@
       }
     }
   },
-  "Workflow": {
+  "#Workflow": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Workflow.json",
     "description": "A workflow such as an AWS CodePipeline, GitHub repository workflow, or Apache Airflow.",
@@ -20831,7 +20831,7 @@
       }
     }
   },
-  "Workload": {
+  "#Workload": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "Workload.json",
     "description": "A virtual compute instance, it could be an aws-ec2-instance, a docker-container, an aws-lambda-function, an application-process, or a vmware-instance. The exact workload type is described in the _type property of the Entity.",
