@@ -6362,6 +6362,11 @@
         ],
         "inherited": true
       },
+      "lastSeenOn": {
+        "description": "The timestamp (in milliseconds since epoch) when the device was last seen. For example, some devices that are managed by vendors, check-in with the vendor.",
+        "type": "number",
+        "format": "date-time"
+      },
       "location": {
         "description": "Site where this device is located.",
         "type": "string"
@@ -9814,6 +9819,11 @@
           { "type": "array", "items": { "type": "string" } }
         ],
         "inherited": true
+      },
+      "lastSeenOn": {
+        "description": "The timestamp (in milliseconds since epoch) when the host agent last checked-in with the vendor.",
+        "type": "number",
+        "format": "date-time"
       },
       "name": {
         "description": "Name of this entity",

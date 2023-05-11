@@ -30,6 +30,11 @@
               "other"
             ]
           }
+        },
+        "lastSeenOn": {
+          "description": "The timestamp (in milliseconds since epoch) when the host agent last checked-in with the vendor.",
+          "type": "number",
+          "format": "date-time"
         }
       },
       "required": ["function"]

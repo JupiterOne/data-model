@@ -166,6 +166,11 @@
             "unknown",
             "other"
           ]
+        },
+        "lastSeenOn": {
+          "description": "The timestamp (in milliseconds since epoch) when the device was last seen. For example, some devices that are managed by vendors, check-in with the vendor.",
+          "type": "number",
+          "format": "date-time"
         }
       },
       "required": ["category", "make", "model", "serial", "deviceId"]
