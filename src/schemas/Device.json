@@ -149,6 +149,11 @@
           "description": "Screen lock timeout in seconds",
           "type": "number"
         },
+        "lastSeenOn": {
+          "description": "The timestamp (in milliseconds since epoch) when the device either last checked in or was scanned.",
+          "type": ["number", "null"],
+          "format": "date-time"
+        },
         "status": {
           "description": "Status label of this device",
           "type": "string",
@@ -168,7 +173,14 @@
           ]
         }
       },
-      "required": ["category", "make", "model", "serial", "deviceId"]
+      "required": [
+        "category",
+        "make",
+        "model",
+        "serial",
+        "deviceId",
+        "lastSeenOn"
+      ]
     }
   ]
 }

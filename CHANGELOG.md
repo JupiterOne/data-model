@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- `lastSeenOn` as a required property on both Devices and HostAgents.
+
 ## 0.54.0 - 2023-03-01
 
 ### Changed
