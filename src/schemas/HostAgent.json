@@ -32,7 +32,12 @@
           }
         }
       },
-      "required": ["function"]
+      "lastSeenOn": {
+        "description": "The timestamp (in milliseconds since epoch) when the device either last checked in or was scanned.",
+        "type": ["number", "null"],
+        "format": "date-time"
+      },
+      "required": ["function", "lastSeenOn"]
     }
   ]
 }

@@ -6362,6 +6362,11 @@
         ],
         "inherited": true
       },
+      "lastSeenOn": {
+        "description": "The timestamp (in milliseconds since epoch) when the device either last checked in or was scanned.",
+        "type": ["number", "null"],
+        "format": "date-time"
+      },
       "location": {
         "description": "Site where this device is located.",
         "type": "string"
