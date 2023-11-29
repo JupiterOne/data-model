@@ -1,0 +1,12 @@
+openapi: 3.0.1
+info:
+  title: '@jupiterone/data-model'
+  description: Automatically generated package.json, please edit manually
+  x-cortex-git:
+    github:
+      repository: JupiterOne/data-model
+  x-cortex-owners:
+    - type: group
+      name: JupiterOne/engineering
+  x-cortex-service-groups: tier-4
+  x-cortex-tag: '@jupiterone/data-model'
