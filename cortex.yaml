@@ -8,5 +8,6 @@ info:
   x-cortex-owners:
     - type: group
       name: JupiterOne/engineering
-  x-cortex-service-groups: tier-4
   x-cortex-tag: '@jupiterone/data-model'
+  x-cortex-service-groups:
+    - tier-4
