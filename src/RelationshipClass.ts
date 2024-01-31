@@ -133,6 +133,11 @@ export enum RelationshipClass {
   IS = 'IS',
 
   /**
+   * Person - KNOWS -> Person
+   */
+  KNOWS = 'KNOWS',
+
+  /**
    * A relationship indicating an Entity limits or restricts another Entity.
    *
    * Examples:
