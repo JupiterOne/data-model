@@ -133,6 +133,9 @@ export enum RelationshipClass {
   IS = 'IS',
 
   /**
+   * A relationship indicating a Person knows another Person.
+   *
+   * Examples:
    * Person - KNOWS -> Person
    */
   KNOWS = 'KNOWS',
