@@ -98,6 +98,87 @@ describe('Host', () => {
       } as any),
     ).not.toThrow();
   });
+
+  test('allows single IPv4 address in ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: '192.168.1.1',
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('allows single IPv4 CIDR block in ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: '192.168.1.0/24',
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('allows single IPv6 address in ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: '2001:db8::1',
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('allows single IPv6 CIDR block in ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: '2001:db8::/32',
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('allows array of IPv4 addresses in ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: ['192.168.1.1', '10.0.0.1'],
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('allows array of IPv4 and IPv6 addresses in ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: ['192.168.1.1', '2001:db8::1'],
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('allows array with IPv4 CIDR blocks in ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: ['192.168.1.0/24', '10.0.0.0/16'],
+      } as any),
+    ).not.toThrow();
+  });
+
+  test('disallows invalid IPv4 address in ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: '256.256.256.256',
+      } as any),
+    ).toThrow();
+  });
+
+  test('disallows invalid IPv4 CIDR block in ipAddress', () => {
+    expect(() =>
+      validateEntityWithSchema({
+        ...requiredProperties,
+        ipAddress: '192.168.1.0/33', // Invalid CIDR notation
+      } as any),
+    ).toThrow();
+  });
 });
 
 describe('IpAddress', () => {
