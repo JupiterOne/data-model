@@ -15,6 +15,7 @@ and this project adheres to
 - `lastSeenOn` as a required property on both Devices and HostAgents.
 - Added ipCidr format
 - Support for IP CIDR in Host class
+- Add `KNOWS` class
 
 ## 0.54.0 - 2023-03-01
 
