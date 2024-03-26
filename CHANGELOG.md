@@ -8,9 +8,13 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 0.55.0 - 2024-03-26
+
 ### Added
 
 - `lastSeenOn` as a required property on both Devices and HostAgents.
+- Added ipCidr format
+- Support for IP CIDR in Host class
 
 ## 0.54.0 - 2023-03-01
 
