@@ -28,12 +28,21 @@
           "description": "A listing of all IP addresses associated with this Host",
           "anyOf": [
             { "type": "string", "format": "ip" },
+            { "type": "string", "format": "ipCidr" },
             {
               "type": "array",
               "uniqueItems": true,
               "items": {
                 "type": "string",
                 "format": "ip"
+              }
+            },
+            {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "format": "ipCidr"
               }
             }
           ]
